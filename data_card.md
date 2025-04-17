@@ -2328,75 +2328,7 @@ Source: Write here and share link
 
 Interpretation: Write here
 
-#### Term of Art
-Definition: Write here
 
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
 
 ## Reflections on Data
 <!-- info: Use this space to include any additional information about the
@@ -2404,11 +2336,18 @@ dataset that has not been captured by the Data Card. For example,
 does the dataset contain data that might be offensive, insulting, threatening,
 or might otherwise cause anxiety? If so, please contact the appropriate parties
 to mitigate any risks. -->
-### Title
-Write notes here.
+### Team Performance
+Games Played: On average, teams play around 28-30 games a season depending how well they do. The top teams by games played, such as Duke, Kansas, and North Carolina, are all consistently strong performers. However their repeated represenation can lead to bias with schools with less extensive data or shorter season.
 
-### Title
-Write notes here.
+Win Percentage: The average win percentage across all teams is 48.03%, with top teams (e.g., Duke and Kansas) reaching win percentages over 79% a season, indicating a strong historical performance. Teams with fewer games played tend to show a wider variance in performance. Which we will also need to find a way to account for in our model. (These are the typical underdogs that could lead to big upsets)
 
-### Title
-Write notes here.
+Tournament Participation: The mean tournament participation rate is approximately 1.06, suggesting that while some teams regularly make the tournament, others may only participate sporadically. This is also seen in overall games played, the best teams have the highest overall games played since they consistently go to the finals. Seperating themselves from the pack. Teams less involved in the tournaments have little to no uniformity.
+
+### Conference Trends
+Games Played: Conferences like the Southeastern Conference (SEC) and Atlantic 10 Conference have the highest number of games played, suggesting strong and competitive leagues. In contrast, conferences like the Mid-Eastern Athletic Conference (MEAC) have lower game totals, reflecting less competition.
+
+Win Percentage: Win percentages across conferences show a lot of variability, with the Atlantic Coast Conference (ACC) performing at a high level (60.80%) and the Mid-Eastern Athletic Conference (MEAC) performing at a much lower level (39.02%). This highlights the difference in strength between conferences.
+
+Tournament Performance: The average tournament win percentage across conferences is 34.55%, with some conferences like the ACC having higher success rates in tournament play, and others facing more challenges.
+
+
