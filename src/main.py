@@ -38,6 +38,72 @@ data_completeness(geography_dir_path)
 data_completeness(public_rankings_dir_path)
 data_completeness(supplements_dir_path)
 
+
+#######################################################################################################################################
+# Validate Data
+# Convert files to dataframes
+dfs = {}
+for filename in os.listdir(basics_dir_path):
+  if filename.endswith(".csv"):
+    filepath = os.path.join(basics_dir_path, filename)
+    df_name = filename[:-4]  # Remove the .csv extension
+    dfs[df_name] = pd.read_csv(filepath)
+dfs.keys()
+
+# check that the Season column only contains years from 1985 to 2025
+def validate_season(df, name):
+  valid_seasons = (df['Season'] >= 1985) & (df['Season'] <= 2025)
+  if not all(valid_seasons):
+    print(f"Invalid season values found in {name}")
+  else:
+    print(f"All season values are valid in {name}")
+  
+for key in ['MNCAATourneyCompactResults', 'MRegularSeasonCompactResults', 'MNCAATourneySeeds', 'MSeasons', 'WNCAATourneyCompactResults', 'WRegularSeasonCompactResults', 'WNCAATourneySeeds', 'WSeasons']:
+  validate_season(dfs[key], key)
+
+# check for negative numbers
+
+def check_non_negative(col, df_name):
+  print (f"All values in '{col.name}' of df '{df_name} are non-negative")
+  return all(col >= 0)
+
+for col in ['DayNum', 'WScore', 'LScore']:
+   for df_name in ['MNCAATourneyCompactResults', 'MRegularSeasonCompactResults', 'WNCAATourneyCompactResults', 'WRegularSeasonCompactResults']:
+     if col in dfs[df_name].columns:
+       check_non_negative(dfs[df_name][col], df_name)
+
+# check mens teams ids match with ids in the tourney_teams dataframe
+team_ids = set(dfs['MTeams']['TeamID'].unique())
+
+def check_team_ids(col, df_name):
+  tourney_team_ids = set(col.unique())
+  invalid_team_ids = tourney_team_ids - team_ids
+  if invalid_team_ids:
+    print(f"Invalid team IDs found in '{col.name}' of df '{df_name}': {invalid_team_ids}")
+  else:
+    print(f"All team IDs in '{col.name}' of df '{df_name}' are valid")
+
+for df_name in ['MNCAATourneyCompactResults', 'MRegularSeasonCompactResults', 'MNCAATourneySeeds']:
+  for col  in ['WTeamID', 'LTeamID', 'TeamID']:
+    if col in dfs[df_name].columns:
+      check_team_ids(dfs[df_name][col], df_name)
+  
+# check womens teams ids are valid 
+team_ids = set(dfs['WTeams']['TeamID'].unique())
+
+for df_name in ['WNCAATourneyCompactResults', 'WRegularSeasonCompactResults', 'WNCAATourneySeeds']:
+  for col  in ['WTeamID', 'LTeamID', 'TeamID']:
+    if col in dfs[df_name].columns:
+      check_team_ids(dfs[df_name][col], df_name)
+
+# validate regions
+for df_name in ['MSeasons', 'WSeasons']:
+  for col in ['RegionW', 'RegionX', 'RegionY', 'RegionZ']:
+    if col in dfs[df_name].columns:
+      print(f"Unique values in column '{col}' of df '{df_name}': {dfs[df_name][col].unique()}")
+#######################################################################################################################################
+
+
 # Feature Distributions
 # Plotting the distribution of winning and losing scores MRegularSeasonCompactResults.csv
 
