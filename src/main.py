@@ -3,6 +3,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
+import seaborn as sns
 
 # import the data
 basics_dir_path = os.path.join(os.path.dirname(__file__),'..','data','section_1_basics')
@@ -67,11 +68,8 @@ df_m_reg[columns_to_normalize] = scaler.fit_transform(df_m_reg[columns_to_normal
 print(df_m_reg[['WScore', 'LScore', 'DayNum', 'NumOT']].head())
 
 
-# Mohsen Alavian section for Data Prep
-# Covered representativeness, Bias, and Fairness of the data
-# Focused heavily on visualization and graphs
-import seaborn as sns
 
+# Code covering representativeness, bias, and fairness of the data with accompanying graphs
 def analyze_team_games(season_range=None):
     """
     Analyze the number of games played by each team and their win/loss records.
