@@ -41,4 +41,5 @@ Rishab Lakhotra - Machine Learner Engineer & Model Evaluator
 Cesar Ramirez - Model Evaluation Lead  
 Alma Campos - Documentation & Reporting  
 Gauri Joshi - Documentation & Reporting  
-Ritik Ptani - Documentation & Reporting
+Ritik Ptani - Documentation & Reporting               
+Kris Kajar - Documentation & Reporting
