@@ -37,6 +37,67 @@ data_completeness(geography_dir_path)
 data_completeness(public_rankings_dir_path)
 data_completeness(supplements_dir_path)
 
+#Verifying Men's wins and losses data
+M_file_path = os.path.join(basics_dir_path, 'MNCAATourneyCompactResults.csv')
+df_m_tcr = pd.read_csv(M_file_path)
+win_counts = df_m_tcr['WTeamID'].value_counts()
+loss_counts = df_m_tcr['LTeamID'].value_counts()
+
+team_ids = np.union1d(win_counts.index, loss_counts.index)
+
+wins = win_counts.reindex(team_ids, fill_value=0)
+losses = loss_counts.reindex(team_ids, fill_value=0)
+total_wins = wins.sum()
+total_losses = losses.sum()
+
+fig, ax = plt.subplots(figsize=(20, 10))
+x = np.arange(len(team_ids))
+
+ax.bar(x - 0.25, wins, width=0.5, label="Wins", color='green', alpha=0.7)
+ax.bar(x + 0.25, losses, width=0.5, label="Losses", color='red', alpha=0.7)
+
+ax.set_xlabel("Team ID")
+ax.set_ylabel("Total Number of Games")
+ax.set_title("Wins and Losses in NCAA Tourney")
+ax.legend()
+
+plt.show()
+print("TOTAL WINS: ", total_wins)
+print("TOTAL LOSSES: ", total_losses)
+
+#Classes are balanced with an equal number of wins as losses
+
+
+#Verifying Women's wins and losses data
+W_file_path = os.path.join(basics_dir_path, 'WNCAATourneyCompactResults.csv')
+df_w_tcr = pd.read_csv(W_file_path)
+win_counts = df_w_tcr['WTeamID'].value_counts()
+loss_counts = df_w_tcr['LTeamID'].value_counts()
+
+team_ids = np.union1d(win_counts.index, loss_counts.index)
+
+wins = win_counts.reindex(team_ids, fill_value=0)
+losses = loss_counts.reindex(team_ids, fill_value=0)
+total_wins = wins.sum()
+total_losses = losses.sum()
+
+fig, ax = plt.subplots(figsize=(20, 10))
+x = np.arange(len(team_ids))
+
+ax.bar(x - 0.25, wins, width=0.5, label="Wins", color='green', alpha=0.7)
+ax.bar(x + 0.25, losses, width=0.5, label="Losses", color='red', alpha=0.7)
+
+ax.set_xlabel("Team ID")
+ax.set_ylabel("Total Number of Games")
+ax.set_title("Wins and Losses in NCAA Tourney")
+ax.legend()
+
+plt.show()
+print("TOTAL WINS: ", total_wins)
+print("TOTAL LOSSES: ", total_losses)
+
+#Classes are balanced with an equal number of wins as losses
+
 # Feature Distributions
 # Plotting the distribution of winning and losing scores MRegularSeasonCompactResults.csv
 
