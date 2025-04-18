@@ -12,9 +12,16 @@ This dataset contains historical data for the NCAA Men's and Women's Basketball 
 (Usage Note: Select the most appropriate choice to describe the author's role
 in creating the Data Card.) -->
 <!-- width: half -->
-- **Name, Team:** (Owner / Contributor / Manager)
-- **Name, Team:** (Owner / Contributor / Manager)
-- **Name, Team:** (Owner / Contributor / Manager)
+- **Cesar Ramirez, Group 9:** Contributor
+- **Alma Campos, Group 9:** Contributor
+- **Moheson Alavian, Group 9:** Contributor
+- **Gauri Joshi, Group 9:** Contributor
+- **Rutik Narute, Group 9:** Contributor
+- **Denise Tabilas, Group 9:** Contributor
+- **Rishab Lakhotra, Group 9:** Contributor
+- **Alex Alcazar, Group 9:** Contributor
+- **Moheson Alavian, Group 9:** Contributor
+- **Kris Kajar, Group 9:** Contributor
 
 ## Authorship
 ### Publishers
@@ -22,55 +29,32 @@ in creating the Data Card.) -->
 <!-- scope: telescope -->
 <!-- info: Provide the names of the institution or organization responsible
 for publishing the dataset: -->
-Organization Name
+Kaggle
 
 #### Industry Type(s)
 <!-- scope: periscope -->
 <!-- info: Select **all applicable** industry types to which the publishing
 organizations belong: -->
-- Corporate - Tech
-- Corporate - Non-Tech (please specify)
 - Academic - Tech
-- Academic - Non-Tech (please specify)
-- Not-for-profit - Tech
-- Not-for-profit - Non-Tech (please specify)
-- Individual (please specify)
-- Others (please specify)
 
 #### Contact Detail(s)
 <!-- scope: microscope -->
 <!-- info: Provide publisher contact details: -->
-- **Publishing POC:** Provide the name for a POC for this dataset's publishers
-- **Affiliation:** Provide the POC's institutional affiliation
-- **Contact:** Provide the POC's contact details
-- **Mailing List:** Provide a mailing list if available
-- **Website:** Provide a website for the dataset if available
+- **Website:** [Kaggle](https://www.kaggle.com/)
 
 ### Dataset Owners
 #### Team(s)
 <!-- scope: telescope -->
 <!-- info: Provide the names of the groups or team(s) that own the dataset: -->
-Name of Group or Team
+Kenneth Massey
+Sonas Consulting
 
 #### Contact Detail(s)
 <!-- scope: periscope -->
 <!-- info: Provide pathways to contact dataset owners: -->
-- **Dataset Owner(s):** Provide the names of the dataset owners
-- **Affiliation:** Provide the affiliation of the dataset owners
-- **Contact:** Provide the email of the dataset owner
-- **Group Email:** Provide a link to the mailing-list@server.com for the dataset owner team
-- **Website:** Provide a link to the website for the dataset owner team
-
-#### Author(s)
-<!-- scope: microscope -->
-<!-- info: Provide the details of all authors associated with the dataset:
-
-(Usage Note: Provide the affiliation and year if different from publishing
-institutions or multiple affiliations.) -->
-- Name, Title, Affiliation, YYYY
-- Name, Title, Affiliation, YYYY
-- Name, Title, Affiliation, YYYY
-- Name, Title, Affiliation, YYYY
+- **Dataset Owner(s):** Kenneth Massey, Jeff Sonas, Sonas Consulting
+- **Affiliation:** Massey Ratings, Sonas Consulting
+- **Website:** [Massey Ratings](http://www.masseyratings.com/)
 
 
 ## Dataset Overview
