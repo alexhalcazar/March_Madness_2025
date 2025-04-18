@@ -38,8 +38,6 @@ data_completeness(geography_dir_path)
 data_completeness(public_rankings_dir_path)
 data_completeness(supplements_dir_path)
 
-
-#######################################################################################################################################
 # Validate Data
 # Convert files to dataframes
 dfs = {}
@@ -101,8 +99,6 @@ for df_name in ['MSeasons', 'WSeasons']:
   for col in ['RegionW', 'RegionX', 'RegionY', 'RegionZ']:
     if col in dfs[df_name].columns:
       print(f"Unique values in column '{col}' of df '{df_name}': {dfs[df_name][col].unique()}")
-#######################################################################################################################################
-
 
 #Verifying Men's wins and losses data
 M_file_path = os.path.join(basics_dir_path, 'MNCAATourneyCompactResults.csv')
@@ -649,4 +645,3 @@ print(conf_stats.nlargest(10, 'GamesPlayed')[['Description', 'GamesPlayed', 'Win
 visualize_conference_analysis(conf_stats)
 
 team_stats, conf_stats
-

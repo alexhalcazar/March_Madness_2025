@@ -36,6 +36,9 @@ pip install -r requirements.txt
 Alex Alcazar - Lead Developer & Repository Manager  
 Mohsen Alavian - Machine Learner Engineer & Model Evaluator  
 Denise Tabilas - Machine Learner Engineer & Model Evaluator  
+Rutik Narute - Machine Learner Engineer & Model Evaluator  
+Rishab Lakhotra - Machine Learner Engineer & Model Evaluator  
 Cesar Ramirez - Model Evaluation Lead  
 Alma Campos - Documentation & Reporting  
-Gauri Joshi - Documentation & Reporting
+Gauri Joshi - Documentation & Reporting  
+Ritik Ptani - Documentation & Reporting

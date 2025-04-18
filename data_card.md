@@ -12,9 +12,16 @@ This dataset contains historical data for the NCAA Men's and Women's Basketball 
 (Usage Note: Select the most appropriate choice to describe the author's role
 in creating the Data Card.) -->
 <!-- width: half -->
-- **Name, Team:** (Owner / Contributor / Manager)
-- **Name, Team:** (Owner / Contributor / Manager)
-- **Name, Team:** (Owner / Contributor / Manager)
+- **Cesar Ramirez, Group 9:** Contributor
+- **Alma Campos, Group 9:** Contributor
+- **Moheson Alavian, Group 9:** Contributor
+- **Gauri Joshi, Group 9:** Contributor
+- **Rutik Narute, Group 9:** Contributor
+- **Denise Tabilas, Group 9:** Contributor
+- **Rishab Lakhotra, Group 9:** Contributor
+- **Alex Alcazar, Group 9:** Contributor
+- **Moheson Alavian, Group 9:** Contributor
+- **Kris Kajar, Group 9:** Contributor
 
 ## Authorship
 ### Publishers
@@ -22,79 +29,33 @@ in creating the Data Card.) -->
 <!-- scope: telescope -->
 <!-- info: Provide the names of the institution or organization responsible
 for publishing the dataset: -->
-Organization Name
+Kaggle
 
 #### Industry Type(s)
 <!-- scope: periscope -->
 <!-- info: Select **all applicable** industry types to which the publishing
 organizations belong: -->
-- Corporate - Tech
-- Corporate - Non-Tech (please specify)
 - Academic - Tech
-- Academic - Non-Tech (please specify)
-- Not-for-profit - Tech
-- Not-for-profit - Non-Tech (please specify)
-- Individual (please specify)
-- Others (please specify)
 
 #### Contact Detail(s)
 <!-- scope: microscope -->
 <!-- info: Provide publisher contact details: -->
-- **Publishing POC:** Provide the name for a POC for this dataset's publishers
-- **Affiliation:** Provide the POC's institutional affiliation
-- **Contact:** Provide the POC's contact details
-- **Mailing List:** Provide a mailing list if available
-- **Website:** Provide a website for the dataset if available
+- **Website:** [Kaggle](https://www.kaggle.com/)
 
 ### Dataset Owners
 #### Team(s)
 <!-- scope: telescope -->
 <!-- info: Provide the names of the groups or team(s) that own the dataset: -->
-Name of Group or Team
+Kenneth Massey
+Sonas Consulting
 
 #### Contact Detail(s)
 <!-- scope: periscope -->
 <!-- info: Provide pathways to contact dataset owners: -->
-- **Dataset Owner(s):** Provide the names of the dataset owners
-- **Affiliation:** Provide the affiliation of the dataset owners
-- **Contact:** Provide the email of the dataset owner
-- **Group Email:** Provide a link to the mailing-list@server.com for the dataset owner team
-- **Website:** Provide a link to the website for the dataset owner team
+- **Dataset Owner(s):** Kenneth Massey, Jeff Sonas, Sonas Consulting
+- **Affiliation:** Massey Ratings, Sonas Consulting
+- **Website:** [Massey Ratings](http://www.masseyratings.com/)
 
-#### Author(s)
-<!-- scope: microscope -->
-<!-- info: Provide the details of all authors associated with the dataset:
-
-(Usage Note: Provide the affiliation and year if different from publishing
-institutions or multiple affiliations.) -->
-- Name, Title, Affiliation, YYYY
-- Name, Title, Affiliation, YYYY
-- Name, Title, Affiliation, YYYY
-- Name, Title, Affiliation, YYYY
-
-### Funding Sources
-#### Institution(s)
-<!-- scope: telescope -->
-<!-- info: Provide the names of the funding institution(s): -->
-- Name of Institution
-- Name of Institution
-- Name of Institution
-
-#### Funding or Grant Summary(ies)
-<!-- scope: periscope -->
-<!-- width: full -->
-<!-- info: Provide a short summary of programs or projects that may have funded
-the creation, collection, or curation of the dataset.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-*For example, Institution 1 and institution 2 jointly funded this dataset as a
-part of the XYZ data program, funded by XYZ grant awarded by institution 3 for
-the years YYYY-YYYY.*
-
-Summarize here. Link to documents if available.
-
-**Additional Notes:** Add here
 
 ## Dataset Overview
 #### Data Subject(s)
@@ -160,119 +121,10 @@ mode |
 
 **Additional Notes:** Add here.
 
-### Sensitivity of Data
-#### Sensitivity Type(s)
-<!-- scope: telescope -->
-<!-- info: Select ***all applicable*** data types present in the dataset: -->
-- User Content
-- User Metadata
-- User Activity Data
-- Identifiable Data
-- S/PII
-- Business Data
-- Employee Data
-- Pseudonymous Data
-- Anonymous Data
-- Health Data
-- Children’s Data
-- None
-- Others (Please specify)
-
-#### Field(s) with Sensitive Data
-<!-- scope: periscope -->
-<!-- info: List fields in the dataset that contain S/PII, and specify if their
-collection was intentional or unintentional.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-**Intentional Collected Sensitive Data**
-
-(S/PII were collected as a part of the
-dataset creation process.)
-
-Field Name | Description
---- | ---
-Field Name | Type of S/PII
-Field Name | Type of S/PII
-Field Name | Type of S/PII
-
-**Unintentionally Collected Sensitive Data**
-
-(S/PII were not explicitly collected as a
-part of the dataset creation process but
-can be inferred using additional
-methods.)
-
-Field Name | Description
---- | ---
-Field Name | Type of S/PII
-Field Name | Type of S/PII
-Field Name | Type of S/PII
-
-**Additional Notes:** Add here
-
-#### Security and Privacy Handling
-<!-- scope: microscope -->
-<!-- info: Summarize the measures or steps to handle sensitive data in this
-dataset.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-
-Summarize here. Include links and metrics where applicable.
-
-**Method:** description
-
-**Method:** description
-
-**Method:** description
-
-**Additional Notes:** Add here
-
-#### Risk Type(s)
-<!-- scope: telescope -->
-<!-- info: Select **all applicable** risk types presenting from the
-dataset: -->
-- Direct Risk
-- Indirect Risk
-- Residual Risk
-- No Known Risks
-- Others (Please Specify)
-
-#### Supplemental Link(s)
-<!-- scope: periscope -->
-<!-- info: Provide link(s) for documentation pertaining to sensitive data in
-the dataset: -->
-**Link Name or Document Type:** link
-
-**Link Name or Document Type:** link
-
-**Link Name or Document Type:** link
-
-#### Risk(s) and Mitigation(s)
-<!-- scope: microscope -->
-<!-- info: Summarize the steps taken to identify and mitigate risks from PII
-or sensitive information.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-Summarize here. Include links and metrics where applicable.
-
-**Risk type:** Description + Mitigations
-
-**Risk type:** Description + Mitigations
-
-**Risk type:** Description + Mitigations
-
-**Additional Notes:** Add here
-
 ### Dataset Version and Maintenance
 #### Maintenance Status
 <!-- scope: telescope -->
 <!-- info: Select **one:** -->
-**Regularly Updated** - New versions of the dataset
-have been or will continue to be
-made available.
 
 **Actively Maintained** - No new versions will be made
 available, but this dataset will
@@ -283,9 +135,6 @@ updates to the data.
 **Limited Maintenance** - The data will not be updated,
 but any technical issues will be
 addressed.
-
-**Deprecated** - This dataset is obsolete or is
-no longer being maintained.
 
 #### Version Details
 <!-- scope: periscope -->
@@ -317,17 +166,6 @@ or updating the dataset.
 or updating the dataset.
 
 **Additional Notes:** Add here
-
-#### Next Planned Update(s)
-<!-- scope: periscope -->
-<!-- info: Provide details about the next planned update: -->
-**Version affected:** 1.0
-
-**Next data update:** MM/YYYY
-
-**Next version:** 1.1
-
-**Next version update:** MM/YYYY
 
 #### Expected Change(s)
 <!-- scope: microscope -->
@@ -632,69 +470,7 @@ considerations. -->
 
 **Additional Notes:** Add here
 
-### Wipeout and Deletion
-#### Duration
-<!-- scope: periscope -->
-<!-- info: Specify the duration after which this dataset should be deleted or
-wiped out: -->
-Specify duration in days, months, or years.
 
-#### Deletion Event Summary
-<!-- scope: microscope -->
-<!-- info: Summarize the sequence of events and allowable processing for data
-deletion.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-**Sequence of deletion and processing events:**
-
-- Summarize first event here
-- Summarize second event here
-- Summarize third event here
-
-**Additional Notes:** Add here
-
-#### Acceptable Means of Deletion
-<!-- scope: periscope -->
-<!-- info: List the acceptable means of deletion: -->
-- Write acceptable means of deletion
-- Write acceptable means of deletion
-- Write acceptable means of deletion
-
-#### Post-Deletion Obligations
-<!-- scope: microscope -->
-<!-- info: Summarize the sequence of obligations after a deletion event.
-
-**Use additional notes to capture any other relevant information or
-considerations.** -->
-**Sequence of post-deletion obligations:**
-
-- Summarize first obligation here
-- Summarize second obligation here
-- Summarize third obligation here
-
-**Additional Notes:** Add here
-
-#### Operational Requirement(s)
-<!-- scope: periscope -->
-<!-- info: List any wipeout integration operational requirements: -->
-**Wipeout Integration Operational Requirements:**
-
-- Write first requirement here
-- Write second requirement here
-- Write third requirement here
-
-#### Exceptions and Exemptions
-<!-- scope: microscope -->
-<!-- info: Summarize any exceptions and related steps to a deletion event.
-
-**Use additional notes to capture any other relevant information or
-considerations.** -->
-**Policy Exception bug:** [bug]
-
-**Summary:** Write summary and notes here
-
-**Additional Notes:** Add here
 
 ## Provenance
 ### Collection
@@ -2536,75 +2312,7 @@ Source: Write here and share link
 
 Interpretation: Write here
 
-#### Term of Art
-Definition: Write here
 
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
-
-#### Term of Art
-Definition: Write here
-
-Source: Write here and share link
-
-Interpretation: Write here
 
 ## Reflections on Data
 <!-- info: Use this space to include any additional information about the
@@ -2612,11 +2320,18 @@ dataset that has not been captured by the Data Card. For example,
 does the dataset contain data that might be offensive, insulting, threatening,
 or might otherwise cause anxiety? If so, please contact the appropriate parties
 to mitigate any risks. -->
-### Title
-Write notes here.
+### Team Performance
+Games Played: On average, teams play around 28-30 games a season depending how well they do. The top teams by games played, such as Duke, Kansas, and North Carolina, are all consistently strong performers. However their repeated represenation can lead to bias with schools with less extensive data or shorter season.
 
-### Title
-Write notes here.
+Win Percentage: The average win percentage across all teams is 48.03%, with top teams (e.g., Duke and Kansas) reaching win percentages over 79% a season, indicating a strong historical performance. Teams with fewer games played tend to show a wider variance in performance. Which we will also need to find a way to account for in our model. (These are the typical underdogs that could lead to big upsets)
 
-### Title
-Write notes here.
+Tournament Participation: The mean tournament participation rate is approximately 1.06, suggesting that while some teams regularly make the tournament, others may only participate sporadically. This is also seen in overall games played, the best teams have the highest overall games played since they consistently go to the finals. Seperating themselves from the pack. Teams less involved in the tournaments have little to no uniformity.
+
+### Conference Trends
+Games Played: Conferences like the Southeastern Conference (SEC) and Atlantic 10 Conference have the highest number of games played, suggesting strong and competitive leagues. In contrast, conferences like the Mid-Eastern Athletic Conference (MEAC) have lower game totals, reflecting less competition.
+
+Win Percentage: Win percentages across conferences show a lot of variability, with the Atlantic Coast Conference (ACC) performing at a high level (60.80%) and the Mid-Eastern Athletic Conference (MEAC) performing at a much lower level (39.02%). This highlights the difference in strength between conferences.
+
+Tournament Performance: The average tournament win percentage across conferences is 34.55%, with some conferences like the ACC having higher success rates in tournament play, and others facing more challenges.
+
+
