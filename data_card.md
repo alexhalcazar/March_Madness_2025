@@ -443,44 +443,21 @@ out for, or other relevant information or considerations. -->
 
 #### Access Type
 
-<!-- scope: telescope -->
-<!-- info: Select **one**: -->
-
--   Internal - Unrestricted
--   Internal - Restricted
 -   External - Open Access
--   Others (please specify)
 
 #### Documentation Link(s)
 
-<!-- scope: periscope -->
-<!-- info: Provide links that describe documentation to access this
-dataset: -->
-
--   Dataset Website URL
--   GitHub URL
+-   [Kaggle Competition Page (2025 NCAA Tournament)](https://www.kaggle.com/competitions/march-machine-learning-mania-2025)
+-   [Kaggle Datasets Used](https://www.kaggle.com/competitions/march-machine-learning-mania-2025/data)
 
 #### Prerequisite(s)
 
-<!-- scope: microscope -->
-<!-- info: Please describe any required training or prerequisites to access
-this dataset. -->
-
-For example:
-
-This dataset requires membership in [specific] database groups:
-
--   Complete the [Mandatory Training]
--   Read [Data Usage Policy]
--   Initiate a Data Requesting by filing
+No formal prerequisites. Access requires a free Kaggle account and acceptance of the competition’s terms of service.
 
 #### Policy Link(s)
 
-<!-- scope: periscope -->
-<!-- info: Provide a link to the access policy: -->
-
--   Direct download URL
--   Other repository URL
+-   [Download Dataset](https://www.kaggle.com/competitions/march-machine-learning-mania-2025/data)
+-   [Kaggle Terms of Service](https://www.kaggle.com/terms)
 
 Code to download data:
 
@@ -488,72 +465,33 @@ Code to download data:
 ...
 ```
 
-#### Access Control List(s)
-
-<!-- scope: microscope -->
-<!-- info: List and summarize any access control lists associated with this
-dataset. Include links where necessary.
-
-Use additional notes to capture any other information relevant to accessing
-the dataset. -->
-
-**Access Control List:** Write summary and notes here.
-
-**Access Control List:** Write summary and notes here.
-
-**Access Control List:** Write summary and notes here.
-
-**Additional Notes:** Add here
-
 ### Retention
 
 #### Duration
 
-<!-- scope: periscope -->
-<!-- info: Specify the duration for which this dataset can be retained: -->
-
-Specify duration in days, months, or years.
+Retain for as long as relevant for the project or competition deadline (e.g., until April 8, 2025), or as required for future academic/research use.
 
 #### Policy Summary
 
-<!-- scope: microscope -->
-<!-- info: Summarize the retention policy for this dataset. -->
+**Retention Plan ID:** N/A
 
-**Retention Plan ID:** Write here
-
-**Summary:** Write summary and notes here
+**Summary:** No formal retention policy applies. Dataset can be re-downloaded from Kaggle at any time while the competition is live or archived.
 
 #### Process Guide
 
-<!-- scope: periscope -->
-<!-- info: Summarize any requirements and related steps to retain the dataset.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-
-For example:
-
-This dataset compiles with [standard policy guidelines].
-
 **Additional Notes:** Add here
+
+This dataset complies with Kaggle's public data usage and retention policies. Since it is publicly available and does not contain personally identifiable information (PII), there are no strict limitations on how long the dataset can be retained.
+
+**Additional Notes:** Retention may be subject to changes in Kaggle’s hosting or availability policies. Users should ensure they have local copies for long-term access if needed.
 
 #### Exception(s) and Exemption(s)
 
-<!-- scope: microscope -->
-<!-- info: Summarize any exceptions and related steps to retain the dataset.
-Include links where necessary.
+**Exemption Code:** PUBLIC_DATA
 
-Use additional notes to capture any other relevant information or
-considerations. -->
+**Summary:** This dataset qualifies as publicly available data with no access restrictions or retention limitations. No additional approvals or exemptions are required to retain or use the dataset for academic purposes.
 
-**Exemption Code:** `ANONYMOUS_DATA` /
-`EMPLOYEE_DATA` / `PUBLIC_DATA` /
-`INTERNAL_BUSINESS_DATA` /
-`SIMULATED_TEST_DATA`
-
-**Summary:** Write summary and notes here.
-
-**Additional Notes:** Add here
+**Additional Notes:** No personal or sensitive data is included. No special handling or anonymization processes are necessary.
 
 ## Human and Other Sensitive Attributes
 
