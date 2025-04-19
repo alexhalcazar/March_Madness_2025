@@ -2000,7 +2000,7 @@ relevant information or considerations.
 following for each validator type.) -->
 **Range and Constraint Validation**
 
-**Number of Data Points Validated:** ~100,000~
+**Number of Data Points Validated:** ~100,000+
 
 **Fields Validated**
 Field | Count (approx)
@@ -2039,6 +2039,7 @@ RegionW | 2,000
 RegionX | 2,000
 RegionY | 2,000
 RegionZ | 2,000
+
 **Above:** Retrieved unique values for NCAA® tournament regions across seasons. Verified that these are consistent with expected names and historical region naming conventions.
 
 
@@ -2066,6 +2067,7 @@ following for each validator type.) -->
 - Pandas
 
 **Validation Results:** 
+
 ✅ All Season values are valid. 
 
 ✅ All numeric game values are non-negative.
@@ -2086,6 +2088,7 @@ following for each validator type.) -->
 - Pandas
 
 **Validation Results:** 
+
 ✅ All team IDs in both men's and women's datasets match the official team files. No unmatched or orphaned IDs were found.
 
 **Additional Notes:** This validation ensures referential integrity across game result data and team metadata.
@@ -2106,18 +2109,18 @@ following for each validator type.) -->
 **Validation Results:** 
 - Men's Regions:
 
-- RegionW: ['East', 'Atlanta', 'Albuquerque', 'NA1']
+    - RegionW: ['East', 'Atlanta', 'Albuquerque', 'NA1']
 
-- RegionX: ['West', 'Midwest', 'Southeast', 'South', 'Phoenix', 'Chicago', 'Oakland', 'NA2']
+    - RegionX: ['West', 'Midwest', 'Southeast', 'South', 'Phoenix', 'Chicago', 'Oakland', 'NA2']
 
-- RegionY: ['Midwest', 'Southeast', 'South', 'EastRutherford', 'Austin', 'Minneapolis', 'NA3']
+    - RegionY: ['Midwest', 'Southeast', 'South', 'EastRutherford', 'Austin', 'Minneapolis', 'NA3']
 
-- RegionZ: ['Southeast', 'West', 'South', 'StLouis', 'Syracuse', 'WashingtonDC', 'Southwest', 'NA4']
+    - RegionZ: ['Southeast', 'West', 'South', 'StLouis', 'Syracuse', 'WashingtonDC', 'Southwest', 'NA4']
 
 - Women's Regions:
 (Includes broader set reflecting more diversity in site locations)
 
-- e.g., ['Chattanooga', 'DesMoines', 'Alamo', 'Seattle4', 'RiverWalk', etc.]
+    -  e.g., ['Chattanooga', 'DesMoines', 'Alamo', 'Seattle4', 'RiverWalk', etc.]
 
 **Additional Notes:** The presence of NA1 to NA4 suggests placeholders, which may require downstream handling depending on modeling use cases.
 
