@@ -4,7 +4,7 @@ This dataset contains historical data for the NCAA Men's and Women's Basketball 
 #### Dataset Link
 <!-- info: Provide a link to the dataset: -->
 <!-- width: half -->
-[Kaggle](https://www.google.com/url?q=https%3A%2F%2Fwww.kaggle.com%2Fcompetitions%2Fmarch-machine-learning-mania-2025%2Fdata)
+[Kaggle](https://www.kaggle.com/competitions/march-machine-learning-mania-2025/data)
 
 #### Data Card Author(s)
 <!-- info: Select **one role per** Data Card Author:
@@ -1986,10 +1986,7 @@ or after the creation of your dataset. -->
 - Data Type Validation
 - Range and Constraint Validation
 - Code/cross-reference Validation
-- Structured Validation
 - Consistency Validation
-- Not Validated
-- Others (Please Specify)
 
 #### Breakdown(s)
 <!-- scope: periscope -->
@@ -2001,18 +1998,49 @@ relevant information or considerations.
 
 (Usage Note: Duplicate and complete the
 following for each validator type.) -->
-**(Validation Type)**
+**Range and Constraint Validation**
 
-**Number of Data Points Validated:** 12345
+**Number of Data Points Validated:** ~100,000~
 
 **Fields Validated**
-Field | Count (if available)
+Field | Count (approx)
 --- | ---
-Field | 123456
-Field | 123456
-Field | 123456
+Season | 16,000
+DayNum | 80,000
+WScore | 123456
+LScore | 123456
 
-**Above:** Provide a caption for the above table or visualization.
+**Above:** Checked that seasons were within the range 1985-2025, and that numeric fields like scores and game days were non-negative
+
+
+**Code / Cross-reference Validation**
+
+**Number of Data Points Validated:** ~50,000+
+
+**Fields Validated**
+Field | Count (approx)
+--- | ---
+WTeamID | 50,000
+LTeamID | 50,000
+TeamID | 10,000
+
+**Above:** Verified that team IDs in game and seed datasets matched entries in the MTeams and WTeams lookup files.
+
+
+
+**Consistency Validation**
+
+**Number of Data Points Validated:** ~4,000+
+
+**Fields Validated**
+Field | Count 
+--- | ---
+RegionW | 2,000
+RegionX | 2,000
+RegionY | 2,000
+RegionZ | 2,000
+**Above:** Retrieved unique values for NCAA® tournament regions across seasons. Verified that these are consistent with expected names and historical region naming conventions.
+
 
 #### Description(s)
 <!-- scope: microscope -->
@@ -2024,108 +2052,79 @@ relevant information or considerations.
 
 (Usage Note: Duplicate and complete the
 following for each validator type.) -->
-**(Validation Type)**
+**Range and Constraint Validation**
 
-**Method:** Describe the validation method here. Include links where
-necessary.
+**Method:** 
+
+- Verified that Season values fall within 1985–2025.
+
+- Checked that fields such as DayNum, WScore, and LScore contain no negative values.
 
 **Platforms, tools, or libraries:**
 
-- Platform, tool, or library: Write description here
-- Platform, tool, or library: Write description here
-- Platform, tool, or library: Write description here
+- Python
+- Pandas
 
-**Validation Results:** Provide results, outcomes, and actions taken because
-of the validation. Include visualizations where available.
+**Validation Results:** 
+✅ All Season values are valid. 
 
-**Additional Notes:** Add here
+✅ All numeric game values are non-negative.
+
+**Additional Notes:** This validation step ensures that no out-of-bounds or corrupted data points interfere with model training.
+
+**Code / Cross-reference Validation**
+
+**Method:** 
+
+- Compared team IDs in result and seed datasets to the official team lists using set logic in Python.
+
+- Checked columns: WTeamID, LTeamID, TeamID.
+
+**Platforms, tools, or libraries:**
+
+- Python
+- Pandas
+
+**Validation Results:** 
+✅ All team IDs in both men's and women's datasets match the official team files. No unmatched or orphaned IDs were found.
+
+**Additional Notes:** This validation ensures referential integrity across game result data and team metadata.
+
+**Consistency Validation**
+
+**Method:** 
+
+- Printed unique values of region fields (RegionW, RegionX, RegionY, RegionZ) in MSeasons and WSeasons.
+
+- Verified consistency with historical naming patterns.
+
+**Platforms, tools, or libraries:**
+
+- Python
+- Pandas
+
+**Validation Results:** 
+- Men's Regions:
+
+- RegionW: ['East', 'Atlanta', 'Albuquerque', 'NA1']
+
+- RegionX: ['West', 'Midwest', 'Southeast', 'South', 'Phoenix', 'Chicago', 'Oakland', 'NA2']
+
+- RegionY: ['Midwest', 'Southeast', 'South', 'EastRutherford', 'Austin', 'Minneapolis', 'NA3']
+
+- RegionZ: ['Southeast', 'West', 'South', 'StLouis', 'Syracuse', 'WashingtonDC', 'Southwest', 'NA4']
+
+- Women's Regions:
+(Includes broader set reflecting more diversity in site locations)
+
+- e.g., ['Chattanooga', 'DesMoines', 'Alamo', 'Seattle4', 'RiverWalk', etc.]
+
+**Additional Notes:** The presence of NA1 to NA4 suggests placeholders, which may require downstream handling depending on modeling use cases.
 
 ### Description of Human Validators
 <!-- info: Fill this section if the dataset was validated using human
 validators -->
-#### Characteristic(s)
-<!-- scope: periscope -->
-<!-- info: Provide characteristics of the validator
-pool(s). Use additional notes to capture any
-other relevant information or considerations. -->
-**(Validation Type)**
-- Unique validators: 12345
-- Number of examples per validator: 123456
-- Average cost/task/validator: $$$
-- Training provided: Y/N
-- Expertise required: Y/N
-
-#### Description(s)
-<!-- scope: microscope -->
-<!-- info: Provide a brief description of the validator
-pool(s). Use additional notes to capture any
-other relevant information or considerations.
-
-(Usage Note: Duplicate and complete the
-following for each validator type.) -->
-**(Validation Type)**
-
-**Validator description:** Summarize here. Include links if available.
-
-**Training provided:** Summarize here. Include links if available.
-
-**Validator selection criteria:** Summarize here. Include links if available.
-
-**Training provided:** Summarize here. Include links if available.
-
-**Additional Notes:** Add here
-
-#### Language(s)
-<!-- scope: telescope -->
-<!-- info: Provide validator distributions.
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each annotation type.)-->
-**(Validation Type)**
-
-- Language [Percentage %]
-- Language [Percentage %]
-- Language [Percentage %]
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
-#### Location(s)
-<!-- scope: periscope -->
-<!-- info: Provide validator distributions.
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each annotation type.)-->
-**(Validation Type)**
-
-- Location [Percentage %]
-- Location [Percentage %]
-- Location [Percentage %]
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
-#### Gender(s)
-<!-- scope: microscope -->
-<!-- info: Provide validator distributions.
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each annotation type.)-->
-**(Validation Type)**
-
-- Gender [Percentage %]
-- Gender [Percentage %]
-- Gender [Percentage %]
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
+No human validators were used; all validations were performed via automated scripts.
 ## Sampling Methods
 <!-- info: Fill out the following block if your dataset employs any sampling
 methods. -->
