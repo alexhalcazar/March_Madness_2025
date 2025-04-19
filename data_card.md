@@ -324,26 +324,13 @@ considerations. -->
 #### Primary Data Modality
 <!-- scope: telescope -->
 <!-- info: Select **one**: -->
-- Image Data
-- Text Data
-- Tabular Data
-- Audio Data
-- Video Data
-- Time Series
-- Graph Data
-- Geospatial Data
-- Multimodel (please specify)
-- Unknown
-- Others (please specify)
+- Tabular Data (majority of data sources)
 
-#### Sampling of Data Points
-<!-- scope: periscope -->
-<!-- info: Provide link(s) to data points or exploratory demos: -->
-- Demo Link
-- Typical Data Point Link
-- Outlier Data Point Link
-- Other Data Point Link
-- Other Data Point Link
+- Geospatial Data (city metadata via Cities.csv)
+
+- Hierarchical Bracket Structure (via MNCAATourneySlots.csv)
+
+
 
 #### Data Fields
 <!-- scope: microscope -->
@@ -354,63 +341,18 @@ the example.) -->
 
 Field Name | Field Value | Description
 --- | --- | ---
-Field Name | Field Value | Description
-Field Name | Field Value | Description
-Field Name | Field Value | Description
+Season | 2024 | The year the NCAA season was played 
+DayNum | 135 | Day of the season 
+WTeamID | 1101 | ID of winning team
+LTeamID | 1345 | ID of losing team
+TeamName | Abilene Chr | Name of the team
+WScore | 91 | Winning Score
+LScore | 41 | Losing Score  
+CityID | 2154 | Unique ID for city where game was played 
+State | TX | State abbreviation 
+Ordinal Rank | 4 | Team's ranking in that system
 
-**Above:** Provide a caption for the above table or visualization if used.
 
-**Additional Notes:** Add here
-
-#### Typical Data Point
-<!-- width: half -->
-<!-- info: Provide an example of a typical data point and describe what makes
-it typical.
-
-**Use additional notes to capture any other relevant information or
-considerations.** -->
-Summarize here. Include any criteria for typicality of data point.
-
-```
-{'q_id': '8houtx',
-  'title': 'Why does water heated to room temperature feel colder than the air around it?',
-  'selftext': '',
-  'document': '',
-  'subreddit': 'explainlikeimfive',
-  'answers': {'a_id': ['dylcnfk', 'dylcj49'],
-  'text': ["Water transfers heat more efficiently than air. When something feels cold it's because heat is being transferred from your skin to whatever you're touching. ... Get out of the water and have a breeze blow on you while you're wet, all of the water starts evaporating, pulling even more heat from you."],
-  'score': [5, 2]},
-  'title_urls': {'url': []},
-  'selftext_urls': {'url': []},
-  'answers_urls': {'url': []}}
-```
-
-**Additional Notes:** Add here
-
-#### Atypical Data Point
-<!-- width: half -->
-<!-- info: Provide an example of an outlier data point and describe what makes
-it atypical.
-
-**Use additional notes to capture any other relevant information or
-considerations.** -->
-Summarize here. Include any criteria for atypicality of data point.
-
-```
-{'q_id': '8houtx',
-  'title': 'Why does water heated to room temperature feel colder than the air around it?',
-  'selftext': '',
-  'document': '',
-  'subreddit': 'explainlikeimfive',
-  'answers': {'a_id': ['dylcnfk', 'dylcj49'],
-  'text': ["Water transfers heat more efficiently than air. When something feels cold it's because heat is being transferred from your skin to whatever you're touching. ... Get out of the water and have a breeze blow on you while you're wet, all of the water starts evaporating, pulling even more heat from you."],
-  'score': [5, 2]},
-  'title_urls': {'url': []},
-  'selftext_urls': {'url': []},
-  'answers_urls': {'url': []}}
-```
-
-**Additional Notes:** Add here
 
 ## Motivations & Intentions
 ### Motivations
