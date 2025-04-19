@@ -109,6 +109,13 @@ more detailed breakdowns.) -->
 **Above:** Provide a caption for the above table of visualization.
 
 **Additional Notes:** Add here.
+=======
+Category | Data
+--- | ---
+Size of Dataset | 182.97 MB
+Number of Instances | 2636297
+Number of Fields | 282
+Labeled Classes | 32
 
 #### Content Description
 
@@ -118,6 +125,37 @@ more detailed breakdowns.) -->
 Summarize here. Include links if available.
 
 **Additional Notes:** Add here.
+=======
+**The Basics**
+- Team ID's and Team Names
+- Tournament seeds since 1984-85 season
+- Final scores of all regular season, conference tournament, and NCAA® tournament games since 1984-85 season
+- Season-level details including dates and region names
+
+**Team Box Scores**
+Game-by-game stats at a team level
+- WFGM - field goals made (by the winning team)
+- WFGA - field goals attempted (by the winning team)
+- WFGM3 - three pointers made (by the winning team)
+- WFGA3 - three pointers attempted (by the winning team)
+- WFTM - free throws made (by the winning team)
+- WFTA - free throws attempted (by the winning team)
+- WOR - offensive rebounds (pulled by the winning team)
+- WDR - defensive rebounds (pulled by the winning team)
+- WAst - assists (by the winning team)
+- WTO - turnovers committed (by the winning team)
+- WStl - steals (accomplished by the winning team)
+- WBlk - blocks (accomplished by the winning team)
+- WPF - personal fouls committed (by the winning team)
+
+**Geography** 
+- City locations of all regular season, conference tournament, and NCAA® tournament games since the 2010 season
+
+**Public Rankings**
+- Weekly team rankings (men's teams only) for dozens of top rating systems - Pomeroy, Sagarin, RPI, ESPN, etc., since the 2003 season
+
+**Supplements**
+- Additional supporting information, including coaches, conference affiliations, alternative team name spellings, bracket structure, and game results for NIT and other postseason tournaments.
 
 #### Descriptive Statistics
 
@@ -145,6 +183,143 @@ strings. -->
 **Above:** Provide a caption for the above table or visualization.
 
 **Additional Notes:** Add here.
+=======
+**Team Statistics**
+
+Statistic | TeamID | GamesPlayed | Wins | Losses | RegularSeasonGames 
+--- | --- | --- | --- | --- | --- 
+count | 380.000000 | 380.000000 | 380.000000 | 380.000000  |   380.000000 
+mean |1290.500000 | 1028.673684  | 514.336842 | 514.336842   |   1015.421053
+std |109.840794 |  338.935823 |  228.058797 | 174.132262  |   330.188419
+min |1101.000000  |  22.000000  |   3.000000  | 16.000000    |   22.000000
+25% |1195.750000 | 1039.000000 |  393.750000 | 458.500000    |   1038.000000
+50% | 1290.500000 | 1159.500000 |  533.000000 | 559.500000    |   1155.000000
+75% |  1385.250000 | 1227.250000  | 669.000000 | 634.000000   |    1215.000000
+max | 1480.000000 | 1441.000000 | 1153.000000 | 869.000000    |     1307.000000 
+        
+Statistic | TournamentGames | HomeGames | AwayGames | NeutralGames | WinPercentage 
+--- | --- | --- | --- | --- | --- 
+count | 380.000000 | 380.000000 | 380.000000   | 380.000000  |   380.000000
+mean | 13.252632 | 455.707895 | 455.707895  | 117.257895   |   48.031105
+std | 21.403754 | 170.107048 | 145.575036  |   69.392173   |   11.103786 
+min | 0.000000  |  9.000000  | 10.000000   |   0.000000    |  12.500000  
+25% | 1.000000 | 402.500000 | 429.250000  |   71.750000   |   40.560000
+50%  |      5.000000 | 494.000000 | 489.000000  |  110.500000     | 47.980000   
+75%   |       14.000000 | 577.000000 | 556.000000 |   156.250000    |  55.422500   
+max    |     137.000000  |707.000000 | 668.000000  |  396.000000   |   80.010000   
+
+Statistic |    TournamentParticipationRate | NumSeasons |  AvgGamesPerSeason  
+--- | --- | --- | ---  
+count   |                380.000000 | 380.000000     |    380.000000  
+mean     |                 1.062868  | 35.231579    |      28.994316  
+std       |                1.575389   |11.178761    |       1.803911  
+min        |               0.000000    |1.000000    |      22.000000  
+25%         |              0.147500   |37.000000    |      27.867500  
+50%          |             0.505000   |41.000000    |      29.000000  
+75%           |            1.152500   |41.000000    |      30.070000  
+max            |           9.510000   |41.000000    |      35.150000  
+      
+**Top 10 Teams by Games Played:**
+
+Team | TeamName | GamesPlayed | Wins | Losses | WinPercentage 
+--- | --- | --- | --- | --- | --- 
+80  |           Duke    |     1441 | 1153   |  288     |     80.01
+213  |  North Carolina    |     1436 | 1062   |  374     |     73.96
+141   |       Kansas    |     1411 | 1121   |  290     |     79.45
+145   |     Kentucky    |     1400 | 1055   |  345     |     75.36
+11    |      Arizona    |     1366 | 1022   |  344     |     74.82
+292   |     Syracuse    |     1362 |  953   |  409     |     69.97
+176   |  Michigan St    |     1350 |  930   |  420     |     68.89
+156   |   Louisville    |     1346 |  884   |  462     |     65.68
+62    |  Connecticut    |     1344 |  927   |  417     |     68.97
+336   |    Villanova    |     1339 |  882   |  457     |     65.87
+
+**Top 10 Teams by Win Percentage (min 100 games):**
+
+Team | TeamName | GamesPlayed | Wins | Losses | WinPercentage 
+--- | --- | --- | --- | --- | --- 
+80    |         Duke     |    1441 | 1153   |  288     |     80.01
+141   |       Kansas     |    1411 | 1121   |  290     |     79.45
+145   |     Kentucky     |    1400 | 1055   |  345     |     75.36
+110   |      Gonzaga     |    1277 |  960   |  317      |    75.18
+11    |      Arizona     |    1366 | 1022   |  344     |     74.82
+213  | North Carolina    |     1436 | 1062  |   374    |      73.96
+292    |    Syracuse     |    1362  | 953   |  409     |     69.97
+171    |     Memphis     |    1326  | 916   |  410     |     69.08
+62     | Connecticut     |    1344  | 927   |  417     |     68.97
+176    | Michigan St     |    1350  | 930   |  420     |     68.89
+
+**Conference Statistics Summary:**
+Statistic  | GamesPlayed     |    Wins   |    Losses  | IntraConferenceGames
+--- | --- | --- | --- | --- 
+count |    51.000000 |   51.000000 |   51.000000     |        51.000000   
+mean  |  7664.627451 | 3832.313725 | 3832.313725     |      2350.235294   
+std   |  5056.436366 | 2702.737460 | 2496.991289     |      1613.305149   
+min   |   201.000000 |   60.000000 |  104.000000     |        30.000000   
+25%   |  2584.000000 | 1433.000000 | 1079.000000     |       663.500000   
+50%   |  8497.000000 | 4131.000000 | 4422.000000     |      2509.000000   
+75%   | 11776.500000 | 5651.000000 | 6193.500000     |      3776.000000   
+max   | 15906.000000 | 9373.000000 | 7413.000000     |      4741.000000   
+
+Statistic| InterConferenceGames | TournamentGames | TournamentWins | WinPercentage 
+--- | --- | --- | --- | --- 
+count |            51.000000    |    51.000000    |   51.000000   |   51.000000   
+mean  |          2865.411765    |    98.745098    |   49.372549   |   49.107843   
+std   |          1834.971806    |   148.593788    |   93.777601   |    7.179466   
+min   |            85.000000    |     0.000000    |    0.000000   |   29.850000   
+25%   |          1135.000000    |    27.000000    |    4.000000   |   45.100000   
+50%   |          3618.000000    |    47.000000    |   10.000000   |   48.670000   
+75%   |          4233.000000    |   103.000000    |   37.500000   |   54.250000   
+max   |          5943.000000    |   592.000000    |  389.000000   |   60.800000   
+
+Statistic |  TournamentWinPercentage | IntraConfPercentage | NumSeasons
+--- | --- | --- | ---
+count   |             48.000000      |      51.000000  | 51.000000   
+mean    |             34.551875      |      29.316863  | 26.058824   
+std     |             19.500014      |       4.853258  | 15.532433   
+min     |              0.000000      |      11.190000  |  1.000000   
+25%     |             18.712500      |      29.120000  | 11.500000   
+50%     |             33.580000      |      30.730000  | 30.000000   
+75%     |             50.950000      |      32.330000  | 41.000000   
+max     |             66.670000      |      34.620000  | 41.000000   
+
+Statistic  |     AvgGamesPerSeason 
+--- | --- 
+count     |     51.000000  
+mean      |    272.038824  
+std       |     66.332431  
+min       |   100.500000  
+25%       |   226.810000  
+50%       |    279.120000  
+75%       |    297.565000  
+max       |    389.230000  
+
+**Top 10 Conferences by Games Played:**
+Conference   |  Description | GamesPlayed | Wins | Losses
+--- | --- | --- | --- | --- 
+19  |           Southeastern Conference    |    15906 | 9373  |  6533   
+31  |            Atlantic 10 Conference    |    15392 | 8202  |  7190   
+16  |               Big East Conference    |    15326 | 9152  |  6174   
+0   |                Big Ten Conference    |    15293 | 9080  |  6213   
+12  |         Atlantic Coast Conference    |    14869 | 9040  |  5829   
+24  |           Mid-American Conference    |    13501 | 6698  |  6803   
+18  |               Sun Belt Conference    |    12791 | 6226  |  6565   
+14  |        Missouri Valley Conference    |    12187 | 6350  |  5837   
+3   |   Mid-Eastern Athletic Conference    |    12157 | 4744  |  7413   
+25  |Metro Atlantic Athletic Conference    |    12051 | 5791  |  6260   
+
+Conference |    WinPercentage 
+--- | ---
+19     |     58.93  
+31     |     53.29  
+16     |     59.72  
+0      |     59.37  
+12     |     60.80  
+24     |     49.61  
+18     |     48.67  
+14     |     52.10  
+3      |     39.02  
+25     |     48.05  
 
 ### Dataset Version and Maintenance
 
@@ -153,15 +328,8 @@ strings. -->
 <!-- scope: telescope -->
 <!-- info: Select **one:** -->
 
-**Actively Maintained** - No new versions will be made
-available, but this dataset will
-be actively maintained,
-including but not limited to
-updates to the data.
+Regularly Updated - New versions of the dataset have been or will continue to be made available.
 
-**Limited Maintenance** - The data will not be updated,
-but any technical issues will be
-addressed.
 
 #### Version Details
 
@@ -170,9 +338,9 @@ addressed.
 
 **Current Version:** 1.0
 
-**Last Updated:** MM/YYYY
+**Last Updated:** 03/2025
 
-**Release Date:** MM/YYYY
+**Release Date:** 02/2025
 
 #### Maintenance Plan
 
@@ -184,19 +352,31 @@ considerations. -->
 
 Summarize here. Include links and metrics where applicable.
 
-**Versioning:** Summarize here. Include information about criteria for
-versioning the dataset.
+**Versioning:** 
+- Use semantic versioning
+- Store and tag dataset versions using Github
 
-**Updates:** Summarize here. Include information about criteria for refreshing
-or updating the dataset.
+**Updates:** 
+- Pre-tournament: load latest regular season and conference tournament games (early March).
 
-**Errors:** Summarize here. Include information about criteria for refreshing
-or updating the dataset.
+**Errors:** 
+- Implement validation checks during ingestion:
 
-**Feedback:** Summarize here. Include information about criteria for refreshing
-or updating the dataset.
+    - No missing values in key fields (e.g., team name, points, win/loss).
 
-**Additional Notes:** Add here
+    - Score totals make sense (e.g., team points > 0).
+
+- Maintain an error log for issues found and corrected (manual or automatic).
+
+- Add a "last_verified" timestamp or flag to records.
+  
+- If errors are found after a model is trained:
+
+    - Flag the version as faulty (e.g., v1.1.0-buggy).
+
+    - Retrain model with corrected data and note version linkage in results.
+
+
 
 #### Expected Change(s)
 
@@ -212,8 +392,9 @@ as appropriate.
 
 **Updates to Dataset:** Summarize here. Include links, charts, and
 visualizations as appropriate.
+=======
+**Updates to Data/DataSet:** Updates expected during and towards the end of each college basketball season.
 
-**Additional Notes:** Add here
 
 ## Example of Data Points
 
@@ -244,6 +425,12 @@ visualizations as appropriate.
 -   Outlier Data Point Link
 -   Other Data Point Link
 -   Other Data Point Link
+=======
+- Tabular Data (majority of data sources)
+
+- Geospatial Data (city metadata via Cities.csv)
+
+- Hierarchical Bracket Structure (via MNCAATourneySlots.csv)
 
 #### Data Fields
 
@@ -258,8 +445,19 @@ the example.) -->
 | Field Name | Field Value | Description |
 | Field Name | Field Value | Description |
 | Field Name | Field Value | Description |
-
-**Above:** Provide a caption for the above table or visualization if used.
+=======
+Field Name | Field Value | Description
+--- | --- | ---
+Season | 2024 | The year the NCAA season was played 
+DayNum | 135 | Day of the season 
+WTeamID | 1101 | ID of winning team
+LTeamID | 1345 | ID of losing team
+TeamName | Abilene Chr | Name of the team
+WScore | 91 | Winning Score
+LScore | 41 | Losing Score  
+CityID | 2154 | Unique ID for city where game was played 
+State | TX | State abbreviation 
+Ordinal Rank | 4 | Team's ranking in that system
 
 **Additional Notes:** Add here
 
@@ -316,6 +514,7 @@ Summarize here. Include any criteria for atypicality of data point.
 ```
 
 **Additional Notes:** Add here
+=======
 
 ## Motivations & Intentions
 
@@ -330,6 +529,8 @@ Summarize here. Include any criteria for atypicality of data point.
 -   Research
 -   Production
 -   Others (please specify)
+=======
+- Production
 
 #### Domain(s) of Application
 
@@ -353,8 +554,14 @@ For example:
 
 -   Bringing demographic diversity to imagery training data for object-detection models
 -   Encouraging academics to take on second-order challenges of cultural representation in object detection
+=======
+- Investigate how individual and team-level performance metrics influence outcomes in high-stakes games.
+- Apply machine learning in a real-world sports analytics context.
+- Help improve NCAA bracket selections by offering data-driven insights beyond public rankings.
+- Practice building robust models with noisy data.
+- Create models that help fans guide their picks for the March Madness bracket.
 
-Summarize motivation here. Include links where relevant.
+The motivation for the dataset is to build predictive models for tournament outcomes and game scheduling. 
 
 ### Intended Use
 
@@ -368,6 +575,8 @@ Summarize motivation here. Include links where relevant.
 -   Conditional use - some unsafe applications
 -   Only approved use
 -   Others (please specify)
+=======
+- Safe for production use
 
 #### Suitable Use Case(s)
 
@@ -378,12 +587,14 @@ Use additional notes to capture any specific patterns that readers should
 look out for, or other relevant information or considerations. -->
 
 **Suitable Use Case:** Summarize here. Include links where necessary.
+=======
+**Build a Predictive Model:** Train a machine learning model that predicts the outcome of tournament games using pre-game box score data, geography, public rankings,and supplements.
 
-**Suitable Use Case:** Summarize here. Include links where necessary.
+**Feautre Importance Analysis:** Identify which statistical features are most predictive of winning.
 
-**Suitable Use Case:** Summarize here. Include links where necessary.
+**Simulate the Tournament:** Use the model to simulate entire brackets and compare predicted vs. actual outcomes over multiple years.
 
-**Additional Notes:** Add here
+**Visualize Insights:** Create dashboards or charts to show trends over time, or how different stats affect win probability.
 
 #### Unsuitable Use Case(s)
 
@@ -396,10 +607,12 @@ out for, or other relevant information or considerations. -->
 **Unsuitable Use Case:** Summarize here. Include links where necessary.
 
 **Unsuitable Use Case:** Summarize here. Include links where necessary.
+=======
+**Predicting Individual Player Career Trajectories:** This dataset is not suitable for predicting long-term player development metrics or off-court factors like injuries, training regimens, or scouting reports.
 
-**Unsuitable Use Case:** Summarize here. Include links where necessary.
+**Determing Player or Team Morale, Motivation,  or Chemistry:** Psychological or emotional factors cannot be determined by this dataset.
 
-**Additional Notes:** Add here
+**Predicting Point Spreads:** This dataset may be unsutiable for predicting point spreads or over/unders for precise betting.
 
 #### Research and Problem Space(s)
 
@@ -408,6 +621,8 @@ out for, or other relevant information or considerations. -->
 dataset intends to address. -->
 
 Summarize here. Include any specific research questions.
+=======
+This dataset intends to provide better bracket predicatability for March Madness, which is typically a very unpredictable tournament. 
 
 #### Citation Guidelines
 
@@ -422,6 +637,17 @@ out for, or other relevant information or considerations. -->
 
 **BiBTeX:**
 
+=======
+
+**BiBTeX:**
+
+@misc{march-machine-learning-mania-2025,
+    author = {Jeff Sonas and Paul Mooney and Addison Howard and Will Cukierski},
+    title = {March Machine Learning Mania 2025},
+    year = {2025},
+    howpublished = {\url{https://kaggle.com/competitions/march-machine-learning-mania-2025}},
+    note = {Kaggle}
+}
 ```
 @article{kuznetsova2020open,
   title={The open images dataset v4},
@@ -435,7 +661,6 @@ out for, or other relevant information or considerations. -->
 }
 ```
 
-**Additional Notes:** Add here
 
 ## Access, Rentention, & Wipeout
 
