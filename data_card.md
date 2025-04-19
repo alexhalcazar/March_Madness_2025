@@ -641,23 +641,13 @@ out for, or other relevant information or considerations. -->
 
 **BiBTeX:**
 
-@misc{march-machine-learning-mania-2025,
-    author = {Jeff Sonas and Paul Mooney and Addison Howard and Will Cukierski},
-    title = {March Machine Learning Mania 2025},
-    year = {2025},
-    howpublished = {\url{https://kaggle.com/competitions/march-machine-learning-mania-2025}},
-    note = {Kaggle}
-}
 ```
-@article{kuznetsova2020open,
-  title={The open images dataset v4},
-  author={Kuznetsova, Alina and Rom, Hassan and Alldrin, and others},
-  journal={International Journal of Computer Vision},
-  volume={128},
-  number={7},
-  pages={1956--1981},
-  year={2020},
-  publisher={Springer}
+@misc{march-machine-learning-mania-2025,
+  author = {Jeff Sonas and Paul Mooney and Addison Howard and Will Cukierski},
+  title = {March Machine Learning Mania 2025},
+  year = {2025},
+  howpublished = {\url{https://kaggle.com/competitions/march-machine-learning-mania-2025}},
+  note = {Kaggle}
 }
 ```
 
