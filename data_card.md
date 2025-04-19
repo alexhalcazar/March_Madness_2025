@@ -4,7 +4,7 @@ This dataset contains historical data for the NCAA Men's and Women's Basketball 
 #### Dataset Link
 <!-- info: Provide a link to the dataset: -->
 <!-- width: half -->
-[Kaggle](https://www.google.com/url?q=https%3A%2F%2Fwww.kaggle.com%2Fcompetitions%2Fmarch-machine-learning-mania-2025%2Fdata)
+[Kaggle](https://www.kaggle.com/competitions/march-machine-learning-mania-2025/data)
 
 #### Data Card Author(s)
 <!-- info: Select **one role per** Data Card Author:
@@ -608,699 +608,16 @@ considerations. -->
 
 
 
-## Provenance
-### Collection
-#### Method(s) Used
-<!-- scope: telescope -->
-<!-- info: Select **all applicable** methods used to collect data: -->
-- API
-- Artificially Generated
-- Crowdsourced - Paid
-- Crowdsourced - Volunteer
-- Vendor Collection Efforts
-- Scraped or Crawled
-- Survey, forms, or polls
-- Taken from other existing datasets
-- Unknown
-- To be determined
-- Others (please specify)
-
-#### Methodology Detail(s)
-<!-- scope: periscope -->
-<!-- info: Provide a description of each collection method used.
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for collection method
-type.) -->
-**Collection Type**
-
-**Source:** Describe here. Include links where available.
-
-**Platform:** [Platform Name], Describe platform here. Include links where relevant.
-
-**Is this source considered sensitive or high-risk?** [Yes/No]
-
-**Dates of Collection:** [MMM YYYY - MMM YYYY]
-
-**Primary modality of collection data:**
-
-*Usage Note: Select one for this collection type.*
-
-- Image Data
-- Text Data
-- Tabular Data
-- Audio Data
-- Video Data
-- Time Series
-- Graph Data
-- Geospatial Data
-- Unknown
-- Multimodal (please specify)
-- Others (please specify)
-
-**Update Frequency for collected data:**
-
-*Usage Note: Select one for this collection type.*
-
-- Yearly
-- Quarterly
-- Monthly
-- Biweekly
-- Weekly
-- Daily
-- Hourly
-- Static
-- Others (please specify)
-
-**Additional Links for this collection:**
-
-- [Access Policy]
-- [Wipeout Policy]
-- [Retention Policy]
-
-**Additional Notes:** Add here
-
-#### Source Description(s)
-<!-- scope: microscope -->
-<!-- info: Provide a description of each upstream source of data.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-- **Source:** Describe here. Include links, data examples, metrics, visualizations where relevant.
-- **Source:** Describe here. Include links, data examples, metrics, visualizations where relevant.
-- **Source:** Describe here. Include links, data examples, metrics, visualizations where relevant.
-
-**Additional Notes:** Add here
-
-#### Collection Cadence
-<!-- scope: telescope -->
-<!-- info: Select **all applicable**: -->
-**Static:** Data was collected once from single or multiple sources.
-
-**Streamed:** Data is continuously acquired from single or multiple sources.
-
-**Dynamic:** Data is updated regularly from single or multiple sources.
-
-**Others:** Please specify
-
-#### Data Integration
-<!-- scope: periscope -->
-<!-- info: List all fields collected from different sources, and specify if
-they were included or excluded from the dataset.
-
-Use additional notes to
-capture any other relevant information or considerations.
-
-(Usage Note: Duplicate and complete the following for each upstream
-source.) -->
-**Source**
-
-**Included Fields**
-
-Data fields that were collected and are included in the dataset.
-
-Field Name | Description
---- | ---
-Field Name | Describe here. Include links, data examples, metrics, visualizations where relevant.
-Field Name | Describe here. Include links, data examples, metrics, visualizations where relevant.
-
-**Additional Notes:** Add here
-
-**Excluded Fields**
-
-Data fields that were collected but are excluded from the dataset.
-
-Field Name | Description
---- | ---
-Field Name | Describe here. Include links, data examples, metrics, visualizations where relevant.
-Field Name | Describe here. Include links, data examples, metrics, visualizations where relevant.
-
-**Additional Notes:** Add here
-
-#### Data Processing
-<!-- scope: microscope -->
-<!-- info: Summarize how data from different sources or methods aggregated,
-processed, or connected.
-
-Use additional notes to capture any other
-relevant information or considerations.
-
-(Usage Note: Duplicate and complete the following for each source OR
-collection method.) -->
-**Collection Method or Source**
-
-**Description:** Describe here. Include links where relevant.
-
-**Methods employed:** Describe here. Include links where relevant.
-
-**Tools or libraries:** Describe here. Include links where relevant.
-
-**Additional Notes:** Add here
-
-### Collection Criteria
-#### Data Selection
-<!-- scope: telescope -->
-<!-- info: Summarize the data selection criteria.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-- **Collection Method of Source:** Summarize data selection criteria here. Include links where available.
-- **Collection Method of Source:** Summarize data selection criteria here. Include links where available.
-- **Collection Method of Source:** Summarize data selection criteria here. Include links where available.
-
-**Additional Notes:** Add here
-
-#### Data Inclusion
-<!-- scope: periscope -->
-<!-- info: Summarize the data inclusion criteria.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-- **Collection Method of Source:** Summarize data inclusion criteria here. Include links where available.
-- **Collection Method of Source:** Summarize data inclusion criteria here. Include links where available.
-- **Collection Method of Source:** Summarize data inclusion criteria here. Include links where available.
-
-**Additional Notes:** Add here
-
-#### Data Exclusion
-<!-- scope: microscope -->
-<!-- info: Summarize the data exclusion criteria.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-- **Collection Method of Source:** Summarize data exclusion criteria here. Include links where available.
-- **Collection Method of Source:** Summarize data exclusion criteria here. Include links where available.
-- **Collection Method of Source:** Summarize data exclusion criteria here. Include links where available.
-
-**Additional Notes:** Add here
-
-### Relationship to Source
-#### Use & Utility(ies)
-<!-- scope: telescope -->
-<!-- info: Describe how the resulting dataset is aligned with the purposes,
-motivations, or intended use of the upstream source(s).
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each source type.) -->
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-
-**Additional Notes:** Add here
-
-#### Benefit and Value(s)
-<!-- scope: periscope -->
-<!-- info: Summarize the benefits of the resulting dataset to its consumers,
-compared to the upstream source(s).
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each source type.) -->
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-
-**Additional Notes:** Add here
-
-#### Limitation(s) and Trade-Off(s)
-<!-- scope: microscope -->
-<!-- info: What are the limitations of the resulting dataset to its consumers,
-compared to the upstream source(s)?
-
-Break down by source type.<br><br>(Usage Note: Duplicate and complete the
-following for each source type.) -->
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-
-### Version and Maintenance
-<!-- info: Fill this next row if this is not the first version of the dataset,
-and there is no data card available for the first version -->
-#### First Version
-<!-- scope: periscope -->
-<!-- info: Provide a **basic description of the first version** of this
-dataset. -->
-- **Release date:** MM/YYYY
-- **Link to dataset:** [Dataset Name + Version]
-- **Status:** [Select one: Actively Maintained/Limited Maintenance/Deprecated]
-- **Size of Dataset:** 123 MB
-- **Number of Instances:** 123456
-
-#### Note(s) and Caveat(s)
-<!-- scope: microscope -->
-<!-- info: Summarize the caveats or nuances of the first version of this
-dataset that may affect the use of the current version.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-Summarize here. Include links where available.
-
-**Additional Notes:** Add here
-
-#### Cadence
-<!-- scope: telescope -->
-<!-- info: Select **one**: -->
-- Yearly
-- Quarterly
-- Monthly
-- Biweekly
-- Weekly
-- Daily
-- Hourly
-- Static
-- Others (please specify)
-
-#### Last and Next Update(s)
-<!-- scope: periscope -->
-<!-- info: Please describe the update schedule: -->
-- **Date of last update:** DD/MM/YYYY
-- **Total data points affected:** 12345
-- **Data points updated:** 12345
-- **Data points added:** 12345
-- **Data points removed:** 12345
-- **Date of next update:** DD/MM/YYYY
-
-#### Changes on Update(s)
-<!-- scope: microscope -->
-<!-- info: Summarize the changes that occur when the dataset is refreshed.
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each source type.) -->
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-- **Source Type:** Summarize here. Include links where available.
-
-**Additional Notes:** Add here
 
 ## Human and Other Sensitive Attributes
 #### Sensitive Human Attribute(s)
 <!-- scope: telescope -->
 <!-- info: Select **all attributes** that are represented (directly or
 indirectly) in the dataset. -->
-- Gender
-- Socio-economic status
-- Geography
-- Language
-- Age
-- Culture
-- Experience or Seniority
-- Others (please specify)
 
-#### Intentionality
-<!-- scope: periscope -->
-<!-- info: List fields in the dataset that contain human attributes, and
-specify if their collection was intentional or unintentional.
+- Gender: Data sets are divided by gender. 
+- Geography: Locations of each team are given.
 
-Use additional notes to capture any other relevant information or
-considerations. -->
-**Intentionally Collected Attributes**
-
-Human attributes were labeled or collected as a part of the dataset creation
-process.
-
-Field Name | Description
---- | ---
-Field Name | Human Attributed Collected
-Field Name | Human Attributed Collected
-
-**Additional Notes:** Add here
-
-**Unintentionally Collected Attributes**
-
-Human attributes were not explicitly collected as a part of the dataset
-creation process but can be inferred using additional methods.
-
-Field Name | Description
---- | ---
-Field Name | Human Attributed Collected
-Field Name | Human Attributed Collected
-
-**Additional Notes:** Add here
-
-#### Rationale
-<!-- scope: microscope -->
-<!-- info: Describe the motivation, rationale, considerations or approaches
-that caused this dataset to include the indicated human attributes.
-
-Summarize why or how this might affect the use of the dataset. -->
-Summarize here. Include links, table, and media as relevant.
-
-#### Source(s)
-<!-- scope: periscope -->
-<!-- info: List the sources of the human attributes.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-- **Human Attribute:** Sources
-- **Human Attribute:** Sources
-- **Human Attribute:** Sources
-
-**Additional Notes:** Add here
-
-#### Methodology Detail(s)
-<!-- scope: microscope -->
-<!-- info: Describe the methods used to collect human attributes in the
-dataset.
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each human
-attribute.) -->
-
-**Human Attribute Method:** Describe the collection method here. Include links where necessary
-
-**Collection task:** Describe the task here. Include links where necessary
-
-**Platforms, tools, or libraries:**
-
-- [Platform, tools, or libraries]: Write description here
-- [Platform, tools, or libraries]: Write description here
-- [Platform, tools, or libraries]: Write description here
-
-**Additional Notes:** Add here
-
-#### Distribution(s)
-<!-- width: full -->
-<!-- info: Provide basic descriptive statistics for each human attribute,
-noting key takeaways in the caption.
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each human
-attribute.) -->
-Human Attribute | Label or Class | Label or Class | Label or Class | Label or Class
---- | --- | --- | --- | ---
-Count | 123456 | 123456 | 123456 | 123456
-[Statistic] | 123456 | 123456 | 123456 | 123456
-[Statistic] | 123456 | 123456 | 123456 | 123456
-[Statistic] | 123456 | 123456 | 123456 | 123456
-
-**Above:** Provide a caption for the above table or visualization.
-**Additional Notes:** Add here
-
-#### Known Correlations
-<!-- scope: periscope -->
-<!-- info: Describe any known correlations with the indicated sensitive
-attributes in this dataset.
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate for each known correlation.) -->
-[`field_name`, `field_name`]
-
-**Description:** Summarize here. Include visualizations, metrics, or links
-where necessary.
-
-**Impact on dataset use:** Summarize here. Include visualizations, metrics, or
-links where necessary.
-
-**Additional Notes:** add here
-
-#### Risk(s) and Mitigation(s)
-<!-- scope: microscope -->
-<!-- info: Summarize systemic or residual risks, performance expectations,
-trade-offs and caveats because of human attributes in this dataset.
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-Usage Note: Duplicate and complete the following for each human attribute. -->
-**Human Attribute**
-
-Summarize here. Include links and metrics where applicable.
-
-**Risk type:** [Description + Mitigations]
-
-**Risk type:** [Description + Mitigations]
-
-**Risk type:** [Description + Mitigations]
-
-**Trade-offs, caveats, & other considerations:** Summarize here. Include
-visualizations, metrics, or links where necessary.
-
-**Additional Notes:** Add here
-
-## Extended Use
-### Use with Other Data
-#### Safety Level
-<!-- scope: telescope -->
-<!-- info: Select **one**: -->
-- Safe to use with other data
-- Conditionally safe to use with other data
-- Should not be used with other data
-- Unknown
-- Others (please specify)
-
-#### Known Safe Dataset(s) or Data Type(s)
-<!-- scope: periscope -->
-<!-- info: List the known datasets or data types and corresponding
-transformations that **are safe to join or aggregate** this dataset with. -->
-**Dataset or Data Type:** Summarize here. Include visualizations, metrics,
-or links where necessary.
-
-**Dataset or Data Type:** Summarize here. Include visualizations, metrics,
-or links where necessary.
-
-**Dataset or Data Type:** Summarize here. Include visualizations, metrics,
-or links where necessary.
-
-#### Best Practices
-<!-- scope: microscope -->
-<!-- info: Summarize best practices for using this dataset with other datasets
-or data types.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-Summarize here. Include visualizations, metrics, demonstrative examples,
-or links where necessary.
-
-**Additional Notes:** Add here
-
-#### Known Unsafe Dataset(s) or Data Type(s)
-<!-- scope: periscope -->
-<!-- info: Fill this out if you selected "Conditionally safe to use with other
-datasets" or "Should not be used with other datasets":
-
-List the known datasets or data types and corresponding transformations that
-are **unsafe to join or aggregate** with this dataset. -->
-**Dataset or Data Type:** Summarize here. Include visualizations, metrics,
-or links where necessary.
-
-**Dataset or Data Type:** Summarize here. Include visualizations, metrics,
-or links where necessary.
-
-**Dataset or Data Type:** Summarize here. Include visualizations, metrics,
-or links where necessary.
-
-#### Limitation(s) and Recommendation(s)
-<!-- scope: microscope -->
-<!-- info: Fill this out if you selected "Conditionally safe to use with
-other datasets" or "Should not be used with
-other datasets":
-
-Summarize limitations of the dataset that introduce foreseeable risks when the
-dataset is conjoined with other datasets.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-Summarize here. Include links and metrics where applicable.
-
-**Limitation type:** Dataset or data type, description and recommendation.
-
-**Limitation type:** Dataset or data type, description and recommendation.
-
-**Limitation type:** Dataset or data type, description and recommendation.
-
-**Additional Notes:** Add here
-
-### Forking & Sampling
-#### Safety Level
-<!-- scope: telescope -->
-<!-- info: Select **one**: -->
-- Safe to form and/or sample
-- Conditionally safe to fork and/or sample
-- Should not be forked and/or sampled
-- Unknown
-- Others (please specify)
-
-#### Acceptable Sampling Method(s)
-<!-- scope: periscope -->
-<!-- info: Select **all applicable** acceptable methods to sample this
-dataset: -->
-- Cluster Sampling
-- Haphazard Sampling
-- Multi-stage sampling
-- Random Sampling
-- Retrospective Sampling
-- Stratified Sampling
-- Systematic Sampling
-- Weighted Sampling
-- Unknown
-- Unsampled
-- Others (please specify)
-
-#### Best Practice(s)
-<!-- scope: microscope -->
-<!-- info: Summarize the best practices for forking or sampling this dataset.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-Summarize here. Include links, figures, and demonstrative examples where
-available.
-
-**Additional Notes:** Add here
-
-#### Risk(s) and Mitigation(s)
-<!-- scope: periscope -->
-<!-- info: Fill this out if you selected "Conditionally safe to fork and/or
-sample" or "Should not be forked and/or sampled":
-
-Summarize known or residual risks associated with forking and sampling methods
-when applied to the dataset.
-
-Use additional notes to capture any other
-relevant information or considerations. -->
-Summarize here. Include links and metrics where applicable.
-
-**Risk Type:** [Description + Mitigations]
-
-**Risk Type:** [Description + Mitigations]
-
-**Risk Type:** [Description + Mitigations]
-
-**Additional Notes:** Add here
-
-#### Limitation(s) and Recommendation(s)
-<!-- scope: microscope -->
-<!-- info: Fill this out if you selected "Conditionally safe to fork and/or
-sample" or "Should not be forked and/or sample":
-
-Summarize the limitations that the dataset introduces when forking
-or sampling the dataset and corresponding recommendations.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-Summarize here. Include links and metrics where applicable.
-
-**Limitation Type:** [Description + Recommendation]
-
-**Limitation Type:** [Description + Recommendation]
-
-**Limitation Type:** [Description + Recommendation]
-
-**Additional Notes:** Add here
-
-### Use in ML or AI Systems
-#### Dataset Use(s)
-<!-- scope: telescope -->
-<!-- info: Select **all applicable** -->
-- Training
-- Testing
-- Validation
-- Development or Production Use
-- Fine Tuning
-- Others (please specify)
-
-#### Notable Feature(s)
-<!-- scope: periscope -->
-<!-- info: Describe any notable feature distributions or relationships between
-individual instances made explicit.
-
-Include links to servers where readers can explore the data on their own. -->
-
-**Exploration Demo:** [Link to server or demo.]
-
-**Notable Field Name:** Describe here. Include links, data examples, metrics,
-visualizations where relevant.
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
-#### Usage Guideline(s)
-<!-- scope: microscope -->
-<!-- info: Summarize usage guidelines or policies that consumers should be
-aware of.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-**Usage Guidelines:** Summarize here. Include links where necessary.
-
-**Approval Steps:** Summarize here. Include links where necessary.
-
-**Reviewer:** Provide the name of a reviewer for publications referencing
-this dataset.
-
-**Additional Notes:** Add here
-
-#### Distribution(s)
-<!-- scope: periscope -->
-<!-- info: Describe the recommended splits and corresponding criteria.
-
-Use additional notes to capture any other
-relevant information or considerations. -->
-
-Set | Number of data points
---- | ---
-Train | 62,563
-Test | 62,563
-Validation | 62,563
-Dev | 62,563
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
-#### Known Correlation(s)
-<!-- scope: microscope -->
-<!-- info: Summarize any known correlations with
-the indicated features in this dataset.
-
-Use additional notes to capture any other
-relevant information or considerations.
-
-(Usage Note: Duplicate for each known
-correlation.) -->
-`field_name`, `field_name`
-
-**Description:** Summarize here. Include
-visualizations, metrics, or links where
-necessary.
-
-**Impact on dataset use:** Summarize here.
-Include visualizations, metrics, or links
-where necessary.
-
-**Risks from correlation:** Summarize here.
-Include recommended mitigative steps if
-available.
-
-**Additional Notes:** Add here
-
-#### Split Statistics
-<!-- scope: periscope -->
-<!-- width: full -->
-<!-- info: Provide the sizes of each split. As appropriate, provide any
-descriptive statistics for features. -->
-
-Statistic | Train | Test | Valid | Dev
---- | --- | --- | --- | ---
-Count | 123456 | 123456 | 123456 | 123456
-Descriptive Statistic | 123456 | 123456 | 123456 | 123456
-Descriptive Statistic | 123456 | 123456 | 123456 | 123456
-Descriptive Statistic | 123456 | 123456 | 123456 | 123456
-
-**Above:** Caption for table above.
 
 ## Transformations
 <!-- info: Fill this section if any transformations were applied in the
@@ -1858,6 +1175,7 @@ Summarize here. Include links where available.
 <!-- info: What additional considerations were made? -->
 Summarize here. Include links where available.
 
+
 ## Validation Types
 <!-- info: Fill this section if the data in the dataset was validated during
 or after the creation of your dataset. -->
@@ -1867,10 +1185,7 @@ or after the creation of your dataset. -->
 - Data Type Validation
 - Range and Constraint Validation
 - Code/cross-reference Validation
-- Structured Validation
 - Consistency Validation
-- Not Validated
-- Others (Please Specify)
 
 #### Breakdown(s)
 <!-- scope: periscope -->
@@ -1882,18 +1197,50 @@ relevant information or considerations.
 
 (Usage Note: Duplicate and complete the
 following for each validator type.) -->
-**(Validation Type)**
+**Range and Constraint Validation**
 
-**Number of Data Points Validated:** 12345
+**Number of Data Points Validated:** ~100,000+
 
 **Fields Validated**
-Field | Count (if available)
+Field | Count (approx)
 --- | ---
-Field | 123456
-Field | 123456
-Field | 123456
+Season | 16,000
+DayNum | 80,000
+WScore | 80,000
+LScore | 80,000
 
-**Above:** Provide a caption for the above table or visualization.
+**Above:** Checked that seasons were within the range 1985-2025, and that numeric fields like scores and game days were non-negative
+
+
+**Code / Cross-reference Validation**
+
+**Number of Data Points Validated:** ~50,000+
+
+**Fields Validated**
+Field | Count (approx)
+--- | ---
+WTeamID | 50,000
+LTeamID | 50,000
+TeamID | 10,000
+
+**Above:** Verified that team IDs in game and seed datasets matched entries in the MTeams and WTeams lookup files.
+
+
+
+**Consistency Validation**
+
+**Number of Data Points Validated:** ~4,000+
+
+**Fields Validated**
+Field | Count 
+--- | ---
+RegionW | 2,000
+RegionX | 2,000
+RegionY | 2,000
+RegionZ | 2,000
+
+**Above:** Retrieved unique values for NCAA® tournament regions across seasons. Verified that these are consistent with expected names and historical region naming conventions.
+
 
 #### Description(s)
 <!-- scope: microscope -->
@@ -1905,108 +1252,81 @@ relevant information or considerations.
 
 (Usage Note: Duplicate and complete the
 following for each validator type.) -->
-**(Validation Type)**
+**Range and Constraint Validation**
 
-**Method:** Describe the validation method here. Include links where
-necessary.
+**Method:** 
+
+- Verified that Season values fall within 1985–2025.
+
+- Checked that fields such as DayNum, WScore, and LScore contain no negative values.
 
 **Platforms, tools, or libraries:**
 
-- Platform, tool, or library: Write description here
-- Platform, tool, or library: Write description here
-- Platform, tool, or library: Write description here
+- Python
+- Pandas
 
-**Validation Results:** Provide results, outcomes, and actions taken because
-of the validation. Include visualizations where available.
+**Validation Results:** 
 
-**Additional Notes:** Add here
+✅ All Season values are valid. 
+
+✅ All numeric game values are non-negative.
+
+**Additional Notes:** This validation step ensures that no out-of-bounds or corrupted data points interfere with model training.
+
+**Code / Cross-reference Validation**
+
+**Method:** 
+
+- Compared team IDs in result and seed datasets to the official team lists using set logic in Python.
+
+- Checked columns: WTeamID, LTeamID, TeamID.
+
+**Platforms, tools, or libraries:**
+
+- Python
+- Pandas
+
+**Validation Results:** 
+
+✅ All team IDs in both men's and women's datasets match the official team files. No unmatched or orphaned IDs were found.
+
+**Additional Notes:** This validation ensures referential integrity across game result data and team metadata.
+
+**Consistency Validation**
+
+**Method:** 
+
+- Printed unique values of region fields (RegionW, RegionX, RegionY, RegionZ) in MSeasons and WSeasons.
+
+- Verified consistency with historical naming patterns.
+
+**Platforms, tools, or libraries:**
+
+- Python
+- Pandas
+
+**Validation Results:** 
+- Men's Regions:
+
+    - RegionW: ['East', 'Atlanta', 'Albuquerque', 'NA1']
+
+    - RegionX: ['West', 'Midwest', 'Southeast', 'South', 'Phoenix', 'Chicago', 'Oakland', 'NA2']
+
+    - RegionY: ['Midwest', 'Southeast', 'South', 'EastRutherford', 'Austin', 'Minneapolis', 'NA3']
+
+    - RegionZ: ['Southeast', 'West', 'South', 'StLouis', 'Syracuse', 'WashingtonDC', 'Southwest', 'NA4']
+
+- Women's Regions:
+(Includes broader set reflecting more diversity in site locations)
+
+    -  e.g., ['Chattanooga', 'DesMoines', 'Alamo', 'Seattle4', 'RiverWalk', etc.]
+
+**Additional Notes:** The presence of NA1 to NA4 suggests placeholders, which may require downstream handling depending on modeling use cases.
 
 ### Description of Human Validators
 <!-- info: Fill this section if the dataset was validated using human
 validators -->
-#### Characteristic(s)
-<!-- scope: periscope -->
-<!-- info: Provide characteristics of the validator
-pool(s). Use additional notes to capture any
-other relevant information or considerations. -->
-**(Validation Type)**
-- Unique validators: 12345
-- Number of examples per validator: 123456
-- Average cost/task/validator: $$$
-- Training provided: Y/N
-- Expertise required: Y/N
-
-#### Description(s)
-<!-- scope: microscope -->
-<!-- info: Provide a brief description of the validator
-pool(s). Use additional notes to capture any
-other relevant information or considerations.
-
-(Usage Note: Duplicate and complete the
-following for each validator type.) -->
-**(Validation Type)**
-
-**Validator description:** Summarize here. Include links if available.
-
-**Training provided:** Summarize here. Include links if available.
-
-**Validator selection criteria:** Summarize here. Include links if available.
-
-**Training provided:** Summarize here. Include links if available.
-
-**Additional Notes:** Add here
-
-#### Language(s)
-<!-- scope: telescope -->
-<!-- info: Provide validator distributions.
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each annotation type.)-->
-**(Validation Type)**
-
-- Language [Percentage %]
-- Language [Percentage %]
-- Language [Percentage %]
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
-#### Location(s)
-<!-- scope: periscope -->
-<!-- info: Provide validator distributions.
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each annotation type.)-->
-**(Validation Type)**
-
-- Location [Percentage %]
-- Location [Percentage %]
-- Location [Percentage %]
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
-#### Gender(s)
-<!-- scope: microscope -->
-<!-- info: Provide validator distributions.
-Use additional notes to capture any other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the following for each annotation type.)-->
-**(Validation Type)**
-
-- Gender [Percentage %]
-- Gender [Percentage %]
-- Gender [Percentage %]
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
+No human validators were used; all validations were performed via automated scripts.
 ## Sampling Methods
 <!-- info: Fill out the following block if your dataset employs any sampling
 methods. -->
@@ -2065,111 +1385,6 @@ relevant information or considerations. -->
 - **Sampling method:** Summarize here. Include links where applicable.
 - **Sampling method:** Summarize here. Include links where applicable.
 
-## Known Applications & Benchmarks
-<!-- info: Fill out the following section if your dataset was primarily
-created for use in AI or ML system(s) -->
-#### ML Application(s)
-<!-- scope: telescope -->
-<!-- info: Provide a list of key ML tasks
-that the dataset has been
-used for.
-
-Usage Note: Use comma-separated keywords. -->
-*For example: Classification, Regression, Object Detection*
-
-#### Evaluation Result(s)
-<!-- scope: periscope -->
-<!-- info: Provide the evaluation results from
-models that this dataset has been used
-in.
-
-Use additional notes to capture any
-other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the
-following for each model.) -->
-**(Model Name)**
-
-**Model Card:** [Link to full model card]
-
-Evaluation Results
-
-- Accuracy: 123 (params)
-- Precision: 123 (params)
-- Recall: 123 (params)
-- Performance metric: 123 (params)
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
-
-#### Evaluation Process(es)
-<!-- scope: microscope -->
-<!-- info: Provide a description of the evaluation process for
-the model's overall performance or the
-determination of how the dataset contributes to
-the model's performance.
-
-Use additional notes to capture any other relevant
-information or considerations.
-
-(Usage Note: Duplicate and complete the following
-for each model and method used.) -->
-**(Model Name)**
-
-**[Method used]:** Summarize here. Include links where available.
-
-- **Process:** Summarize here. Include links, diagrams, visualizations, tables as relevant.
-- **Factors:** Summarize here. Include links, diagrams, visualizations, tables as relevant.
-- **Considerations:** Summarize here. Include links, diagrams, visualizations, tables as relevant.
-- **Results:** Summarize here. Include links, diagrams, visualizations, tables as relevant.
-
-**Additional Notes:** Add here
-
-#### Description(s) and Statistic(s)
-<!-- scope: periscope -->
-<!-- info: Provide a description of the model(s) and
-task(s) that this dataset has been used
-in.
-
-Use additional notes to capture any
-other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete the
-following for each model.) -->
-**(Model Name)**
-
-**Model Card:** Link to full model card
-
-**Model Description:** Summarize here. Include links where applicable.
-
-- Model Size: 123 (params)
-- Model Weights: 123 (params)
-- Model Layers 123 (params)
-- Latency: 123 (params)
-
-**Additional Notes:** Add here
-
-#### Expected Performance and Known Caveats
-<!-- scope: microscope -->
-<!-- info: Provide a description of the expected performance
-and known caveats of the models for this dataset.
-
-Use additional notes to capture any other relevant
-information or considerations.
-
-(Usage Note: Duplicate and complete the following
-for each model.) -->
-**(Model Name)**
-
-**Expected Performance:** Summarize here. Include links where available.
-
-**Known Caveats:** Summarize here. Include links, diagrams, visualizations, and
-tables as relevant.
-
-**Additioanl Notes:** Add here
 
 ## Terms of Art
 ### Concepts and Definitions referenced in this Data Card
