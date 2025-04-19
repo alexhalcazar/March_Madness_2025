@@ -2007,8 +2007,8 @@ Field | Count (approx)
 --- | ---
 Season | 16,000
 DayNum | 80,000
-WScore | 123456
-LScore | 123456
+WScore | 80,000
+LScore | 80,000
 
 **Above:** Checked that seasons were within the range 1985-2025, and that numeric fields like scores and game days were non-negative
 
