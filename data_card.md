@@ -94,22 +94,6 @@ Sonas Consulting
 to include relevant information, considerations, and links to table(s) with
 more detailed breakdowns.) -->
 
-| Category                     | Data      |
-| ---------------------------- | --------- |
-| Size of Dataset              | 123456 MB |
-| Number of Instances          | 123456    |
-| Number of Fields             | 123456    |
-| Labeled Classes              | 123456    |
-| Number of Labels             | 123456789 |
-| Average Labeles Per Instance | 123456    |
-| Algorithmic Labels           | 123456789 |
-| Human Labels                 | 123456789 |
-| Other Characteristics        | 123456    |
-
-**Above:** Provide a caption for the above table of visualization.
-
-**Additional Notes:** Add here.
-=======
 Category | Data
 --- | ---
 Size of Dataset | 182.97 MB
@@ -122,10 +106,6 @@ Labeled Classes | 32
 <!-- scope: microscope -->
 <!-- info: Provide a short description of the content in a data point: -->
 
-Summarize here. Include links if available.
-
-**Additional Notes:** Add here.
-=======
 **The Basics**
 - Team ID's and Team Names
 - Tournament seeds since 1984-85 season
@@ -167,23 +147,6 @@ considerations.
 
 Usage Note: Some statistics will be relevant for numeric data, for not for
 strings. -->
-
-| Statistic | Field Name | Field Name | Field Name | Field Name | Field Name | Field Name |
-| --------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| count     |
-| mean      |
-| std       |
-| min       |
-| 25%       |
-| 50%       |
-| 75%       |
-| max       |
-| mode      |
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here.
-=======
 **Team Statistics**
 
 Statistic | TeamID | GamesPlayed | Wins | Losses | RegularSeasonGames 
@@ -350,8 +313,6 @@ Regularly Updated - New versions of the dataset have been or will continue to be
 Use additional notes to capture any other relevant information or
 considerations. -->
 
-Summarize here. Include links and metrics where applicable.
-
 **Versioning:** 
 - Use semantic versioning
 - Store and tag dataset versions using Github
@@ -387,12 +348,6 @@ on the next update.
 Use additional notes to capture any other relevant information or
 considerations. -->
 
-**Updates to Data:** Summarize here. Include links, charts, and visualizations
-as appropriate.
-
-**Updates to Dataset:** Summarize here. Include links, charts, and
-visualizations as appropriate.
-=======
 **Updates to Data/DataSet:** Updates expected during and towards the end of each college basketball season.
 
 
@@ -420,12 +375,7 @@ visualizations as appropriate.
 <!-- scope: periscope -->
 <!-- info: Provide link(s) to data points or exploratory demos: -->
 
--   Demo Link
--   Typical Data Point Link
--   Outlier Data Point Link
--   Other Data Point Link
--   Other Data Point Link
-=======
+
 - Tabular Data (majority of data sources)
 
 - Geospatial Data (city metadata via Cities.csv)
@@ -440,12 +390,6 @@ visualizations as appropriate.
 (Usage Note: Describe each field in a data point. Optionally use this to show
 the example.) -->
 
-| Field Name | Field Value | Description |
-| ---------- | ----------- | ----------- |
-| Field Name | Field Value | Description |
-| Field Name | Field Value | Description |
-| Field Name | Field Value | Description |
-=======
 Field Name | Field Value | Description
 --- | --- | ---
 Season | 2024 | The year the NCAA season was played 
@@ -459,7 +403,6 @@ CityID | 2154 | Unique ID for city where game was played
 State | TX | State abbreviation 
 Ordinal Rank | 4 | Team's ranking in that system
 
-**Additional Notes:** Add here
 
 #### Typical Data Point
 
@@ -470,8 +413,6 @@ it typical.
 **Use additional notes to capture any other relevant information or
 considerations.** -->
 
-Summarize here. Include any criteria for typicality of data point.
-
 ```
 {'q_id': '8houtx',
   'title': 'Why does water heated to room temperature feel colder than the air around it?',
@@ -486,7 +427,6 @@ Summarize here. Include any criteria for typicality of data point.
   'answers_urls': {'url': []}}
 ```
 
-**Additional Notes:** Add here
 
 #### Atypical Data Point
 
@@ -497,7 +437,6 @@ it atypical.
 **Use additional notes to capture any other relevant information or
 considerations.** -->
 
-Summarize here. Include any criteria for atypicality of data point.
 
 ```
 {'q_id': '8houtx',
@@ -513,9 +452,6 @@ Summarize here. Include any criteria for atypicality of data point.
   'answers_urls': {'url': []}}
 ```
 
-**Additional Notes:** Add here
-=======
-
 ## Motivations & Intentions
 
 ### Motivations
@@ -524,12 +460,6 @@ Summarize here. Include any criteria for atypicality of data point.
 
 <!-- scope: telescope -->
 <!-- info: Select **one**: -->
-
--   Monitoring
--   Research
--   Production
--   Others (please specify)
-=======
 - Production
 
 #### Domain(s) of Application
@@ -538,9 +468,7 @@ Summarize here. Include any criteria for atypicality of data point.
 <!-- info: Provide a list of key domains of application that the dataset has
 been designed for:<br><br>(Usage Note: Use comma-separated keywords.) -->
 
-For example: `Machine Learning`, `Computer Vision`, `Object Detection`.
-
-`keyword`, `keyword`, `keyword`
+`Machine Learning`
 
 #### Motivating Factor(s)
 
@@ -549,12 +477,6 @@ For example: `Machine Learning`, `Computer Vision`, `Object Detection`.
 
 (Usage Note: use this to describe the problem space and corresponding
 motivations for the dataset.) -->
-
-For example:
-
--   Bringing demographic diversity to imagery training data for object-detection models
--   Encouraging academics to take on second-order challenges of cultural representation in object detection
-=======
 - Investigate how individual and team-level performance metrics influence outcomes in high-stakes games.
 - Apply machine learning in a real-world sports analytics context.
 - Help improve NCAA bracket selections by offering data-driven insights beyond public rankings.
@@ -569,13 +491,6 @@ The motivation for the dataset is to build predictive models for tournament outc
 
 <!-- scope: telescope -->
 <!-- info: Select **one**: -->
-
--   Safe for production use
--   Safe for research use
--   Conditional use - some unsafe applications
--   Only approved use
--   Others (please specify)
-=======
 - Safe for production use
 
 #### Suitable Use Case(s)
@@ -586,8 +501,6 @@ The motivation for the dataset is to build predictive models for tournament outc
 Use additional notes to capture any specific patterns that readers should
 look out for, or other relevant information or considerations. -->
 
-**Suitable Use Case:** Summarize here. Include links where necessary.
-=======
 **Build a Predictive Model:** Train a machine learning model that predicts the outcome of tournament games using pre-game box score data, geography, public rankings,and supplements.
 
 **Feautre Importance Analysis:** Identify which statistical features are most predictive of winning.
@@ -604,10 +517,6 @@ look out for, or other relevant information or considerations. -->
 Use additional notes to capture any specific patterns that readers should look
 out for, or other relevant information or considerations. -->
 
-**Unsuitable Use Case:** Summarize here. Include links where necessary.
-
-**Unsuitable Use Case:** Summarize here. Include links where necessary.
-=======
 **Predicting Individual Player Career Trajectories:** This dataset is not suitable for predicting long-term player development metrics or off-court factors like injuries, training regimens, or scouting reports.
 
 **Determing Player or Team Morale, Motivation,  or Chemistry:** Psychological or emotional factors cannot be determined by this dataset.
@@ -620,8 +529,6 @@ out for, or other relevant information or considerations. -->
 <!-- info: Provide a description of the specific problem space that this
 dataset intends to address. -->
 
-Summarize here. Include any specific research questions.
-=======
 This dataset intends to provide better bracket predicatability for March Madness, which is typically a very unpredictable tournament. 
 
 #### Citation Guidelines
@@ -632,12 +539,6 @@ and/or production.
 
 Use additional notes to capture any specific patterns that readers should look
 out for, or other relevant information or considerations. -->
-
-**Guidelines & Steps:** Summarize here. Include links where necessary.
-
-**BiBTeX:**
-
-=======
 
 **BiBTeX:**
 
