@@ -621,30 +621,44 @@ indirectly) in the dataset. -->
 -   Geography: Locations of each team are given.
 
 ## Transformations
-
-<!-- info: Fill this section if any transformations were applied in the
-creation of your dataset. -->
+1) Data Validation & Cleaning
+   - Missing vaule handling
+   - Duplicate Removal
+   - Value Validation
+2) Normalization (Min-Max Scaling)
+3) Feature Engineering
+   - Derived Metrics
+4) Bias & Fairness Checks
+   - Class Balance Verification
+   - Game Distribution Analysis
+   - Conference-Level Analysis
+5) Visualization (Diagnostic)
 
 ### Synopsis
 
 #### Transformation(s) Applied
-
-<!-- scope: telescope -->
-<!-- info: Select **all applicable** transformations
-that were applied to the dataset. -->
-
--   Anomaly Detection
--   Cleaning Mismatched Values
--   Cleaning Missing Values
--   Converting Data Types
--   Data Aggregation
--   Dimensionality Reduction
--   Joining Input Sources
--   Redaction or Anonymization
--   Others (Please specify)
+1. Handling Missing Values and Duplicates
+2.  Data Validation and Consistency Checks
+  - Season Validation
+  - Non-Negative Values
+  - Team ID Validation
+  - Region Validation
+3. Class Balance Verification
+4. Feature Distribution Analysis
+5. Normalization
+6. Outlier Removal 
 
 #### Field(s) Transformed
 
+| Field Name              | Source & Target            |
+| ---------- | -----------------------------------------------------------------------|   
+| WScore     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
+| LScore     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1)
+| DayNum     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
+| NumOT      | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
+| All fields | All CSVs in basics, team_box_scores|Empty strings/spaces replaced with NaN                      |
+|WTeamID     | All relevant results and seeds files| Validated against master teams list  
+ 
 <!-- scope: periscope -->
 <!-- info: Provide the fields in the dataset that
 were transformed.
@@ -660,40 +674,50 @@ which fields were transformed.) -->
 
 **Transformation Type**
 
-| Field Name | Source & Target            |
-| ---------- | -------------------------- |
-| Field Name | Source Field: Target Field |
-| Field Name | Source Field: Target Field |
-| ...        | ...                        |
 
-**Additional Notes:** Add here
+
+**Additional Notes:** Add here 
 
 #### Library(ies) and Method(s) Used
 
-<!-- scope: microscope -->
-<!-- info: Provide a description of the methods
-used to transform or process the
-dataset.
+Example Code Snippets from the Notebook 
 
-Use additional notes to capture any
-other relevant information or
-considerations.
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+import matplotlib.pyplot as plt
 
-(Usage Note: Duplicate and complete
-the following for each transformation
-type applied.) -->
+# Replace empty strings/spaces with NaN
+df = df.replace(r'^\s*$', np.nan, regex=True)
 
-**Transformation Type**
+# Remove duplicates
+df = df.drop_duplicates()
 
-**Method:** Describe the transformation
-method here. Include links where
-necessary.
+# Normalize selected columns
+scaler = MinMaxScaler()
+df[['WScore', 'LScore', 'DayNum', 'NumOT']] = scaler.fit_transform(df[['WScore', 'LScore', 'DayNum', 'NumOT']]) 
 
-**Platforms, tools, or libraries:**
+Transformation| Library/Method|Dataset/Field(s) Affected|
+---------------------------------------------------------
+|Missing Value Handling| pandas replace| All loaded DataFrames 
+|Duplicate Removal|  pandas drop_duplicates| All loaded DataFrames 
+|Normalization | sklearn MinMaxScaler | WScore, LScore, DayNum, NumOT in regular season results 
+|Validation Checks |pandas isin, unique | Season, TeamID, Region columns 
+|Feature Distribution Plot | pandas/matplotlib hist | Score columns in regular season results 
 
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
+**Transformation Type** 
+
+**Platforms, tools, or libraries:** 
+. Programming Language: Python
+
+. Libraries:
+  1) pandas
+  2) numpy
+  3) matplotlib
+  4) scikit-learn (sklearn)
+     
+. Platform: Google Colab     
+
 
 **Transformation Results:** Provide
 results, outcomes, and actions taken
