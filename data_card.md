@@ -659,24 +659,9 @@ indirectly) in the dataset. -->
 | All fields | All CSVs in basics, team_box_scores|Empty strings/spaces replaced with NaN                      |
 |WTeamID     | All relevant results and seeds files| Validated against master teams list  
  
-<!-- scope: periscope -->
-<!-- info: Provide the fields in the dataset that
-were transformed.
-
-Use additional notes to capture any
-other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete
-the following for each transformation
-type applied. Include the data types to
-which fields were transformed.) -->
 
 **Transformation Type**
 
-
-
-**Additional Notes:** Add here 
 
 #### Library(ies) and Method(s) Used
 
@@ -762,9 +747,6 @@ Outcome: The 'WScore', 'LScore', 'DayNum', and 'NumOT' columns in the MRegularSe
 Action Taken: Normalization scaled the values of these columns to a range between 0 and 1. 
 
 
-
-**Additional Notes:** Add here
-
 ### Breakdown of Transformations
 
 <!-- info: Fill out relevant rows. --> 
@@ -789,31 +771,6 @@ What other choices were considered? -->
 
 No missing vaules in the datasets 
 
-**Platforms, tools, or libraries**
-
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
-
-#### Comparative Summary
-
-<!-- scope: microscope -->
-<!-- info: Why were missing values cleaned using
-this method (over others)? Provide
-comparative charts showing before
-and after missing values were cleaned. -->
-
-Summarize here. Include links, tables, visualizations where available.
-
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risk(s)
 
@@ -826,17 +783,10 @@ Transformation	     | Risk Introduced	          |  Risk Mitigated
 -------------------------------------------------------------------------
 Min-Max Normalization |Potential loss of granularity due to data compression. | N/A
 Missing Value Handling |NA |Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
-Data Validation |	N/A	Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
+Data Validation |	N/A	|Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
 Class Balance Check |	N/A  |Model bias due to unequal representation of wins and losses.
 Duplicate Removal |	N/A  |Skewed analysis and model training due to over-representation of duplicate data p
 
-
-
-Summarize here. Include links and metrics where applicable.
-
--   **Risk Type:** Description + Mitigations
--   **Risk Type:** Description + Mitigations
--   **Risk Type:** Description + Mitigations
 
 #### Human Oversight Measure(s)
 
@@ -853,18 +803,6 @@ taken due to this transformation? -->
 3) Manual Inspection of Unique Values: The unique values of region names were printed, implying a manual check for correctness and consistency.
 
 4) Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
-
-
-
-Summarize here. Include links where available.
-
-#### Additional Considerations
-
-<!-- scope: microscope -->
-<!-- info: What additional considerations were
-made? -->
-
-Summarize here. Include links where available.
 
 #### Cleaning Mismatched Value(s)
 
@@ -883,14 +821,6 @@ Valid team IDs
 Valid region names
 
 If any of these checks had failed (which the output shows they did not), further investigation and correction would have been necessary. However, the  code and output do not show any instances where such corrections were applied 
-
-Summarize here. Include links where available.
-
-**Field Name:** Count or Description
-
-**Field Name:** Count or Description
-
-**Field Name:** Count or Description
 
 #### Method(s) Used
 
@@ -967,12 +897,6 @@ Visual Inspection: Visualization of the distribution of winning and losing score
 
 The document does not explicitly mention formal approvals or sign-off procedures. 
 
-#### Additional Considerations
-
-<!-- scope: microscope -->
-<!-- info: What additional considerations were made? -->
-
-Summarize here. Include links where available.
 
 #### Anomalies
 
@@ -1041,8 +965,6 @@ anomaly handling measures. -->
 Based on the notbook, no explicit outlier handling measures were taken. The "Review of PreML Checklist" stated, "Data is a normal distribution with no outliers in points." Therefore, there's no "before and after" comparison to present. 
 
 
-**Additional Notes:** Add here
-
 #### Residual & Other Risk(s)
 
 <!-- scope: telescope -->
@@ -1076,12 +998,6 @@ Manual Inspection of Unique Values: The unique values of region names were print
 Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
 
 
-#### Additional Considerations
-
-<!-- scope: microscope -->
-<!-- info: What additional considerations were made? -->
-
-Summarize here. Include links where available.
 
 #### Dimensionality Reduction
 
@@ -1102,8 +1018,6 @@ choices were considered? -->
 
 The Notebook  does not mention the specific methods used to reduce the dimensionality of the data or alternative choices that were considered.
 
-Summarize here. Include links where
-necessary.
 
 **Platforms, tools, or libraries** 
 NA 
@@ -1119,10 +1033,6 @@ processes. -->
 
 The Notebook does not discuss why specific dimensionality reduction methods were chosen over others, nor does it include comparative charts showing the before-and-after effects of dimensionality reduction processes. 
 
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risks
 
@@ -1143,15 +1053,6 @@ taken due to this transformation? -->
 
 The Notebook does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
  
-
-Summarize here. Include links where available.
-
-#### Additional Considerations
-
-<!-- scope: microscope -->
-<!-- info: What additional considerations were made? -->
-
-Summarize here. Include links where available.
 
 #### Joining Input Sources
 
@@ -1204,11 +1105,9 @@ method over others?
 Provide comparative charts showing
 before and after dimensionality
 reduction processes. -->
+
 The notebook  does not contain information on why specific feature joining methods were chosen over others. Additionally, there are no comparative charts that illustrate before-and-after states for dimensionality reduction processes.
 
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risk(s)
 
@@ -1231,15 +1130,6 @@ taken due to this transformation? -->
 The notebook  does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
 
 
-#### Additional Considerations
-
-<!-- scope: microscope -->
-<!-- info: What additional considerations were
-made? -->
-
-Summarize here. Include links where
-available.
-
 #### Redaction or Anonymization
 
 <!-- scope: telescope -->
@@ -1257,7 +1147,6 @@ anonymize data? -->
 
 The notebook  indicates "Privacy Consideration: None," and therefore does not mention any methods used to redact or anonymize data.
 
-Summarize here. Include links where necessary.
 
 **Platforms, tools, or libraries**
 Google Colab: Platform for running the notebook.
@@ -1294,7 +1183,7 @@ The Notebook  states, "Privacy Consideration: None," meaning no data was redacte
 this transformation? Which risks were
 mitigated? -->
 
-Based on the provided document:
+Based on the Notebook:
 
 **Risks Introduced:**
 
@@ -1305,8 +1194,6 @@ Based on the provided document:
 *   Missing Values**: The initial data completeness check found no missing values, thus mitigating risks associated with imputing or removing missing data.
 *   Data Validation**: Validation steps were performed to check for negative scores, invalid team IDs, and season ranges, mitigating the risk of using incorrect or invalid data in the analysis.
 *   
-Summarize here. Include links and metrics where applicable.
-
 
 #### Human Oversight Measure(s)
 
@@ -1432,9 +1319,6 @@ The document does not include comparative charts showing the before and after st
 
 print(df_m_reg[['WScore', 'LScore', 'DayNum', 'NumOT']].head())
 
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risk(s)
 
