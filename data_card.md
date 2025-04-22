@@ -621,656 +621,713 @@ indirectly) in the dataset. -->
 -   Geography: Locations of each team are given.
 
 ## Transformations
-
-<!-- info: Fill this section if any transformations were applied in the
-creation of your dataset. -->
+1) Data Validation & Cleaning
+   - Missing vaule handling
+   - Duplicate Removal
+   - Value Validation
+2) Normalization (Min-Max Scaling)
+3) Feature Engineering
+   - Derived Metrics
+4) Bias & Fairness Checks
+   - Class Balance Verification
+   - Game Distribution Analysis
+   - Conference-Level Analysis
+5) Visualization (Diagnostic)
 
 ### Synopsis
 
 #### Transformation(s) Applied
-
-<!-- scope: telescope -->
-<!-- info: Select **all applicable** transformations
-that were applied to the dataset. -->
-
--   Anomaly Detection
--   Cleaning Mismatched Values
--   Cleaning Missing Values
--   Converting Data Types
--   Data Aggregation
--   Dimensionality Reduction
--   Joining Input Sources
--   Redaction or Anonymization
--   Others (Please specify)
+1. Handling Missing Values and Duplicates
+2.  Data Validation and Consistency Checks
+  - Season Validation
+  - Non-Negative Values
+  - Team ID Validation
+  - Region Validation
+3. Class Balance Verification
+4. Feature Distribution Analysis
+5. Normalization
+6. Outlier Removal 
 
 #### Field(s) Transformed
 
-<!-- scope: periscope -->
-<!-- info: Provide the fields in the dataset that
-were transformed.
-
-Use additional notes to capture any
-other relevant information or
-considerations.
-
-(Usage Note: Duplicate and complete
-the following for each transformation
-type applied. Include the data types to
-which fields were transformed.) -->
+| Field Name              | Source & Target            |
+| ---------- | -----------------------------------------------------------------------|   
+| WScore     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
+| LScore     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1)
+| DayNum     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
+| NumOT      | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
+| All fields | All CSVs in basics, team_box_scores|Empty strings/spaces replaced with NaN                      |
+|WTeamID     | All relevant results and seeds files| Validated against master teams list  
+ 
 
 **Transformation Type**
 
-| Field Name | Source & Target            |
-| ---------- | -------------------------- |
-| Field Name | Source Field: Target Field |
-| Field Name | Source Field: Target Field |
-| ...        | ...                        |
-
-**Additional Notes:** Add here
 
 #### Library(ies) and Method(s) Used
 
-<!-- scope: microscope -->
-<!-- info: Provide a description of the methods
-used to transform or process the
-dataset.
+Example Code Snippets from the Notebook 
 
-Use additional notes to capture any
-other relevant information or
-considerations.
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+import matplotlib.pyplot as plt
 
-(Usage Note: Duplicate and complete
-the following for each transformation
-type applied.) -->
+# Replace empty strings/spaces with NaN
+df = df.replace(r'^\s*$', np.nan, regex=True)
 
-**Transformation Type**
+# Remove duplicates
+df = df.drop_duplicates()
 
-**Method:** Describe the transformation
-method here. Include links where
-necessary.
+# Normalize selected columns
+scaler = MinMaxScaler()
+df[['WScore', 'LScore', 'DayNum', 'NumOT']] = scaler.fit_transform(df[['WScore', 'LScore', 'DayNum', 'NumOT']]) 
 
-**Platforms, tools, or libraries:**
+Transformation| Library/Method|Dataset/Field(s) Affected|
+---------------------------------------------------------
+|Missing Value Handling| pandas replace| All loaded DataFrames 
+|Duplicate Removal|  pandas drop_duplicates| All loaded DataFrames 
+|Normalization | sklearn MinMaxScaler | WScore, LScore, DayNum, NumOT in regular season results 
+|Validation Checks |pandas isin, unique | Season, TeamID, Region columns 
+|Feature Distribution Plot | pandas/matplotlib hist | Score columns in regular season results 
 
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
+**Transformation Type** 
 
-**Transformation Results:** Provide
-results, outcomes, and actions taken
-because of the transformations. Include
-visualizations where available.
+**Platforms, tools, or libraries:** 
+. Programming Language: Python
 
-**Additional Notes:** Add here
+. Libraries:
+  1) pandas
+  2) numpy
+  3) matplotlib
+  4) scikit-learn (sklearn)
+     
+. Platform: Google Colab     
+
+
+**Transformation Results:**
+
+1. Handling Missing Values and Duplicates
+Outcome: The code identified that there were no missing values or duplicate rows in the datasets.
+
+Action Taken: No specific action was required since no missing or duplicate data was found.
+
+2. Data Validation 
+Outcome:
+The 'Season' column was validated to ensure all years were within the 1985-2025 range.
+
+Columns like 'DayNum', 'WScore', and 'LScore' were confirmed to have no negative numbers.
+
+Team IDs were validated against the master team lists.
+
+Region names were validated.
+
+Action Taken: The validation confirmed that the data met the expected criteria, ensuring data consistency and integrity.
+
+3. Class Balance Check
+Outcome: The total number of wins and losses in both the men's and women's tournament results were equal.
+
+Visualization:
+
+Men's Tournament Results
+
+Women's Tournament Results
+
+Action Taken: The classes (wins and losses) were balanced, which is good for model training.
+
+4. Feature Distributions
+Outcome: The distribution of winning and losing scores was visualized.
+
+Visualization:
+
+Action Taken: The visualization confirmed that winning scores were generally higher than losing scores, as expected.
+
+5. Normalization
+Outcome: The 'WScore', 'LScore', 'DayNum', and 'NumOT' columns in the MRegularSeasonCompactResults.csv file were Min-Max normalized.
+
+Action Taken: Normalization scaled the values of these columns to a range between 0 and 1. 
+
 
 ### Breakdown of Transformations
 
-<!-- info: Fill out relevant rows. -->
+<!-- info: Fill out relevant rows. --> 
+
+The notebook. does not mention or use transformers in the context of transormer models like NLP instead it focuses on data preparation and processing steps for NCAA basketball data 
 
 #### Cleaning Missing Value(s)
 
 <!-- scope: telescope -->
 <!-- info: Which fields in the data were missing
-values? How many? -->
+values? How many? --> 
 
-Summarize here. Include links where available.
+In the notebook , the initial data completeness check. revealed no missing vaules in any of the datasets therefore there are no fields with missing vaules to report  
 
-**Field Name:** Count or description
 
-**Field Name:** Count or description
-
-**Field Name:** Count or description
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: How were missing values cleaned?
 What other choices were considered? -->
 
-Summarize here. Include links where necessary.
+No missing vaules in the datasets 
 
-**Platforms, tools, or libraries**
-
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
-
-#### Comparative Summary
-
-<!-- scope: microscope -->
-<!-- info: Why were missing values cleaned using
-this method (over others)? Provide
-comparative charts showing before
-and after missing values were cleaned. -->
-
-Summarize here. Include links, tables, visualizations where available.
-
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
-mitigated? -->
+mitigated? --> 
 
-Summarize here. Include links and metrics where applicable.
+Transformation	     | Risk Introduced	          |  Risk Mitigated
+-------------------------------------------------------------------------
+Min-Max Normalization |Potential loss of granularity due to data compression. | N/A
+Missing Value Handling |NA |Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
+Data Validation |	N/A	|Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
+Class Balance Check |	N/A  |Model bias due to unequal representation of wins and losses.
+Duplicate Removal |	N/A  |Skewed analysis and model training due to over-representation of duplicate data p
 
--   **Risk Type:** Description + Mitigations
--   **Risk Type:** Description + Mitigations
--   **Risk Type:** Description + Mitigations
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
 taken due to this transformation? -->
 
-Summarize here. Include links where available.
+1) Review of Pre-ML Checklist: A review to ensure data completeness, accurate entries, gender representation bias, bias & fairness, privacy consideration and labeling consistency
 
-#### Additional Considerations
+2) Data Validation: Implementation of specific checks like validate_season, check_non_negative, check_team_ids to confirm the integrity and correctness of the data
 
-<!-- scope: microscope -->
-<!-- info: What additional considerations were
-made? -->
+3) Manual Inspection of Unique Values: The unique values of region names were printed, implying a manual check for correctness and consistency.
 
-Summarize here. Include links where available.
+4) Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
 
 #### Cleaning Mismatched Value(s)
 
-<!-- scope: telescope -->
+
 <!-- info: Which fields in the data were corrected
 for mismatched values? -->
 
-Summarize here. Include links where available.
+Based on the Notebook , no fields were explicitly corrected for mismatched values. The focus was on validating data integrity by checking for:
 
-**Field Name:** Count or Description
+Valid season ranges
 
-**Field Name:** Count or Description
+Non-negative values in score and day number columns
 
-**Field Name:** Count or Description
+Valid team IDs
+
+Valid region names
+
+If any of these checks had failed (which the output shows they did not), further investigation and correction would have been necessary. However, the  code and output do not show any instances where such corrections were applied 
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: How were incorrect or mismatched
 values cleaned? What other choices
 were considered? -->
+In the NCAA data preparation workflow, the main focus was on identifying and validating possible incorrect or mismatched values rather than directly correcting them 
+steps to   summarize the cleaning process:
+Validation Checks:
+Action Taken:
+Manual Correction (if needed):  
 
-Summarize here. Include links where available.
+Example from Related Basketball Data Cleaning
+For example, in a similar basketball dataset, mismatched team names across sources were resolved by mapping different notations (e.g., "UNC" vs. "Carolina") to a standardized team name, often requiring manual review or a mapping table
+
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why were incorrect or mismatched
 values cleaned using this method (over
 others)? Provide a comparative
 analysis demonstrating before and
-after values were cleaned. -->
+after values were cleaned. --> 
 
-Summarize here. Include links where available.
+Scenario: Invalid Team ID (TeamID = 9999)
+Before Cleaning: 
+# Original data
+results_df = pd.DataFrame({
+    'WTeamID': [1104, 9999],  # 9999 is invalid
+    'LTeamID': [1234, 5678]
+})
+After Cleaning:
 
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
+Method Used: Validation check (check_team_ids) flags invalid IDs but does not auto-correct.
 
-**Above:** Provide a caption for the above table or visualization.
+Outcome: Row remains unchanged. Requires manual investigation (e.g., cross-referencing historical data to identify the correct team). 
 
-**Additional Notes:** Add here
+
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
 
-Summarize here. Include links and metrics where applicable.
 
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
+Transformation  	     Risk Introduced	                                 Risk Mitigated
+---------------------------------------------------------------------------------------------------
+Min-Max Normalization	| Potential loss of granularity due to data compression.	|N/A
+Missing Value Handling	| N/A	 |Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
+Data Validation	 |N/A	 |Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
+Class Balance Check	|N/A	|Model bias due to unequal representation of wins and losses.
+Duplicate Removal	|N/A	|Skewed analysis and model training due to over-representation of duplicate data points. 
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
 taken due to this transformation? -->
 
-Summarize here. Include links where available.
+Review of Pre-ML Checklist: A review to ensure data completeness, accurate entries, gender representation bias, bias & fairness, privacy consideration and labeling consistency
 
-#### Additional Considerations
+Data Validation: Implementation of specific checks like validate_season, check_non_negative, check_team_ids to confirm the integrity and correctness of the data
 
-<!-- scope: microscope -->
-<!-- info: What additional considerations were made? -->
+Manual Inspection of Unique Values: The unique values of region names were printed, implying a manual check for correctness and consistency.
 
-Summarize here. Include links where available.
+Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
+
+The document does not explicitly mention formal approvals or sign-off procedures. 
+
 
 #### Anomalies
 
-<!-- scope: telescope -->
 <!-- info: How many anomalies or outliers were
 detected?
 If at all, how were detected anomalies
 or outliers handled?
-Why or why not? -->
+Why or why not? --> 
 
-Summarize here. Include links where available.
+Number of Anomalies/Outliers Detected: According to the "Review of PreML Checklist," the data has a normal distribution with no outliers in points. The code does not implement any specific outlier detection methods.
 
-**Field Name:** Count or Description
+Handling of Anomalies/Outliers: Since no outliers were detected, no specific outlier handling was performed.
 
-**Field Name:** Count or Description
+Reasoning: The absence of detected outliers meant that no specific outlier treatment was necessary. The data was considered to be normally distributed, which is acceptable for further analysis without outlier manipulation.
 
-**Field Name:** Count or Description
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What methods were used to detect
 anomalies or outliers? -->
 
-Summarize here. Include links where necessary.
+Review of Pre-ML Checklist: This review stated that the data has a normal distribution with no outliers in points. This suggests a prior assessment, though the specific methods used for this assessment are not detailed in the provided document.
 
-**Platforms, tools, or libraries**
+Feature Distributions (Histograms): Histograms of winning and losing scores were plotted to visually inspect the distribution of these features. This could help identify potential outliers, such as unusually high or low scores, but it is primarily a visual assessment.
 
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
+Validation Checks: The code includes validation checks for:
+
+Valid season ranges: Ensures that the 'Season' column only contains years within the valid range (1985–2025).
+
+Non-negative values: Checks that columns such as 'DayNum', 'WScore', and 'LScore' do not contain negative numbers.
+
+Valid team IDs: Verifies that all team IDs in results and seeds files exist in the master teams list for both men's and women's datasets.
+
+Valid region names: Confirms that region names in the season files are within expected values, listing unique entries for review. 
+
+
+**Platforms, tools, or libraries** 
+Platforms:
+
+Google Colab
+
+Programming Languages:
+
+Python
+
+Libraries:
+
+pandas: For data loading, manipulation, and descriptive statistics.
+
+numpy: For numerical operations.
+
+matplotlib: For visualizing data distributions (histograms).
+
+scikit-learn (sklearn): MinMaxScaler was used, but there were no functions explicitly used for outlier detection.
+
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Provide a comparative analysis
 demonstrating before and after
 anomaly handling measures. -->
 
-Summarize here. Include links, tables, visualizations where available.
+Based on the notbook, no explicit outlier handling measures were taken. The "Review of PreML Checklist" stated, "Data is a normal distribution with no outliers in points." Therefore, there's no "before and after" comparison to present. 
 
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
 
-Summarize here. Include links and metrics where applicable.
+Transformation           	Risk Introduced                         	Risk Mitigated
+------------------------------------------------------------------------------------------------
+Min-Max Normalization	   |Potential loss of granularity due to data compression.  | N/A
+Missing Value Handling	|N/A	|Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
+Data Validation	|N/A	|Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
+Class Balance Check	|N/A	|Model bias due to unequal representation of wins and losses.
+Duplicate Removal	|N/A	|Skewed analysis and model training due to over-representation of duplicate data points.
 
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
 taken due to this transformation? -->
 
-Summarize here. Include links where available.
+Review of Pre-ML Checklist: A review to ensure data completeness, accurate entries, gender representation bias, bias & fairness, privacy consideration and labeling consistency
 
-#### Additional Considerations
+Data Validation: Implementation of specific checks like validate_season, check_non_negative, check_team_ids to confirm the integrity and correctness of the data
 
-<!-- scope: microscope -->
-<!-- info: What additional considerations were made? -->
+Manual Inspection of Unique Values: The unique values of region names were printed, implying a manual check for correctness and consistency.
 
-Summarize here. Include links where available.
+Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
+
+
 
 #### Dimensionality Reduction
 
-<!-- scope: telescope -->
 <!-- info: How many original features were
 collected and how many dimensions
 were reduced? -->
 
-Summarize here. Include links where available.
+The Notebook focuses on data completeness, validation, and preprocessing. The number of original features collected and the dimensions reduced are not mentioned. To find this information, review the original dataset documentation on Kaggle, linked in the document.
 
-**Field Name:** Count or Description
-
-**Field Name:** Count or Description
-
-**Field Name:** Count or Description
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What methods were used to reduce the
 dimensionality of the data? What other
 choices were considered? -->
 
-Summarize here. Include links where
-necessary.
+The Notebook  does not mention the specific methods used to reduce the dimensionality of the data or alternative choices that were considered.
 
-**Platforms, tools, or libraries**
 
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
+**Platforms, tools, or libraries** 
+NA 
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why were features reduced using this
 method (over others)? Provide
 comparative charts showing before
 and after dimensionality reduction
 processes. -->
 
-Summarize here. Include links, tables, visualizations where available.
+The Notebook does not discuss why specific dimensionality reduction methods were chosen over others, nor does it include comparative charts showing the before-and-after effects of dimensionality reduction processes. 
 
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risks
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
 
-Summarize here. Include links and metrics where applicable.
-
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
+The Notebook  focuses on data completeness, validation, and preprocessing steps such as handling missing values, checking for data inconsistencies (e.g., negative scores or invalid team IDs), and normalization. It does not explicitly discuss risks introduced or mitigated due to specific data transformations
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
 taken due to this transformation? -->
 
-Summarize here. Include links where available.
-
-#### Additional Considerations
-
-<!-- scope: microscope -->
-<!-- info: What additional considerations were made? -->
-
-Summarize here. Include links where available.
+The Notebook does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
+ 
 
 #### Joining Input Sources
 
-<!-- scope: telescope -->
 <!-- info: What were the distinct input sources that were joined? -->
 
-Summarize here. Include links where available.
+The distinct input sources joined in this project are multiple CSV files, each containing specific aspects of the NCAA Men's and Women's Basketball Tournaments history and structure. These files are located in the following directories:
 
-**Field Name:** Count or Description
+basics_dir_path
 
-**Field Name:** Count or Description
+team_box_scores_dir_path
 
-**Field Name:** Count or Description
+geography_dir_path
+
+public_rankings_dir_path
+
+supplements_dir_path  
+
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What are the shared columns of fields used to join these
 sources? -->
-
-Summarize here. Include links where necessary.
+The shared columns or fields used to join the data sources are not explicitly mentioned in the Notebook . 
 
 **Platforms, tools, or libraries**
 
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
+pandas: For data manipulation and analysis.
+
+os: For interacting with the operating system, such as navigating file paths.
+
+numpy: For numerical computations.
+
+matplotlib.pyplot: For creating visualizations.
+
+sklearn.preprocessing.MinMaxScaler: For normalization.
+
+Kaggle: As the source for downloading the dataset.
+
+Google Colab: As the platform for running the notebook.
+
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why were features joined using this
-method over others?
+method over others? 
 
-Provide comparative charts showing
-before and after dimensionality
-reduction processes. -->
+The notebook  does not contain information on why specific feature joining methods were chosen over others. Additionally, there are no comparative charts that illustrate before-and-after states for dimensionality reduction processes.
 
-Summarize here. Include links, tables, visualizations where available.
-
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
+The notebook  does not specify additional risks introduced or mitigated.
 
-Summarize here. Include links and metrics where applicable.
 
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
-
-**Risk Type:** Description + Mitigations
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
 taken due to this transformation? -->
 
-Summarize here. Include links where
-available.
+The notebook  does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
 
-#### Additional Considerations
-
-<!-- scope: microscope -->
-<!-- info: What additional considerations were
-made? -->
-
-Summarize here. Include links where
-available.
 
 #### Redaction or Anonymization
 
-<!-- scope: telescope -->
 <!-- info: Which features were redacted or
 anonymized? -->
 
-Summarize here. Include links where available.
+The notebook  indicates "Privacy Consideration: None," suggesting that no features were redacted or anonymized in this dataset.
 
-**Field Name:** Count or Description
-
-**Field Name:** Count or Description
-
-**Field Name:** Count or Description
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What methods were used to redact or
 anonymize data? -->
 
-Summarize here. Include links where necessary.
+The notebook  indicates "Privacy Consideration: None," and therefore does not mention any methods used to redact or anonymize data.
+
 
 **Platforms, tools, or libraries**
+Google Colab: Platform for running the notebook.
 
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
+Kaggle: Source for downloading the dataset.
+
+pandas: For data manipulation and analysis.
+
+numpy: For numerical computations.
+
+os: For interacting with the file system.
+
+matplotlib.pyplot: For data visualization.
+
+sklearn.preprocessing.MinMaxScaler: For feature normalization.
+
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why was data redacted or anonymized
 using this method over others? Provide
 comparative charts showing before
 and after redaction or anonymization
 process. -->
 
-Summarize here. Include links, tables, visualizations where available.
+The Notebook  states, "Privacy Consideration: None," meaning no data was redacted or anonymized. Therefore, there were no methods used for this purpose, and no comparative charts exis
 
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
-
-**Above:** Provide a caption for the above table or visualization.
-
-**Additional Notes:** Add here
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
 
-Summarize here. Include links and metrics where applicable.
+Based on the Notebook:
 
-**Risk Type:** Description + Mitigations
+**Risks Introduced:**
 
-**Risk Type:** Description + Mitigations
+*   Normalization**: The document mentions that normalization was applied to the 'WScore', 'LScore', 'DayNum', and 'NumOT' columns using `MinMaxScaler`. It suggests that a potential risk introduced by normalization is altering the original data distribution, which could affect the performance of certain algorithms sensitive to feature scaling.
 
-**Risk Type:** Description + Mitigations
+**Risks Mitigated:**
+
+*   Missing Values**: The initial data completeness check found no missing values, thus mitigating risks associated with imputing or removing missing data.
+*   Data Validation**: Validation steps were performed to check for negative scores, invalid team IDs, and season ranges, mitigating the risk of using incorrect or invalid data in the analysis.
+*   
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
 taken due to this transformation? -->
 
-Summarize here. Include links where available.
+The Notebook does not include specific details on human oversight measures, additional testing, investigations, or approvals related to data transformations. 
+
 
 #### Additional Considerations
 
-<!-- scope: microscope -->
+
 <!-- info: What additional considerations were
 made? -->
 
-Summarize here. Include links where available.
+Gender Representation Bias: The data for women's basketball starts from 1988, while the data for men's basketball starts from 1985.
+
+Bias & Fairness: The data is normally distributed with no outliers in points.
+
+Labeling Consistency: Labels remain consistent from men's to women's data and maintain the same labeling for teams across all files.
+
+Class Balance: Ensuring an equal number of wins and losses.
+
+Data Validation: Checking for negative scores, invalid team IDs and valid seasons. 
+
 
 #### Others (Please Specify)
 
-<!-- scope: telescope -->
 <!-- info: What was done? Which features or
 fields were affected? -->
 
-Summarize here. Include links where available.
+Handling Missing Data: The code checked for missing values in all CSV files within the specified directories using df.isnull().sum(). No missing values were found.
 
-**Field Name:** Count or Description
+Data Validation: The code validated entries by:
 
-**Field Name:** Count or Description
+Checking if the 'Season' column contained years between 1985 and 2025 using the validate_season function.
 
-**Field Name:** Count or Description
+Checking for negative values in 'DayNum', 'WScore', and 'LScore' columns across multiple dataframes using the check_non_negative function.
+
+Verifying 'TeamID' in various dataframes against unique 'TeamID's from 'MTeams' and 'WTeams' dataframes using the check_team_ids function.
+
+Checking unique values in 'RegionW', 'RegionX', 'RegionY', and 'RegionZ' columns for both men's and women's seasons.
+
+Class Balance Check: Verified that wins and losses are balanced in the data.
+
+Normalization: The columns 'WScore', 'LScore', 'DayNum', and 'NumOT' in the MRegularSeasonCompactResults.csv file were normalized using MinMaxScaler from scikit-learn.
+
+The features/fields affected were:
+
+'Season' (validated for year range)
+
+'DayNum', 'WScore', 'LScore' (validated for non-negative values)
+
+'TeamID', 'WTeamID', 'LTeamID' (validated against known team IDs)
+
+'RegionW', 'RegionX', 'RegionY', 'RegionZ' (validated for unique region values)
+
+'WTeamID', 'LTeamID' (used in Class Balance Check)
+
+'WScore', 'LScore', 'DayNum', 'NumOT' (normalized using MinMaxScaler) in the MRegularSeasonCompactResults.csv file.
+
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
+
 <!-- info: What method were used? -->
 
-Summarize here. Include links where necessary.
+Checking for Missing Values: pandas' isnull().sum() was used to find the number of missing values in each column of the dataframes.
+
+Data Validation:
+
+Defined functions to validate data, checking 'Season' columns for values between 1985 and 2025.
+
+Defined functions to check for negative values in specified columns ('DayNum', 'WScore', 'LScore').
+
+Checking 'TeamID' columns against a list of valid team IDs.
+
+Class Balance Check: Counting the number of wins and losses to ensure they are balanced.
+
+Normalization: MinMaxScaler from scikit-learn was used to normalize the 'WScore', 'LScore', 'DayNum', and 'NumOT' columns in the MRegularSeasonCompactResults.csv file.
+
 
 **Platforms, tools, or libraries**
+Platform: Google Colab
 
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
--   Platform, tool, or library: Write description here
+Libraries:
+
+pandas
+
+os
+
+numpy
+
+matplotlib.pyplot
+
+sklearn.preprocessing.MinMaxScaler
+
+Data Source: Kaggle
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why was this method used over
 others? Provide comparative charts
 showing before and after this
 transformation. -->
 
-Summarize here. Include links, tables, visualizations where available.
+The Notebook  states that MinMaxScaler from scikit-learn was used to normalize the columns 'WScore', 'LScore', 'DayNum', and 'NumOT' in the MRegularSeasonCompactResults.csv file.
 
-| **Field Name** | **Diff**      |
-| -------------- | ------------- |
-| Field Name     | Before: After |
-| Field Name     | Before: After |
-| ...            | ...           |
+Why this method?
 
-**Above:** Provide a caption for the above table or visualization.
+The document does not explicitly state why MinMaxScaler was chosen over other scaling methods.
 
-**Additional Notes:** Add here
+Comparative charts:
+
+The document does not include comparative charts showing the before and after states of the normalization process. However, the code to print the first few rows of the normalized columns is included, which would allow the user to inspect the normalized values directly. 
+
+print(df_m_reg[['WScore', 'LScore', 'DayNum', 'NumOT']].head())
+
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
 
-Summarize here. Include links and metrics where applicable.
+Risks Introduced:
 
-**Risk type:** [Description + Mitigations]
+Normalization: The document mentions that normalization was applied to the 'WScore', 'LScore', 'DayNum', and 'NumOT' columns using MinMaxScaler. It suggests that a potential risk introduced by normalization is altering the original data distribution, which could affect the performance of certain algorithms sensitive to feature scaling.
 
-**Risk type:** [Description + Mitigations]
+Risks Mitigated:
 
-**Risk type:** [Description + Mitigations]
+Missing Values: The initial data completeness check found no missing values, thus mitigating risks associated with imputing or removing missing data.
+
+Data Validation: Validation steps were performed to check for negative scores, invalid team IDs, and season ranges, mitigating the risk of using incorrect or invalid data in the analysis.
+
+Class Imbalance: Checking for an equal number of wins and losses ensures no class imbalance, and this mitigates risks associated with biased models. 
+
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
 taken due to this transformation? -->
 
-Summarize here. Include links where available.
+The Notebook does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
+
 
 #### Additional Considerations
 
-<!-- scope: microscope -->
 <!-- info: What additional considerations were made? -->
 
-Summarize here. Include links where available.
+Gender Representation Bias: The dataset contains data for women's basketball starting from 1988, whereas men's basketball data starts from 1985.
+
+Bias & Fairness: The data is normally distributed with no outliers in points.
+
+Labeling Consistency: Labels are consistent between men's and women's data and maintain the same labeling for teams across all files.
+
+Class Balance: Ensuring an equal number of wins and losses in the dataset.
+
+Data Validation: Checking for negative scores, invalid team IDs, and valid seasons.
+
+
 
 ## Validation Types
 
