@@ -765,7 +765,6 @@ In the notebook , the initial data completeness check. revealed no missing vaule
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: How were missing values cleaned?
 What other choices were considered? -->
 
@@ -774,7 +773,6 @@ No missing vaules in the datasets
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? --> 
@@ -790,7 +788,6 @@ Duplicate Removal |	N/A  |Skewed analysis and model training due to over-represe
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
@@ -806,7 +803,7 @@ taken due to this transformation? -->
 
 #### Cleaning Mismatched Value(s)
 
-<!-- scope: telescope -->
+
 <!-- info: Which fields in the data were corrected
 for mismatched values? -->
 
@@ -824,11 +821,9 @@ If any of these checks had failed (which the output shows they did not), further
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: How were incorrect or mismatched
 values cleaned? What other choices
 were considered? -->
-
 In the NCAA data preparation workflow, the main focus was on identifying and validating possible incorrect or mismatched values rather than directly correcting them 
 steps to   summarize the cleaning process:
 Validation Checks:
@@ -837,11 +832,10 @@ Manual Correction (if needed):
 
 Example from Related Basketball Data Cleaning
 For example, in a similar basketball dataset, mismatched team names across sources were resolved by mapping different notations (e.g., "UNC" vs. "Carolina") to a standardized team name, often requiring manual review or a mapping table
-Summarize here. Include links where available.
+
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why were incorrect or mismatched
 values cleaned using this method (over
 others)? Provide a comparative
@@ -865,7 +859,6 @@ Outcome: Row remains unchanged. Requires manual investigation (e.g., cross-refer
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
@@ -881,7 +874,6 @@ Duplicate Removal	|N/A	|Skewed analysis and model training due to over-represent
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
@@ -900,7 +892,6 @@ The document does not explicitly mention formal approvals or sign-off procedures
 
 #### Anomalies
 
-<!-- scope: telescope -->
 <!-- info: How many anomalies or outliers were
 detected?
 If at all, how were detected anomalies
@@ -916,7 +907,6 @@ Reasoning: The absence of detected outliers meant that no specific outlier treat
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What methods were used to detect
 anomalies or outliers? -->
 
@@ -957,7 +947,6 @@ scikit-learn (sklearn): MinMaxScaler was used, but there were no functions expli
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Provide a comparative analysis
 demonstrating before and after
 anomaly handling measures. -->
@@ -967,7 +956,6 @@ Based on the notbook, no explicit outlier handling measures were taken. The "Rev
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
@@ -983,7 +971,6 @@ Duplicate Removal	|N/A	|Skewed analysis and model training due to over-represent
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
@@ -1001,7 +988,6 @@ Visual Inspection: Visualization of the distribution of winning and losing score
 
 #### Dimensionality Reduction
 
-<!-- scope: telescope -->
 <!-- info: How many original features were
 collected and how many dimensions
 were reduced? -->
@@ -1011,7 +997,6 @@ The Notebook focuses on data completeness, validation, and preprocessing. The nu
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What methods were used to reduce the
 dimensionality of the data? What other
 choices were considered? -->
@@ -1024,7 +1009,6 @@ NA
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why were features reduced using this
 method (over others)? Provide
 comparative charts showing before
@@ -1036,7 +1020,6 @@ The Notebook does not discuss why specific dimensionality reduction methods were
 
 #### Residual & Other Risks
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
@@ -1045,7 +1028,6 @@ The Notebook  focuses on data completeness, validation, and preprocessing steps 
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
@@ -1056,7 +1038,6 @@ The Notebook does not contain information regarding specific human oversight mea
 
 #### Joining Input Sources
 
-<!-- scope: telescope -->
 <!-- info: What were the distinct input sources that were joined? -->
 
 The distinct input sources joined in this project are multiple CSV files, each containing specific aspects of the NCAA Men's and Women's Basketball Tournaments history and structure. These files are located in the following directories:
@@ -1074,7 +1055,6 @@ supplements_dir_path
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What are the shared columns of fields used to join these
 sources? -->
 The shared columns or fields used to join the data sources are not explicitly mentioned in the Notebook . 
@@ -1098,30 +1078,23 @@ Google Colab: As the platform for running the notebook.
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why were features joined using this
-method over others?
-
-Provide comparative charts showing
-before and after dimensionality
-reduction processes. -->
+method over others? 
 
 The notebook  does not contain information on why specific feature joining methods were chosen over others. Additionally, there are no comparative charts that illustrate before-and-after states for dimensionality reduction processes.
 
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
 The notebook  does not specify additional risks introduced or mitigated.
-Summarize here. Include links and metrics where applicable.
+
 
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
@@ -1132,7 +1105,6 @@ The notebook  does not contain information regarding specific human oversight me
 
 #### Redaction or Anonymization
 
-<!-- scope: telescope -->
 <!-- info: Which features were redacted or
 anonymized? -->
 
@@ -1141,7 +1113,6 @@ The notebook  indicates "Privacy Consideration: None," suggesting that no featur
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
 <!-- info: What methods were used to redact or
 anonymize data? -->
 
@@ -1166,7 +1137,6 @@ sklearn.preprocessing.MinMaxScaler: For feature normalization.
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why was data redacted or anonymized
 using this method over others? Provide
 comparative charts showing before
@@ -1178,7 +1148,6 @@ The Notebook  states, "Privacy Consideration: None," meaning no data was redacte
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
@@ -1197,7 +1166,6 @@ Based on the Notebook:
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
@@ -1206,11 +1174,9 @@ taken due to this transformation? -->
 The Notebook does not include specific details on human oversight measures, additional testing, investigations, or approvals related to data transformations. 
 
 
-Summarize here. Include links where available.
-
 #### Additional Considerations
 
-<!-- scope: microscope -->
+
 <!-- info: What additional considerations were
 made? -->
 
@@ -1227,7 +1193,6 @@ Data Validation: Checking for negative scores, invalid team IDs and valid season
 
 #### Others (Please Specify)
 
-<!-- scope: telescope -->
 <!-- info: What was done? Which features or
 fields were affected? -->
 
@@ -1264,7 +1229,7 @@ The features/fields affected were:
 
 #### Method(s) Used
 
-<!-- scope: periscope -->
+
 <!-- info: What method were used? -->
 
 Checking for Missing Values: pandas' isnull().sum() was used to find the number of missing values in each column of the dataframes.
@@ -1301,7 +1266,6 @@ Data Source: Kaggle
 
 #### Comparative Summary
 
-<!-- scope: microscope -->
 <!-- info: Why was this method used over
 others? Provide comparative charts
 showing before and after this
@@ -1322,7 +1286,6 @@ print(df_m_reg[['WScore', 'LScore', 'DayNum', 'NumOT']].head())
 
 #### Residual & Other Risk(s)
 
-<!-- scope: telescope -->
 <!-- info: What risks were introduced because of
 this transformation? Which risks were
 mitigated? -->
@@ -1342,7 +1305,6 @@ Class Imbalance: Checking for an equal number of wins and losses ensures no clas
 
 #### Human Oversight Measure(s)
 
-<!-- scope: periscope -->
 <!-- info: What human oversight measures,
 including additional testing,
 investigations and approvals were
@@ -1353,7 +1315,6 @@ The Notebook does not contain information regarding specific human oversight mea
 
 #### Additional Considerations
 
-<!-- scope: microscope -->
 <!-- info: What additional considerations were made? -->
 
 Gender Representation Bias: The dataset contains data for women's basketball starting from 1988, whereas men's basketball data starts from 1985.
