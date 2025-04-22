@@ -4,18 +4,9 @@ This dataset contains historical data for the NCAA Men's and Women's Basketball 
 
 #### Dataset Link
 
-<!-- info: Provide a link to the dataset: -->
-<!-- width: half -->
-
 [Kaggle](https://www.kaggle.com/competitions/march-machine-learning-mania-2025/data)
 
 #### Data Card Author(s)
-
-<!-- info: Select **one role per** Data Card Author:
-
-(Usage Note: Select the most appropriate choice to describe the author's role
-in creating the Data Card.) -->
-<!-- width: half -->
 
 -   **Cesar Ramirez, Group 9:** Contributor
 -   **Alma Campos, Group 9:** Contributor
@@ -34,24 +25,13 @@ in creating the Data Card.) -->
 
 #### Publishing Organization(s)
 
-<!-- scope: telescope -->
-<!-- info: Provide the names of the institution or organization responsible
-for publishing the dataset: -->
-
 Kaggle
 
 #### Industry Type(s)
 
-<!-- scope: periscope -->
-<!-- info: Select **all applicable** industry types to which the publishing
-organizations belong: -->
-
 -   Academic - Tech
 
 #### Contact Detail(s)
-
-<!-- scope: microscope -->
-<!-- info: Provide publisher contact details: -->
 
 -   **Website:** [Kaggle](https://www.kaggle.com/)
 
@@ -59,16 +39,10 @@ organizations belong: -->
 
 #### Team(s)
 
-<!-- scope: telescope -->
-<!-- info: Provide the names of the groups or team(s) that own the dataset: -->
-
 Kenneth Massey
 Sonas Consulting
 
 #### Contact Detail(s)
-
-<!-- scope: periscope -->
-<!-- info: Provide pathways to contact dataset owners: -->
 
 -   **Dataset Owner(s):** Kenneth Massey, Jeff Sonas, Sonas Consulting
 -   **Affiliation:** Massey Ratings, Sonas Consulting
@@ -78,9 +52,6 @@ Sonas Consulting
 
 #### Data Subject(s)
 
-<!-- scope: telescope -->
-<!-- info: Select ***all applicable**** subjects contained the dataset: -->
-
 -   The Basics
 -   Team Box Scores
 -   Geography
@@ -89,215 +60,197 @@ Sonas Consulting
 
 #### Dataset Snapshot
 
-<!-- scope: periscope -->
-<!-- info: Provide a snapshot of the dataset:<br><br>(Use the additional notes
-to include relevant information, considerations, and links to table(s) with
-more detailed breakdowns.) -->
-
-Category | Data
---- | ---
-Size of Dataset | 182.97 MB
-Number of Instances | 2636297
-Number of Fields | 282
-Labeled Classes | 32
+| Category            | Data      |
+| ------------------- | --------- |
+| Size of Dataset     | 182.97 MB |
+| Number of Instances | 2636297   |
+| Number of Fields    | 282       |
+| Labeled Classes     | 32        |
 
 #### Content Description
 
-<!-- scope: microscope -->
-<!-- info: Provide a short description of the content in a data point: -->
-
 **The Basics**
-- Team ID's and Team Names
-- Tournament seeds since 1984-85 season
-- Final scores of all regular season, conference tournament, and NCAA® tournament games since 1984-85 season
-- Season-level details including dates and region names
+
+-   Team ID's and Team Names
+-   Tournament seeds since 1984-85 season
+-   Final scores of all regular season, conference tournament, and NCAA® tournament games since 1984-85 season
+-   Season-level details including dates and region names
 
 **Team Box Scores**
 Game-by-game stats at a team level
-- WFGM - field goals made (by the winning team)
-- WFGA - field goals attempted (by the winning team)
-- WFGM3 - three pointers made (by the winning team)
-- WFGA3 - three pointers attempted (by the winning team)
-- WFTM - free throws made (by the winning team)
-- WFTA - free throws attempted (by the winning team)
-- WOR - offensive rebounds (pulled by the winning team)
-- WDR - defensive rebounds (pulled by the winning team)
-- WAst - assists (by the winning team)
-- WTO - turnovers committed (by the winning team)
-- WStl - steals (accomplished by the winning team)
-- WBlk - blocks (accomplished by the winning team)
-- WPF - personal fouls committed (by the winning team)
 
-**Geography** 
-- City locations of all regular season, conference tournament, and NCAA® tournament games since the 2010 season
+-   WFGM - field goals made (by the winning team)
+-   WFGA - field goals attempted (by the winning team)
+-   WFGM3 - three pointers made (by the winning team)
+-   WFGA3 - three pointers attempted (by the winning team)
+-   WFTM - free throws made (by the winning team)
+-   WFTA - free throws attempted (by the winning team)
+-   WOR - offensive rebounds (pulled by the winning team)
+-   WDR - defensive rebounds (pulled by the winning team)
+-   WAst - assists (by the winning team)
+-   WTO - turnovers committed (by the winning team)
+-   WStl - steals (accomplished by the winning team)
+-   WBlk - blocks (accomplished by the winning team)
+-   WPF - personal fouls committed (by the winning team)
+
+**Geography**
+
+-   City locations of all regular season, conference tournament, and NCAA® tournament games since the 2010 season
 
 **Public Rankings**
-- Weekly team rankings (men's teams only) for dozens of top rating systems - Pomeroy, Sagarin, RPI, ESPN, etc., since the 2003 season
+
+-   Weekly team rankings (men's teams only) for dozens of top rating systems - Pomeroy, Sagarin, RPI, ESPN, etc., since the 2003 season
 
 **Supplements**
-- Additional supporting information, including coaches, conference affiliations, alternative team name spellings, bracket structure, and game results for NIT and other postseason tournaments.
+
+-   Additional supporting information, including coaches, conference affiliations, alternative team name spellings, bracket structure, and game results for NIT and other postseason tournaments.
 
 #### Descriptive Statistics
 
-<!-- width: full -->
-<!-- info: Provide basic descriptive statistics for each field.
-
-Use additional notes to capture any other relevant information or
-considerations.
-
-Usage Note: Some statistics will be relevant for numeric data, for not for
-strings. -->
 **Team Statistics**
 
-Statistic | TeamID | GamesPlayed | Wins | Losses | RegularSeasonGames 
---- | --- | --- | --- | --- | --- 
-count | 380.000000 | 380.000000 | 380.000000 | 380.000000  |   380.000000 
-mean |1290.500000 | 1028.673684  | 514.336842 | 514.336842   |   1015.421053
-std |109.840794 |  338.935823 |  228.058797 | 174.132262  |   330.188419
-min |1101.000000  |  22.000000  |   3.000000  | 16.000000    |   22.000000
-25% |1195.750000 | 1039.000000 |  393.750000 | 458.500000    |   1038.000000
-50% | 1290.500000 | 1159.500000 |  533.000000 | 559.500000    |   1155.000000
-75% |  1385.250000 | 1227.250000  | 669.000000 | 634.000000   |    1215.000000
-max | 1480.000000 | 1441.000000 | 1153.000000 | 869.000000    |     1307.000000 
-        
-Statistic | TournamentGames | HomeGames | AwayGames | NeutralGames | WinPercentage 
---- | --- | --- | --- | --- | --- 
-count | 380.000000 | 380.000000 | 380.000000   | 380.000000  |   380.000000
-mean | 13.252632 | 455.707895 | 455.707895  | 117.257895   |   48.031105
-std | 21.403754 | 170.107048 | 145.575036  |   69.392173   |   11.103786 
-min | 0.000000  |  9.000000  | 10.000000   |   0.000000    |  12.500000  
-25% | 1.000000 | 402.500000 | 429.250000  |   71.750000   |   40.560000
-50%  |      5.000000 | 494.000000 | 489.000000  |  110.500000     | 47.980000   
-75%   |       14.000000 | 577.000000 | 556.000000 |   156.250000    |  55.422500   
-max    |     137.000000  |707.000000 | 668.000000  |  396.000000   |   80.010000   
+| Statistic | TeamID      | GamesPlayed | Wins        | Losses     | RegularSeasonGames |
+| --------- | ----------- | ----------- | ----------- | ---------- | ------------------ |
+| count     | 380.000000  | 380.000000  | 380.000000  | 380.000000 | 380.000000         |
+| mean      | 1290.500000 | 1028.673684 | 514.336842  | 514.336842 | 1015.421053        |
+| std       | 109.840794  | 338.935823  | 228.058797  | 174.132262 | 330.188419         |
+| min       | 1101.000000 | 22.000000   | 3.000000    | 16.000000  | 22.000000          |
+| 25%       | 1195.750000 | 1039.000000 | 393.750000  | 458.500000 | 1038.000000        |
+| 50%       | 1290.500000 | 1159.500000 | 533.000000  | 559.500000 | 1155.000000        |
+| 75%       | 1385.250000 | 1227.250000 | 669.000000  | 634.000000 | 1215.000000        |
+| max       | 1480.000000 | 1441.000000 | 1153.000000 | 869.000000 | 1307.000000        |
 
-Statistic |    TournamentParticipationRate | NumSeasons |  AvgGamesPerSeason  
---- | --- | --- | ---  
-count   |                380.000000 | 380.000000     |    380.000000  
-mean     |                 1.062868  | 35.231579    |      28.994316  
-std       |                1.575389   |11.178761    |       1.803911  
-min        |               0.000000    |1.000000    |      22.000000  
-25%         |              0.147500   |37.000000    |      27.867500  
-50%          |             0.505000   |41.000000    |      29.000000  
-75%           |            1.152500   |41.000000    |      30.070000  
-max            |           9.510000   |41.000000    |      35.150000  
-      
+| Statistic | TournamentGames | HomeGames  | AwayGames  | NeutralGames | WinPercentage |
+| --------- | --------------- | ---------- | ---------- | ------------ | ------------- |
+| count     | 380.000000      | 380.000000 | 380.000000 | 380.000000   | 380.000000    |
+| mean      | 13.252632       | 455.707895 | 455.707895 | 117.257895   | 48.031105     |
+| std       | 21.403754       | 170.107048 | 145.575036 | 69.392173    | 11.103786     |
+| min       | 0.000000        | 9.000000   | 10.000000  | 0.000000     | 12.500000     |
+| 25%       | 1.000000        | 402.500000 | 429.250000 | 71.750000    | 40.560000     |
+| 50%       | 5.000000        | 494.000000 | 489.000000 | 110.500000   | 47.980000     |
+| 75%       | 14.000000       | 577.000000 | 556.000000 | 156.250000   | 55.422500     |
+| max       | 137.000000      | 707.000000 | 668.000000 | 396.000000   | 80.010000     |
+
+| Statistic | TournamentParticipationRate | NumSeasons | AvgGamesPerSeason |
+| --------- | --------------------------- | ---------- | ----------------- |
+| count     | 380.000000                  | 380.000000 | 380.000000        |
+| mean      | 1.062868                    | 35.231579  | 28.994316         |
+| std       | 1.575389                    | 11.178761  | 1.803911          |
+| min       | 0.000000                    | 1.000000   | 22.000000         |
+| 25%       | 0.147500                    | 37.000000  | 27.867500         |
+| 50%       | 0.505000                    | 41.000000  | 29.000000         |
+| 75%       | 1.152500                    | 41.000000  | 30.070000         |
+| max       | 9.510000                    | 41.000000  | 35.150000         |
+
 **Top 10 Teams by Games Played:**
 
-Team | TeamName | GamesPlayed | Wins | Losses | WinPercentage 
---- | --- | --- | --- | --- | --- 
-80  |           Duke    |     1441 | 1153   |  288     |     80.01
-213  |  North Carolina    |     1436 | 1062   |  374     |     73.96
-141   |       Kansas    |     1411 | 1121   |  290     |     79.45
-145   |     Kentucky    |     1400 | 1055   |  345     |     75.36
-11    |      Arizona    |     1366 | 1022   |  344     |     74.82
-292   |     Syracuse    |     1362 |  953   |  409     |     69.97
-176   |  Michigan St    |     1350 |  930   |  420     |     68.89
-156   |   Louisville    |     1346 |  884   |  462     |     65.68
-62    |  Connecticut    |     1344 |  927   |  417     |     68.97
-336   |    Villanova    |     1339 |  882   |  457     |     65.87
+| Team | TeamName       | GamesPlayed | Wins | Losses | WinPercentage |
+| ---- | -------------- | ----------- | ---- | ------ | ------------- |
+| 80   | Duke           | 1441        | 1153 | 288    | 80.01         |
+| 213  | North Carolina | 1436        | 1062 | 374    | 73.96         |
+| 141  | Kansas         | 1411        | 1121 | 290    | 79.45         |
+| 145  | Kentucky       | 1400        | 1055 | 345    | 75.36         |
+| 11   | Arizona        | 1366        | 1022 | 344    | 74.82         |
+| 292  | Syracuse       | 1362        | 953  | 409    | 69.97         |
+| 176  | Michigan St    | 1350        | 930  | 420    | 68.89         |
+| 156  | Louisville     | 1346        | 884  | 462    | 65.68         |
+| 62   | Connecticut    | 1344        | 927  | 417    | 68.97         |
+| 336  | Villanova      | 1339        | 882  | 457    | 65.87         |
 
 **Top 10 Teams by Win Percentage (min 100 games):**
 
-Team | TeamName | GamesPlayed | Wins | Losses | WinPercentage 
---- | --- | --- | --- | --- | --- 
-80    |         Duke     |    1441 | 1153   |  288     |     80.01
-141   |       Kansas     |    1411 | 1121   |  290     |     79.45
-145   |     Kentucky     |    1400 | 1055   |  345     |     75.36
-110   |      Gonzaga     |    1277 |  960   |  317      |    75.18
-11    |      Arizona     |    1366 | 1022   |  344     |     74.82
-213  | North Carolina    |     1436 | 1062  |   374    |      73.96
-292    |    Syracuse     |    1362  | 953   |  409     |     69.97
-171    |     Memphis     |    1326  | 916   |  410     |     69.08
-62     | Connecticut     |    1344  | 927   |  417     |     68.97
-176    | Michigan St     |    1350  | 930   |  420     |     68.89
+| Team | TeamName       | GamesPlayed | Wins | Losses | WinPercentage |
+| ---- | -------------- | ----------- | ---- | ------ | ------------- |
+| 80   | Duke           | 1441        | 1153 | 288    | 80.01         |
+| 141  | Kansas         | 1411        | 1121 | 290    | 79.45         |
+| 145  | Kentucky       | 1400        | 1055 | 345    | 75.36         |
+| 110  | Gonzaga        | 1277        | 960  | 317    | 75.18         |
+| 11   | Arizona        | 1366        | 1022 | 344    | 74.82         |
+| 213  | North Carolina | 1436        | 1062 | 374    | 73.96         |
+| 292  | Syracuse       | 1362        | 953  | 409    | 69.97         |
+| 171  | Memphis        | 1326        | 916  | 410    | 69.08         |
+| 62   | Connecticut    | 1344        | 927  | 417    | 68.97         |
+| 176  | Michigan St    | 1350        | 930  | 420    | 68.89         |
 
 **Conference Statistics Summary:**
-Statistic  | GamesPlayed     |    Wins   |    Losses  | IntraConferenceGames
---- | --- | --- | --- | --- 
-count |    51.000000 |   51.000000 |   51.000000     |        51.000000   
-mean  |  7664.627451 | 3832.313725 | 3832.313725     |      2350.235294   
-std   |  5056.436366 | 2702.737460 | 2496.991289     |      1613.305149   
-min   |   201.000000 |   60.000000 |  104.000000     |        30.000000   
-25%   |  2584.000000 | 1433.000000 | 1079.000000     |       663.500000   
-50%   |  8497.000000 | 4131.000000 | 4422.000000     |      2509.000000   
-75%   | 11776.500000 | 5651.000000 | 6193.500000     |      3776.000000   
-max   | 15906.000000 | 9373.000000 | 7413.000000     |      4741.000000   
+Statistic | GamesPlayed | Wins | Losses | IntraConferenceGames
+--- | --- | --- | --- | ---
+count | 51.000000 | 51.000000 | 51.000000 | 51.000000  
+mean | 7664.627451 | 3832.313725 | 3832.313725 | 2350.235294  
+std | 5056.436366 | 2702.737460 | 2496.991289 | 1613.305149  
+min | 201.000000 | 60.000000 | 104.000000 | 30.000000  
+25% | 2584.000000 | 1433.000000 | 1079.000000 | 663.500000  
+50% | 8497.000000 | 4131.000000 | 4422.000000 | 2509.000000  
+75% | 11776.500000 | 5651.000000 | 6193.500000 | 3776.000000  
+max | 15906.000000 | 9373.000000 | 7413.000000 | 4741.000000
 
-Statistic| InterConferenceGames | TournamentGames | TournamentWins | WinPercentage 
---- | --- | --- | --- | --- 
-count |            51.000000    |    51.000000    |   51.000000   |   51.000000   
-mean  |          2865.411765    |    98.745098    |   49.372549   |   49.107843   
-std   |          1834.971806    |   148.593788    |   93.777601   |    7.179466   
-min   |            85.000000    |     0.000000    |    0.000000   |   29.850000   
-25%   |          1135.000000    |    27.000000    |    4.000000   |   45.100000   
-50%   |          3618.000000    |    47.000000    |   10.000000   |   48.670000   
-75%   |          4233.000000    |   103.000000    |   37.500000   |   54.250000   
-max   |          5943.000000    |   592.000000    |  389.000000   |   60.800000   
+| Statistic | InterConferenceGames | TournamentGames | TournamentWins | WinPercentage |
+| --------- | -------------------- | --------------- | -------------- | ------------- |
+| count     | 51.000000            | 51.000000       | 51.000000      | 51.000000     |
+| mean      | 2865.411765          | 98.745098       | 49.372549      | 49.107843     |
+| std       | 1834.971806          | 148.593788      | 93.777601      | 7.179466      |
+| min       | 85.000000            | 0.000000        | 0.000000       | 29.850000     |
+| 25%       | 1135.000000          | 27.000000       | 4.000000       | 45.100000     |
+| 50%       | 3618.000000          | 47.000000       | 10.000000      | 48.670000     |
+| 75%       | 4233.000000          | 103.000000      | 37.500000      | 54.250000     |
+| max       | 5943.000000          | 592.000000      | 389.000000     | 60.800000     |
 
-Statistic |  TournamentWinPercentage | IntraConfPercentage | NumSeasons
---- | --- | --- | ---
-count   |             48.000000      |      51.000000  | 51.000000   
-mean    |             34.551875      |      29.316863  | 26.058824   
-std     |             19.500014      |       4.853258  | 15.532433   
-min     |              0.000000      |      11.190000  |  1.000000   
-25%     |             18.712500      |      29.120000  | 11.500000   
-50%     |             33.580000      |      30.730000  | 30.000000   
-75%     |             50.950000      |      32.330000  | 41.000000   
-max     |             66.670000      |      34.620000  | 41.000000   
+| Statistic | TournamentWinPercentage | IntraConfPercentage | NumSeasons |
+| --------- | ----------------------- | ------------------- | ---------- |
+| count     | 48.000000               | 51.000000           | 51.000000  |
+| mean      | 34.551875               | 29.316863           | 26.058824  |
+| std       | 19.500014               | 4.853258            | 15.532433  |
+| min       | 0.000000                | 11.190000           | 1.000000   |
+| 25%       | 18.712500               | 29.120000           | 11.500000  |
+| 50%       | 33.580000               | 30.730000           | 30.000000  |
+| 75%       | 50.950000               | 32.330000           | 41.000000  |
+| max       | 66.670000               | 34.620000           | 41.000000  |
 
-Statistic  |     AvgGamesPerSeason 
---- | --- 
-count     |     51.000000  
-mean      |    272.038824  
-std       |     66.332431  
-min       |   100.500000  
-25%       |   226.810000  
-50%       |    279.120000  
-75%       |    297.565000  
-max       |    389.230000  
+| Statistic | AvgGamesPerSeason |
+| --------- | ----------------- |
+| count     | 51.000000         |
+| mean      | 272.038824        |
+| std       | 66.332431         |
+| min       | 100.500000        |
+| 25%       | 226.810000        |
+| 50%       | 279.120000        |
+| 75%       | 297.565000        |
+| max       | 389.230000        |
 
 **Top 10 Conferences by Games Played:**
-Conference   |  Description | GamesPlayed | Wins | Losses
---- | --- | --- | --- | --- 
-19  |           Southeastern Conference    |    15906 | 9373  |  6533   
-31  |            Atlantic 10 Conference    |    15392 | 8202  |  7190   
-16  |               Big East Conference    |    15326 | 9152  |  6174   
-0   |                Big Ten Conference    |    15293 | 9080  |  6213   
-12  |         Atlantic Coast Conference    |    14869 | 9040  |  5829   
-24  |           Mid-American Conference    |    13501 | 6698  |  6803   
-18  |               Sun Belt Conference    |    12791 | 6226  |  6565   
-14  |        Missouri Valley Conference    |    12187 | 6350  |  5837   
-3   |   Mid-Eastern Athletic Conference    |    12157 | 4744  |  7413   
-25  |Metro Atlantic Athletic Conference    |    12051 | 5791  |  6260   
+Conference | Description | GamesPlayed | Wins | Losses
+--- | --- | --- | --- | ---
+19 | Southeastern Conference | 15906 | 9373 | 6533  
+31 | Atlantic 10 Conference | 15392 | 8202 | 7190  
+16 | Big East Conference | 15326 | 9152 | 6174  
+0 | Big Ten Conference | 15293 | 9080 | 6213  
+12 | Atlantic Coast Conference | 14869 | 9040 | 5829  
+24 | Mid-American Conference | 13501 | 6698 | 6803  
+18 | Sun Belt Conference | 12791 | 6226 | 6565  
+14 | Missouri Valley Conference | 12187 | 6350 | 5837  
+3 | Mid-Eastern Athletic Conference | 12157 | 4744 | 7413  
+25 |Metro Atlantic Athletic Conference | 12051 | 5791 | 6260
 
-Conference |    WinPercentage 
---- | ---
-19     |     58.93  
-31     |     53.29  
-16     |     59.72  
-0      |     59.37  
-12     |     60.80  
-24     |     49.61  
-18     |     48.67  
-14     |     52.10  
-3      |     39.02  
-25     |     48.05  
+| Conference | WinPercentage |
+| ---------- | ------------- |
+| 19         | 58.93         |
+| 31         | 53.29         |
+| 16         | 59.72         |
+| 0          | 59.37         |
+| 12         | 60.80         |
+| 24         | 49.61         |
+| 18         | 48.67         |
+| 14         | 52.10         |
+| 3          | 39.02         |
+| 25         | 48.05         |
 
 ### Dataset Version and Maintenance
 
 #### Maintenance Status
 
-<!-- scope: telescope -->
-<!-- info: Select **one:** -->
-
 Regularly Updated - New versions of the dataset have been or will continue to be made available.
 
-
 #### Version Details
-
-<!-- scope: periscope -->
-<!-- info: Provide details about **this** version of the dataset: -->
 
 **Current Version:** 1.0
 
@@ -307,56 +260,39 @@ Regularly Updated - New versions of the dataset have been or will continue to be
 
 #### Maintenance Plan
 
-<!-- scope: microscope -->
-<!-- info: Summarize the maintenance plan for the dataset:
+**Versioning:**
 
-Use additional notes to capture any other relevant information or
-considerations. -->
+-   Use semantic versioning
+-   Store and tag dataset versions using Github
 
-**Versioning:** 
-- Use semantic versioning
-- Store and tag dataset versions using Github
+**Updates:**
 
-**Updates:** 
-- Pre-tournament: load latest regular season and conference tournament games (early March).
+-   Pre-tournament: load latest regular season and conference tournament games (early March).
 
-**Errors:** 
-- Implement validation checks during ingestion:
+**Errors:**
 
-    - No missing values in key fields (e.g., team name, points, win/loss).
+-   Implement validation checks during ingestion:
 
-    - Score totals make sense (e.g., team points > 0).
+    -   No missing values in key fields (e.g., team name, points, win/loss).
 
-- Maintain an error log for issues found and corrected (manual or automatic).
+    -   Score totals make sense (e.g., team points > 0).
 
-- Add a "last_verified" timestamp or flag to records.
-  
-- If errors are found after a model is trained:
+-   Maintain an error log for issues found and corrected (manual or automatic).
 
-    - Flag the version as faulty (e.g., v1.1.0-buggy).
+-   Add a "last_verified" timestamp or flag to records.
+-   If errors are found after a model is trained:
 
-    - Retrain model with corrected data and note version linkage in results.
+    -   Flag the version as faulty (e.g., v1.1.0-buggy).
 
-
+    -   Retrain model with corrected data and note version linkage in results.
 
 #### Expected Change(s)
 
-<!-- scope: microscope -->
-<!-- info: Summarize the updates to the dataset and/or data that are expected
-on the next update.
-
-Use additional notes to capture any other relevant information or
-considerations. -->
-
 **Updates to Data/DataSet:** Updates expected during and towards the end of each college basketball season.
-
 
 ## Example of Data Points
 
 #### Primary Data Modality
-
-<!-- scope: telescope -->
-<!-- info: Select **one**: -->
 
 -   Image Data
 -   Text Data
@@ -372,46 +308,28 @@ considerations. -->
 
 #### Sampling of Data Points
 
-<!-- scope: periscope -->
-<!-- info: Provide link(s) to data points or exploratory demos: -->
+-   Tabular Data (majority of data sources)
 
+-   Geospatial Data (city metadata via Cities.csv)
 
-- Tabular Data (majority of data sources)
-
-- Geospatial Data (city metadata via Cities.csv)
-
-- Hierarchical Bracket Structure (via MNCAATourneySlots.csv)
+-   Hierarchical Bracket Structure (via MNCAATourneySlots.csv)
 
 #### Data Fields
 
-<!-- scope: microscope -->
-<!-- info: List the fields in data points and their descriptions.
-
-(Usage Note: Describe each field in a data point. Optionally use this to show
-the example.) -->
-
-Field Name | Field Value | Description
---- | --- | ---
-Season | 2024 | The year the NCAA season was played 
-DayNum | 135 | Day of the season 
-WTeamID | 1101 | ID of winning team
-LTeamID | 1345 | ID of losing team
-TeamName | Abilene Chr | Name of the team
-WScore | 91 | Winning Score
-LScore | 41 | Losing Score  
-CityID | 2154 | Unique ID for city where game was played 
-State | TX | State abbreviation 
-Ordinal Rank | 4 | Team's ranking in that system
-
+| Field Name   | Field Value | Description                              |
+| ------------ | ----------- | ---------------------------------------- |
+| Season       | 2024        | The year the NCAA season was played      |
+| DayNum       | 135         | Day of the season                        |
+| WTeamID      | 1101        | ID of winning team                       |
+| LTeamID      | 1345        | ID of losing team                        |
+| TeamName     | Abilene Chr | Name of the team                         |
+| WScore       | 91          | Winning Score                            |
+| LScore       | 41          | Losing Score                             |
+| CityID       | 2154        | Unique ID for city where game was played |
+| State        | TX          | State abbreviation                       |
+| Ordinal Rank | 4           | Team's ranking in that system            |
 
 #### Typical Data Point
-
-<!-- width: half -->
-<!-- info: Provide an example of a typical data point and describe what makes
-it typical.
-
-**Use additional notes to capture any other relevant information or
-considerations.** -->
 
 ```
 {'q_id': '8houtx',
@@ -427,16 +345,7 @@ considerations.** -->
   'answers_urls': {'url': []}}
 ```
 
-
 #### Atypical Data Point
-
-<!-- width: half -->
-<!-- info: Provide an example of an outlier data point and describe what makes
-it atypical.
-
-**Use additional notes to capture any other relevant information or
-considerations.** -->
-
 
 ```
 {'q_id': '8houtx',
@@ -458,48 +367,27 @@ considerations.** -->
 
 #### Purpose(s)
 
-<!-- scope: telescope -->
-<!-- info: Select **one**: -->
-- Production
+-   Production
 
 #### Domain(s) of Application
 
-<!-- scope: periscope -->
-<!-- info: Provide a list of key domains of application that the dataset has
-been designed for:<br><br>(Usage Note: Use comma-separated keywords.) -->
-
-`Machine Learning`
-
 #### Motivating Factor(s)
 
-<!-- scope: microscope -->
-<!-- info: List the primary motivations for creating or curating this dataset:
+-   Investigate how individual and team-level performance metrics influence outcomes in high-stakes games.
+-   Apply machine learning in a real-world sports analytics context.
+-   Help improve NCAA bracket selections by offering data-driven insights beyond public rankings.
+-   Practice building robust models with noisy data.
+-   Create models that help fans guide their picks for the March Madness bracket.
 
-(Usage Note: use this to describe the problem space and corresponding
-motivations for the dataset.) -->
-- Investigate how individual and team-level performance metrics influence outcomes in high-stakes games.
-- Apply machine learning in a real-world sports analytics context.
-- Help improve NCAA bracket selections by offering data-driven insights beyond public rankings.
-- Practice building robust models with noisy data.
-- Create models that help fans guide their picks for the March Madness bracket.
-
-The motivation for the dataset is to build predictive models for tournament outcomes and game scheduling. 
+The motivation for the dataset is to build predictive models for tournament outcomes and game scheduling.
 
 ### Intended Use
 
 #### Dataset Use(s)
 
-<!-- scope: telescope -->
-<!-- info: Select **one**: -->
-- Safe for production use
+-   Safe for production use
 
 #### Suitable Use Case(s)
-
-<!-- scope: periscope -->
-<!-- info: Summarize known suitable and intended use cases of this dataset.
-
-Use additional notes to capture any specific patterns that readers should
-look out for, or other relevant information or considerations. -->
 
 **Build a Predictive Model:** Train a machine learning model that predicts the outcome of tournament games using pre-game box score data, geography, public rankings,and supplements.
 
@@ -511,34 +399,17 @@ look out for, or other relevant information or considerations. -->
 
 #### Unsuitable Use Case(s)
 
-<!-- scope: microscope -->
-<!-- info: Summarize known unsuitable and unintended use cases of this dataset.
-
-Use additional notes to capture any specific patterns that readers should look
-out for, or other relevant information or considerations. -->
-
 **Predicting Individual Player Career Trajectories:** This dataset is not suitable for predicting long-term player development metrics or off-court factors like injuries, training regimens, or scouting reports.
 
-**Determing Player or Team Morale, Motivation,  or Chemistry:** Psychological or emotional factors cannot be determined by this dataset.
+**Determing Player or Team Morale, Motivation, or Chemistry:** Psychological or emotional factors cannot be determined by this dataset.
 
 **Predicting Point Spreads:** This dataset may be unsutiable for predicting point spreads or over/unders for precise betting.
 
 #### Research and Problem Space(s)
 
-<!-- scope: periscope -->
-<!-- info: Provide a description of the specific problem space that this
-dataset intends to address. -->
-
-This dataset intends to provide better bracket predicatability for March Madness, which is typically a very unpredictable tournament. 
+This dataset intends to provide better bracket predicatability for March Madness, which is typically a very unpredictable tournament.
 
 #### Citation Guidelines
-
-<!-- scope: microscope -->
-<!-- info: Provide guidelines and steps for citing this dataset in research
-and/or production.
-
-Use additional notes to capture any specific patterns that readers should look
-out for, or other relevant information or considerations. -->
 
 **BiBTeX:**
 
@@ -551,7 +422,6 @@ out for, or other relevant information or considerations. -->
   note = {Kaggle}
 }
 ```
-
 
 ## Access, Rentention, & Wipeout
 
@@ -613,59 +483,59 @@ This dataset complies with Kaggle's public data usage and retention policies. Si
 
 #### Sensitive Human Attribute(s)
 
-<!-- scope: telescope -->
-<!-- info: Select **all attributes** that are represented (directly or
-indirectly) in the dataset. -->
-
 -   Gender: Data sets are divided by gender.
 -   Geography: Locations of each team are given.
 
 ## Transformations
-1) Data Validation & Cleaning
-   - Missing vaule handling
-   - Duplicate Removal
-   - Value Validation
-2) Normalization (Min-Max Scaling)
-3) Feature Engineering
-   - Derived Metrics
-4) Bias & Fairness Checks
-   - Class Balance Verification
-   - Game Distribution Analysis
-   - Conference-Level Analysis
-5) Visualization (Diagnostic)
+
+1. Data Validation & Cleaning
+    - Missing vaule handling
+    - Duplicate Removal
+    - Value Validation
+2. Normalization (Min-Max Scaling)
+3. Feature Engineering
+    - Derived Metrics
+4. Bias & Fairness Checks
+    - Class Balance Verification
+    - Game Distribution Analysis
+    - Conference-Level Analysis
+5. Visualization (Diagnostic)
 
 ### Synopsis
 
 #### Transformation(s) Applied
+
 1. Handling Missing Values and Duplicates
-2.  Data Validation and Consistency Checks
-  - Season Validation
-  - Non-Negative Values
-  - Team ID Validation
-  - Region Validation
+2. Data Validation and Consistency Checks
+
+-   Season Validation
+-   Non-Negative Values
+-   Team ID Validation
+-   Region Validation
+
 3. Class Balance Verification
 4. Feature Distribution Analysis
 5. Normalization
-6. Outlier Removal 
+6. Outlier Removal
 
 #### Field(s) Transformed
 
-| Field Name              | Source & Target            |
-| ---------- | -----------------------------------------------------------------------|   
-| WScore     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
-| LScore     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1)
-| DayNum     | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
-| NumOT      | MRegularSeasonCompactResults.csv |Min-Max Normalized (values scaled 0–1) 
-| All fields | All CSVs in basics, team_box_scores|Empty strings/spaces replaced with NaN                      |
-|WTeamID     | All relevant results and seeds files| Validated against master teams list  
- 
+| Field Name | Source & Target                      |
+| ---------- | ------------------------------------ | -------------------------------------- |
+| WScore     | MRegularSeasonCompactResults.csv     | Min-Max Normalized (values scaled 0–1) |
+| LScore     | MRegularSeasonCompactResults.csv     | Min-Max Normalized (values scaled 0–1) |
+| DayNum     | MRegularSeasonCompactResults.csv     | Min-Max Normalized (values scaled 0–1) |
+| NumOT      | MRegularSeasonCompactResults.csv     | Min-Max Normalized (values scaled 0–1) |
+| All fields | All CSVs in basics, team_box_scores  | Empty strings/spaces replaced with NaN |
+| WTeamID    | All relevant results and seeds files | Validated against master teams list    |
 
 **Transformation Type**
 
-
 #### Library(ies) and Method(s) Used
 
-Example Code Snippets from the Notebook 
+<!-- Style Note: Refer to "The Jupyter Notebook used in this project" on first use. Use "the notebook" thereafter. -->
+
+Example Code Snippets from the The Jupyter Notebook used in this Project
 
 import pandas as pd
 import numpy as np
@@ -673,47 +543,49 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 
 # Replace empty strings/spaces with NaN
-df = df.replace(r'^\s*$', np.nan, regex=True)
+
+df = df.replace(r'^\s\*$', np.nan, regex=True)
 
 # Remove duplicates
+
 df = df.drop_duplicates()
 
 # Normalize selected columns
+
 scaler = MinMaxScaler()
-df[['WScore', 'LScore', 'DayNum', 'NumOT']] = scaler.fit_transform(df[['WScore', 'LScore', 'DayNum', 'NumOT']]) 
+df[['WScore', 'LScore', 'DayNum', 'NumOT']] = scaler.fit_transform(df[['WScore', 'LScore', 'DayNum', 'NumOT']])
 
-Transformation| Library/Method|Dataset/Field(s) Affected|
----------------------------------------------------------
-|Missing Value Handling| pandas replace| All loaded DataFrames 
-|Duplicate Removal|  pandas drop_duplicates| All loaded DataFrames 
-|Normalization | sklearn MinMaxScaler | WScore, LScore, DayNum, NumOT in regular season results 
-|Validation Checks |pandas isin, unique | Season, TeamID, Region columns 
-|Feature Distribution Plot | pandas/matplotlib hist | Score columns in regular season results 
+## Transformation| Library/Method|Dataset/Field(s) Affected|
 
-**Transformation Type** 
+|Missing Value Handling| pandas replace| All loaded DataFrames
+|Duplicate Removal| pandas drop_duplicates| All loaded DataFrames
+|Normalization | sklearn MinMaxScaler | WScore, LScore, DayNum, NumOT in regular season results
+|Validation Checks |pandas isin, unique | Season, TeamID, Region columns
+|Feature Distribution Plot | pandas/matplotlib hist | Score columns in regular season results
 
-**Platforms, tools, or libraries:** 
+**Transformation Type**
+
+**Platforms, tools, or libraries:**
 . Programming Language: Python
 
 . Libraries:
-  1) pandas
-  2) numpy
-  3) matplotlib
-  4) scikit-learn (sklearn)
-     
-. Platform: Google Colab     
 
+1. pandas
+2. numpy
+3. matplotlib
+4. scikit-learn (sklearn)
+
+. Platform: Google Colab
 
 **Transformation Results:**
 
 1. Handling Missing Values and Duplicates
-Outcome: The code identified that there were no missing values or duplicate rows in the datasets.
+   Outcome: The code identified that there were no missing values or duplicate rows in the datasets.
 
 Action Taken: No specific action was required since no missing or duplicate data was found.
 
-2. Data Validation 
-Outcome:
-The 'Season' column was validated to ensure all years were within the 1985-2025 range.
+2. Data Validation
+   Outcome: The 'Season' column was validated to ensure all years were within the 1985-2025 range.
 
 Columns like 'DayNum', 'WScore', and 'LScore' were confirmed to have no negative numbers.
 
@@ -724,7 +596,7 @@ Region names were validated.
 Action Taken: The validation confirmed that the data met the expected criteria, ensuring data consistency and integrity.
 
 3. Class Balance Check
-Outcome: The total number of wins and losses in both the men's and women's tournament results were equal.
+   Outcome: The total number of wins and losses in both the men's and women's tournament results were equal.
 
 Visualization:
 
@@ -735,79 +607,52 @@ Women's Tournament Results
 Action Taken: The classes (wins and losses) were balanced, which is good for model training.
 
 4. Feature Distributions
-Outcome: The distribution of winning and losing scores was visualized.
+   Outcome: The distribution of winning and losing scores was visualized.
 
 Visualization:
 
 Action Taken: The visualization confirmed that winning scores were generally higher than losing scores, as expected.
 
 5. Normalization
-Outcome: The 'WScore', 'LScore', 'DayNum', and 'NumOT' columns in the MRegularSeasonCompactResults.csv file were Min-Max normalized.
+   Outcome: The 'WScore', 'LScore', 'DayNum', and 'NumOT' columns in the MRegularSeasonCompactResults.csv file were Min-Max normalized.
 
-Action Taken: Normalization scaled the values of these columns to a range between 0 and 1. 
-
+Action Taken: Normalization scaled the values of these columns to a range between 0 and 1.
 
 ### Breakdown of Transformations
 
-<!-- info: Fill out relevant rows. --> 
-
-The notebook. does not mention or use transformers in the context of transormer models like NLP instead it focuses on data preparation and processing steps for NCAA basketball data 
+The notebook. does not mention or use transformers in the context of transormer models like NLP instead it focuses on data preparation and processing steps for NCAA basketball data
 
 #### Cleaning Missing Value(s)
 
-<!-- scope: telescope -->
-<!-- info: Which fields in the data were missing
-values? How many? --> 
-
-In the notebook , the initial data completeness check. revealed no missing vaules in any of the datasets therefore there are no fields with missing vaules to report  
-
-
+In the notebook, the initial data completeness check. revealed no missing vaules in any of the datasets therefore there are no fields with missing vaules to report
 
 #### Method(s) Used
 
-<!-- info: How were missing values cleaned?
-What other choices were considered? -->
-
-No missing vaules in the datasets 
-
+No missing vaules in the datasets
 
 #### Residual & Other Risk(s)
 
-<!-- info: What risks were introduced because of
-this transformation? Which risks were
-mitigated? --> 
+## Transformation | Risk Introduced | Risk Mitigated
 
-Transformation	     | Risk Introduced	          |  Risk Mitigated
--------------------------------------------------------------------------
 Min-Max Normalization |Potential loss of granularity due to data compression. | N/A
 Missing Value Handling |NA |Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
-Data Validation |	N/A	|Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
-Class Balance Check |	N/A  |Model bias due to unequal representation of wins and losses.
-Duplicate Removal |	N/A  |Skewed analysis and model training due to over-representation of duplicate data p
-
+Data Validation | N/A |Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
+Class Balance Check | N/A |Model bias due to unequal representation of wins and losses.
+Duplicate Removal | N/A |Skewed analysis and model training due to over-representation of duplicate data p
 
 #### Human Oversight Measure(s)
 
-<!-- info: What human oversight measures,
-including additional testing,
-investigations and approvals were
-taken due to this transformation? -->
+1. Review of Pre-ML Checklist: A review to ensure data completeness, accurate entries, gender representation bias, bias & fairness, privacy consideration and labeling consistency
 
-1) Review of Pre-ML Checklist: A review to ensure data completeness, accurate entries, gender representation bias, bias & fairness, privacy consideration and labeling consistency
+2. Data Validation: Implementation of specific checks like validate_season, check_non_negative, check_team_ids to confirm the integrity and correctness of the data
 
-2) Data Validation: Implementation of specific checks like validate_season, check_non_negative, check_team_ids to confirm the integrity and correctness of the data
+3. Manual Inspection of Unique Values: The unique values of region names were printed, implying a manual check for correctness and consistency.
 
-3) Manual Inspection of Unique Values: The unique values of region names were printed, implying a manual check for correctness and consistency.
-
-4) Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
+4. Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
 
 #### Cleaning Mismatched Value(s)
 
-
-<!-- info: Which fields in the data were corrected
-for mismatched values? -->
-
-Based on the Notebook , no fields were explicitly corrected for mismatched values. The focus was on validating data integrity by checking for:
+Based on the Notebook, no fields were explicitly corrected for mismatched values. The focus was on validating data integrity by checking for:
 
 Valid season ranges
 
@@ -817,67 +662,47 @@ Valid team IDs
 
 Valid region names
 
-If any of these checks had failed (which the output shows they did not), further investigation and correction would have been necessary. However, the  code and output do not show any instances where such corrections were applied 
+If any of these checks had failed (which the output shows they did not), further investigation and correction would have been necessary. However, the code and output do not show any instances where such corrections were applied
 
 #### Method(s) Used
 
-<!-- info: How were incorrect or mismatched
-values cleaned? What other choices
-were considered? -->
-In the NCAA data preparation workflow, the main focus was on identifying and validating possible incorrect or mismatched values rather than directly correcting them 
-steps to   summarize the cleaning process:
+In the NCAA data preparation workflow, the main focus was on identifying and validating possible incorrect or mismatched values rather than directly correcting them
+steps to summarize the cleaning process:
 Validation Checks:
 Action Taken:
-Manual Correction (if needed):  
+Manual Correction (if needed):
 
 Example from Related Basketball Data Cleaning
 For example, in a similar basketball dataset, mismatched team names across sources were resolved by mapping different notations (e.g., "UNC" vs. "Carolina") to a standardized team name, often requiring manual review or a mapping table
 
-
 #### Comparative Summary
 
-<!-- info: Why were incorrect or mismatched
-values cleaned using this method (over
-others)? Provide a comparative
-analysis demonstrating before and
-after values were cleaned. --> 
-
 Scenario: Invalid Team ID (TeamID = 9999)
-Before Cleaning: 
+Before Cleaning:
+
 # Original data
+
 results_df = pd.DataFrame({
-    'WTeamID': [1104, 9999],  # 9999 is invalid
-    'LTeamID': [1234, 5678]
+'WTeamID': [1104, 9999], # 9999 is invalid
+'LTeamID': [1234, 5678]
 })
 After Cleaning:
 
 Method Used: Validation check (check_team_ids) flags invalid IDs but does not auto-correct.
 
-Outcome: Row remains unchanged. Requires manual investigation (e.g., cross-referencing historical data to identify the correct team). 
-
-
+Outcome: Row remains unchanged. Requires manual investigation (e.g., cross-referencing historical data to identify the correct team).
 
 #### Residual & Other Risk(s)
 
-<!-- info: What risks were introduced because of
-this transformation? Which risks were
-mitigated? -->
+## Transformation Risk Introduced Risk Mitigated
 
-
-Transformation  	     Risk Introduced	                                 Risk Mitigated
----------------------------------------------------------------------------------------------------
-Min-Max Normalization	| Potential loss of granularity due to data compression.	|N/A
-Missing Value Handling	| N/A	 |Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
-Data Validation	 |N/A	 |Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
-Class Balance Check	|N/A	|Model bias due to unequal representation of wins and losses.
-Duplicate Removal	|N/A	|Skewed analysis and model training due to over-representation of duplicate data points. 
+Min-Max Normalization | Potential loss of granularity due to data compression. |N/A
+Missing Value Handling | N/A |Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
+Data Validation |N/A |Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
+Class Balance Check |N/A |Model bias due to unequal representation of wins and losses.
+Duplicate Removal |N/A |Skewed analysis and model training due to over-representation of duplicate data points.
 
 #### Human Oversight Measure(s)
-
-<!-- info: What human oversight measures,
-including additional testing,
-investigations and approvals were
-taken due to this transformation? -->
 
 Review of Pre-ML Checklist: A review to ensure data completeness, accurate entries, gender representation bias, bias & fairness, privacy consideration and labeling consistency
 
@@ -887,16 +712,9 @@ Manual Inspection of Unique Values: The unique values of region names were print
 
 Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
 
-The document does not explicitly mention formal approvals or sign-off procedures. 
-
+The document does not explicitly mention formal approvals or sign-off procedures.
 
 #### Anomalies
-
-<!-- info: How many anomalies or outliers were
-detected?
-If at all, how were detected anomalies
-or outliers handled?
-Why or why not? --> 
 
 Number of Anomalies/Outliers Detected: According to the "Review of PreML Checklist," the data has a normal distribution with no outliers in points. The code does not implement any specific outlier detection methods.
 
@@ -904,11 +722,7 @@ Handling of Anomalies/Outliers: Since no outliers were detected, no specific out
 
 Reasoning: The absence of detected outliers meant that no specific outlier treatment was necessary. The data was considered to be normally distributed, which is acceptable for further analysis without outlier manipulation.
 
-
 #### Method(s) Used
-
-<!-- info: What methods were used to detect
-anomalies or outliers? -->
 
 Review of Pre-ML Checklist: This review stated that the data has a normal distribution with no outliers in points. This suggests a prior assessment, though the specific methods used for this assessment are not detailed in the provided document.
 
@@ -922,10 +736,9 @@ Non-negative values: Checks that columns such as 'DayNum', 'WScore', and 'LScore
 
 Valid team IDs: Verifies that all team IDs in results and seeds files exist in the master teams list for both men's and women's datasets.
 
-Valid region names: Confirms that region names in the season files are within expected values, listing unique entries for review. 
+Valid region names: Confirms that region names in the season files are within expected values, listing unique entries for review.
 
-
-**Platforms, tools, or libraries** 
+**Platforms, tools, or libraries**
 Platforms:
 
 Google Colab
@@ -944,37 +757,21 @@ matplotlib: For visualizing data distributions (histograms).
 
 scikit-learn (sklearn): MinMaxScaler was used, but there were no functions explicitly used for outlier detection.
 
-
 #### Comparative Summary
 
-<!-- info: Provide a comparative analysis
-demonstrating before and after
-anomaly handling measures. -->
-
-Based on the notbook, no explicit outlier handling measures were taken. The "Review of PreML Checklist" stated, "Data is a normal distribution with no outliers in points." Therefore, there's no "before and after" comparison to present. 
-
+Based on the notbook, no explicit outlier handling measures were taken. The "Review of PreML Checklist" stated, "Data is a normal distribution with no outliers in points." Therefore, there's no "before and after" comparison to present.
 
 #### Residual & Other Risk(s)
 
-<!-- info: What risks were introduced because of
-this transformation? Which risks were
-mitigated? -->
+## Transformation Risk Introduced Risk Mitigated
 
-Transformation           	Risk Introduced                         	Risk Mitigated
-------------------------------------------------------------------------------------------------
-Min-Max Normalization	   |Potential loss of granularity due to data compression.  | N/A
-Missing Value Handling	|N/A	|Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
-Data Validation	|N/A	|Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
-Class Balance Check	|N/A	|Model bias due to unequal representation of wins and losses.
-Duplicate Removal	|N/A	|Skewed analysis and model training due to over-representation of duplicate data points.
-
+Min-Max Normalization |Potential loss of granularity due to data compression. | N/A
+Missing Value Handling |N/A |Inconsistent data format due to empty strings/spaces, leading to potential misinterpretation or errors.
+Data Validation |N/A |Data integrity issues due to invalid season years, negative scores, invalid team IDs, and inconsistent region names.
+Class Balance Check |N/A |Model bias due to unequal representation of wins and losses.
+Duplicate Removal |N/A |Skewed analysis and model training due to over-representation of duplicate data points.
 
 #### Human Oversight Measure(s)
-
-<!-- info: What human oversight measures,
-including additional testing,
-investigations and approvals were
-taken due to this transformation? -->
 
 Review of Pre-ML Checklist: A review to ensure data completeness, accurate entries, gender representation bias, bias & fairness, privacy consideration and labeling consistency
 
@@ -984,61 +781,30 @@ Manual Inspection of Unique Values: The unique values of region names were print
 
 Visual Inspection: Visualization of the distribution of winning and losing scores via histograms.
 
-
-
 #### Dimensionality Reduction
-
-<!-- info: How many original features were
-collected and how many dimensions
-were reduced? -->
 
 The Notebook focuses on data completeness, validation, and preprocessing. The number of original features collected and the dimensions reduced are not mentioned. To find this information, review the original dataset documentation on Kaggle, linked in the document.
 
-
 #### Method(s) Used
 
-<!-- info: What methods were used to reduce the
-dimensionality of the data? What other
-choices were considered? -->
+The Notebook does not mention the specific methods used to reduce the dimensionality of the data or alternative choices that were considered.
 
-The Notebook  does not mention the specific methods used to reduce the dimensionality of the data or alternative choices that were considered.
-
-
-**Platforms, tools, or libraries** 
-NA 
+**Platforms, tools, or libraries**
+NA
 
 #### Comparative Summary
 
-<!-- info: Why were features reduced using this
-method (over others)? Provide
-comparative charts showing before
-and after dimensionality reduction
-processes. -->
-
-The Notebook does not discuss why specific dimensionality reduction methods were chosen over others, nor does it include comparative charts showing the before-and-after effects of dimensionality reduction processes. 
-
+The Notebook does not discuss why specific dimensionality reduction methods were chosen over others, nor does it include comparative charts showing the before-and-after effects of dimensionality reduction processes.
 
 #### Residual & Other Risks
 
-<!-- info: What risks were introduced because of
-this transformation? Which risks were
-mitigated? -->
-
-The Notebook  focuses on data completeness, validation, and preprocessing steps such as handling missing values, checking for data inconsistencies (e.g., negative scores or invalid team IDs), and normalization. It does not explicitly discuss risks introduced or mitigated due to specific data transformations
+The Notebook focuses on data completeness, validation, and preprocessing steps such as handling missing values, checking for data inconsistencies (e.g., negative scores or invalid team IDs), and normalization. It does not explicitly discuss risks introduced or mitigated due to specific data transformations
 
 #### Human Oversight Measure(s)
 
-<!-- info: What human oversight measures,
-including additional testing,
-investigations and approvals were
-taken due to this transformation? -->
-
 The Notebook does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
- 
 
 #### Joining Input Sources
-
-<!-- info: What were the distinct input sources that were joined? -->
 
 The distinct input sources joined in this project are multiple CSV files, each containing specific aspects of the NCAA Men's and Women's Basketball Tournaments history and structure. These files are located in the following directories:
 
@@ -1050,14 +816,11 @@ geography_dir_path
 
 public_rankings_dir_path
 
-supplements_dir_path  
-
+supplements_dir_path
 
 #### Method(s) Used
 
-<!-- info: What are the shared columns of fields used to join these
-sources? -->
-The shared columns or fields used to join the data sources are not explicitly mentioned in the Notebook . 
+The shared columns or fields used to join the data sources are not explicitly mentioned in the Notebook .
 
 **Platforms, tools, or libraries**
 
@@ -1075,49 +838,21 @@ Kaggle: As the source for downloading the dataset.
 
 Google Colab: As the platform for running the notebook.
 
-
 #### Comparative Summary
 
-<!-- info: Why were features joined using this
-method over others? 
-
-The notebook  does not contain information on why specific feature joining methods were chosen over others. Additionally, there are no comparative charts that illustrate before-and-after states for dimensionality reduction processes.
-
-
-#### Residual & Other Risk(s)
-
-<!-- info: What risks were introduced because of
-this transformation? Which risks were
-mitigated? -->
-The notebook  does not specify additional risks introduced or mitigated.
-
-
+The notebook does not specify additional risks introduced or mitigated.
 
 #### Human Oversight Measure(s)
 
-<!-- info: What human oversight measures,
-including additional testing,
-investigations and approvals were
-taken due to this transformation? -->
-
-The notebook  does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
-
+The notebook does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
 
 #### Redaction or Anonymization
 
-<!-- info: Which features were redacted or
-anonymized? -->
-
-The notebook  indicates "Privacy Consideration: None," suggesting that no features were redacted or anonymized in this dataset.
-
+The notebook indicates "Privacy Consideration: None," suggesting that no features were redacted or anonymized in this dataset.
 
 #### Method(s) Used
 
-<!-- info: What methods were used to redact or
-anonymize data? -->
-
-The notebook  indicates "Privacy Consideration: None," and therefore does not mention any methods used to redact or anonymize data.
-
+The notebook indicates "Privacy Consideration: None," and therefore does not mention any methods used to redact or anonymize data.
 
 **Platforms, tools, or libraries**
 Google Colab: Platform for running the notebook.
@@ -1134,51 +869,29 @@ matplotlib.pyplot: For data visualization.
 
 sklearn.preprocessing.MinMaxScaler: For feature normalization.
 
-
 #### Comparative Summary
 
-<!-- info: Why was data redacted or anonymized
-using this method over others? Provide
-comparative charts showing before
-and after redaction or anonymization
-process. -->
-
-The Notebook  states, "Privacy Consideration: None," meaning no data was redacted or anonymized. Therefore, there were no methods used for this purpose, and no comparative charts exis
-
+The Notebook states, "Privacy Consideration: None," meaning no data was redacted or anonymized. Therefore, there were no methods used for this purpose, and no comparative charts exis
 
 #### Residual & Other Risk(s)
-
-<!-- info: What risks were introduced because of
-this transformation? Which risks were
-mitigated? -->
 
 Based on the Notebook:
 
 **Risks Introduced:**
 
-*   Normalization**: The document mentions that normalization was applied to the 'WScore', 'LScore', 'DayNum', and 'NumOT' columns using `MinMaxScaler`. It suggests that a potential risk introduced by normalization is altering the original data distribution, which could affect the performance of certain algorithms sensitive to feature scaling.
+-   Normalization\*\*: The document mentions that normalization was applied to the 'WScore', 'LScore', 'DayNum', and 'NumOT' columns using `MinMaxScaler`. It suggests that a potential risk introduced by normalization is altering the original data distribution, which could affect the performance of certain algorithms sensitive to feature scaling.
 
 **Risks Mitigated:**
 
-*   Missing Values**: The initial data completeness check found no missing values, thus mitigating risks associated with imputing or removing missing data.
-*   Data Validation**: Validation steps were performed to check for negative scores, invalid team IDs, and season ranges, mitigating the risk of using incorrect or invalid data in the analysis.
-*   
+-   Missing Values\*\*: The initial data completeness check found no missing values, thus mitigating risks associated with imputing or removing missing data.
+-   Data Validation\*\*: Validation steps were performed to check for negative scores, invalid team IDs, and season ranges, mitigating the risk of using incorrect or invalid data in the analysis.
+-
 
 #### Human Oversight Measure(s)
 
-<!-- info: What human oversight measures,
-including additional testing,
-investigations and approvals were
-taken due to this transformation? -->
-
-The Notebook does not include specific details on human oversight measures, additional testing, investigations, or approvals related to data transformations. 
-
+The Notebook does not include specific details on human oversight measures, additional testing, investigations, or approvals related to data transformations.
 
 #### Additional Considerations
-
-
-<!-- info: What additional considerations were
-made? -->
 
 Gender Representation Bias: The data for women's basketball starts from 1988, while the data for men's basketball starts from 1985.
 
@@ -1188,13 +901,9 @@ Labeling Consistency: Labels remain consistent from men's to women's data and ma
 
 Class Balance: Ensuring an equal number of wins and losses.
 
-Data Validation: Checking for negative scores, invalid team IDs and valid seasons. 
-
+Data Validation: Checking for negative scores, invalid team IDs and valid seasons.
 
 #### Others (Please Specify)
-
-<!-- info: What was done? Which features or
-fields were affected? -->
 
 Handling Missing Data: The code checked for missing values in all CSV files within the specified directories using df.isnull().sum(). No missing values were found.
 
@@ -1226,11 +935,7 @@ The features/fields affected were:
 
 'WScore', 'LScore', 'DayNum', 'NumOT' (normalized using MinMaxScaler) in the MRegularSeasonCompactResults.csv file.
 
-
 #### Method(s) Used
-
-
-<!-- info: What method were used? -->
 
 Checking for Missing Values: pandas' isnull().sum() was used to find the number of missing values in each column of the dataframes.
 
@@ -1245,7 +950,6 @@ Checking 'TeamID' columns against a list of valid team IDs.
 Class Balance Check: Counting the number of wins and losses to ensure they are balanced.
 
 Normalization: MinMaxScaler from scikit-learn was used to normalize the 'WScore', 'LScore', 'DayNum', and 'NumOT' columns in the MRegularSeasonCompactResults.csv file.
-
 
 **Platforms, tools, or libraries**
 Platform: Google Colab
@@ -1266,12 +970,7 @@ Data Source: Kaggle
 
 #### Comparative Summary
 
-<!-- info: Why was this method used over
-others? Provide comparative charts
-showing before and after this
-transformation. -->
-
-The Notebook  states that MinMaxScaler from scikit-learn was used to normalize the columns 'WScore', 'LScore', 'DayNum', and 'NumOT' in the MRegularSeasonCompactResults.csv file.
+The Notebook states that MinMaxScaler from scikit-learn was used to normalize the columns 'WScore', 'LScore', 'DayNum', and 'NumOT' in the MRegularSeasonCompactResults.csv file.
 
 Why this method?
 
@@ -1279,16 +978,11 @@ The document does not explicitly state why MinMaxScaler was chosen over other sc
 
 Comparative charts:
 
-The document does not include comparative charts showing the before and after states of the normalization process. However, the code to print the first few rows of the normalized columns is included, which would allow the user to inspect the normalized values directly. 
+The document does not include comparative charts showing the before and after states of the normalization process. However, the code to print the first few rows of the normalized columns is included, which would allow the user to inspect the normalized values directly.
 
 print(df_m_reg[['WScore', 'LScore', 'DayNum', 'NumOT']].head())
 
-
 #### Residual & Other Risk(s)
-
-<!-- info: What risks were introduced because of
-this transformation? Which risks were
-mitigated? -->
 
 Risks Introduced:
 
@@ -1300,22 +994,13 @@ Missing Values: The initial data completeness check found no missing values, thu
 
 Data Validation: Validation steps were performed to check for negative scores, invalid team IDs, and season ranges, mitigating the risk of using incorrect or invalid data in the analysis.
 
-Class Imbalance: Checking for an equal number of wins and losses ensures no class imbalance, and this mitigates risks associated with biased models. 
-
+Class Imbalance: Checking for an equal number of wins and losses ensures no class imbalance, and this mitigates risks associated with biased models.
 
 #### Human Oversight Measure(s)
 
-<!-- info: What human oversight measures,
-including additional testing,
-investigations and approvals were
-taken due to this transformation? -->
-
 The Notebook does not contain information regarding specific human oversight measures, additional testing, investigations, or approvals taken due to data transformation.
 
-
 #### Additional Considerations
-
-<!-- info: What additional considerations were made? -->
 
 Gender Representation Bias: The dataset contains data for women's basketball starting from 1988, whereas men's basketball data starts from 1985.
 
@@ -1327,17 +1012,9 @@ Class Balance: Ensuring an equal number of wins and losses in the dataset.
 
 Data Validation: Checking for negative scores, invalid team IDs, and valid seasons.
 
-
-
 ## Validation Types
 
-<!-- info: Fill this section if the data in the dataset was validated during
-or after the creation of your dataset. -->
-
 #### Method(s)
-
-<!-- scope: telescope -->
-<!-- info: Select **all applicable**: -->
 
 -   Data Type Validation
 -   Range and Constraint Validation
@@ -1345,16 +1022,6 @@ or after the creation of your dataset. -->
 -   Consistency Validation
 
 #### Breakdown(s)
-
-<!-- scope: periscope -->
-<!-- info: Provide a description of the fields and data
-points that were validated.
-
-Use additional notes to capture any other
-relevant information or considerations.
-
-(Usage Note: Duplicate and complete the
-following for each validator type.) -->
 
 **Range and Constraint Validation**
 
@@ -1368,7 +1035,7 @@ DayNum | 80,000
 WScore | 80,000
 LScore | 80,000
 
-**Above:** Checked that seasons were within the range 1985-2025, and that numeric fields like scores and game days were non-negative
+**Above:** Checked that seasons were within the range 1985-2025, and that numeric fields like scores and game days were non-negative.
 
 **Code / Cross-reference Validation**
 
@@ -1398,16 +1065,6 @@ RegionZ | 2,000
 **Above:** Retrieved unique values for NCAA® tournament regions across seasons. Verified that these are consistent with expected names and historical region naming conventions.
 
 #### Description(s)
-
-<!-- scope: microscope -->
-<!-- info: Provide a description of the methods used to
-validate the dataset.
-
-Use additional notes to capture any other
-relevant information or considerations.
-
-(Usage Note: Duplicate and complete the
-following for each validator type.) -->
 
 **Range and Constraint Validation**
 
@@ -1498,23 +1155,17 @@ following for each validator type.) -->
 **Source**: [Wikipedia - Brier Score](https://en.wikipedia.org/wiki/Brier_score)  
 **Interpretation**: In this competition, the Brier Score evaluates how close your predicted win probabilities are to the actual game results. A lower Brier Score indicates better performance.
 
----
-
 #### Term of Art: Seed
 
 **Definition**: A number assigned to each team in a tournament to represent its ranking or expected performance. Lower seed numbers indicate higher-ranked teams.  
 **Source**: [NCAA - March Madness Seeding](https://www.ncaa.com/news/basketball-men/bracketiq/2025-01-22/what-march-madness-ncaa-tournament-explained)  
 **Interpretation**: Seeds are used as a predictive feature in our model, often in the form of "Seed Difference" between two teams in a matchup.
 
----
-
 #### Term of Art: Feature Engineering
 
 **Definition**: The process of using domain knowledge to create additional input variables (features) that make machine learning algorithms work better.  
 **Source**: [Wikipedia - Feature Engineering](https://en.wikipedia.org/wiki/Feature_engineering)  
 **Interpretation**: We created features such as win/loss ratios, scoring margin, and seed differences to improve model accuracy.
-
----
 
 #### Term of Art: Matchup
 
