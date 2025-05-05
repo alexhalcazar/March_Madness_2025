@@ -709,7 +709,8 @@ def train_model(gender):
             'avg_points_against': f'Team{i}_avg_points_against',
             'win_pct': f'Team{i}_win_pct',
             'Seed': f'Team{i}_Seed'
-        }).drop(columns=['TeamID'])
+        }).drop(columns=['TeamID_x', 'TeamID_y'])
+
 
     # Randomize order of teams to avoid label bias
     np.random.seed(42)
@@ -769,7 +770,7 @@ def create_features_and_predict(matchups, team_stats, seeds_df, model, scaler):
             'avg_points_against': f'Team{i}_avg_points_against',
             'win_pct': f'Team{i}_win_pct',
             'Seed': f'Team{i}_Seed'
-        }).drop(columns=['TeamID'])
+        }).drop(columns=['TeamID_x', 'TeamID_y'])
 
     features = matchups[[
         'Team1_avg_points_for', 'Team1_avg_points_against', 'Team1_win_pct', 'Team1_Seed',
