@@ -4,3 +4,4 @@
 .venv
 # ignore all data files
 data/
+submission.csv
