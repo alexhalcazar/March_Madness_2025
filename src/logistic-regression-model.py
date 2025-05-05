@@ -17,11 +17,11 @@ from sklearn.metrics import accuracy_score
 
 # import the data
 current_dir = os.getcwd()
-basics_dir_path = os.path.join(current_dir, 'data', 'section_1_basics')
-team_box_scores_dir_path = os.path.join(current_dir, 'data', 'section_2_team_box_scores')
-geography_dir_path = os.path.join(current_dir, 'data', 'section_3_geography')
-public_rankings_dir_path = os.path.join(current_dir, 'data', 'section_4_public_rankings')
-supplements_dir_path = os.path.join(current_dir,'data', 'section_5_supplements')
+basics_dir_path = os.path.join(current_dir, '..', 'data', 'section_1_basics')
+team_box_scores_dir_path = os.path.join(current_dir, '..', 'data', 'section_2_team_box_scores')
+geography_dir_path = os.path.join(current_dir, '..', 'data','section_3_geography')
+public_rankings_dir_path = os.path.join(current_dir, '..','data', 'section_4_public_rankings')
+supplements_dir_path = os.path.join(current_dir, '..', 'data', 'section_5_supplements')
 
 # %%
 dfs = {}
