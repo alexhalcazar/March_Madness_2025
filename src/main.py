@@ -209,7 +209,7 @@ def analyze_team_games(season_range=None):
     DataFrame with team game counts and win/loss statistics
     """
     # Define file paths
-    basics_dir_path = os.path.join(os.getcwd(), 'data', 'section_1_basics')
+    basics_dir_path = os.path.join(os.getcwd(), '..', 'data', 'section_1_basics')
     
     # Load team information
     teams_file = os.path.join(basics_dir_path, 'MTeams.csv')
@@ -416,8 +416,8 @@ def conference_analysis(season_range=None):
     DataFrame with conference statistics
     """
     # Define file paths
-    basics_dir_path = os.path.join(os.getcwd(), 'data', 'section_1_basics')
-    supplements_dir_path = os.path.join(os.getcwd(), 'data', 'section_5_supplements')
+    basics_dir_path = os.path.join(os.getcwd(), '..','data', 'section_1_basics')
+    supplements_dir_path = os.path.join(os.getcwd(), '..', 'data', 'section_5_supplements')
     
     # Load team information
     teams_file = os.path.join(basics_dir_path, 'MTeams.csv')
