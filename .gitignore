@@ -5,3 +5,5 @@
 # ignore all data files
 data/
 submission.csv
+
+*/__pycache__

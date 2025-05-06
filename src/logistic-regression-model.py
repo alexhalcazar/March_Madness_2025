@@ -5,7 +5,6 @@
 
 # %%
 import pandas as pd
-import os
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -14,29 +13,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-
-# import the data
-current_dir = os.getcwd()
-basics_dir_path = os.path.join(current_dir, '..', 'data', 'section_1_basics')
-team_box_scores_dir_path = os.path.join(current_dir, '..', 'data', 'section_2_team_box_scores')
-geography_dir_path = os.path.join(current_dir, '..', 'data', 'section_3_geography')
-public_rankings_dir_path = os.path.join(current_dir, '..', 'data', 'section_4_public_rankings')
-supplements_dir_path = os.path.join(current_dir, '..','data', 'section_5_supplements')
-
-# %%
-dfs = {}
-for path in [basics_dir_path, team_box_scores_dir_path, geography_dir_path, public_rankings_dir_path, supplements_dir_path]:
-  for filename in os.listdir(path):
-    if filename.endswith(".csv"):
-      filepath = os.path.join(path, filename)
-      df_name = filename[:-4]  # Remove the .csv extension
-      dfs[df_name] = pd.read_csv(filepath)
-dfs.keys()
-
+from utils.data_loader import load_all_data_frames
 # %% [markdown]
 # ## 2. For this model we are going to use the data from `MRegularSeasonCompactResults.csv`
 
 # %%
+dfs = load_all_data_frames()
 games = dfs['MRegularSeasonCompactResults']
 games
 
