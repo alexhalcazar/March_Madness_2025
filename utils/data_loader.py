@@ -23,3 +23,7 @@ def load_all_data_frames():
     dfs.keys()
 
     return dfs
+
+def get_basic_directory_path():
+     return os.path.join(os.path.dirname(__file__),'..','data','section_1_basics')
+     
