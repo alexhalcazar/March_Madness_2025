@@ -8,6 +8,7 @@ from utils.data_cleaner import inspect_and_clean_data
 from utils.data_validation import *
 from utils.bias_analysis import *
 from models.logistic_regression_model_alt import create_submission
+from models.logreg_margOfVict_Rank import run_model
 # import the data
 dfs = load_all_data_frames()
 # handle missing data
@@ -175,4 +176,9 @@ print(conf_stats.nlargest(10, 'GamesPlayed')[['Description', 'GamesPlayed', 'Win
 # Visualize conference analysis
 visualize_conference_analysis(conf_stats)
 
-team_stats, conf_stats
+
+# team_stats, conf_stats
+
+#### Run logistic regression model with features including team stats, margin of victory, ordinal rankings ####
+#### and print accuracy score ####
+run_model(dfs)
