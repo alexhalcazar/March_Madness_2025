@@ -28,7 +28,7 @@ def run_model(dfs):
     y = matchups['Team1Won']
 
     # Train/Test Split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 
     # Scale the features
     scaler = StandardScaler()
@@ -42,7 +42,7 @@ def run_model(dfs):
     # Evaluate the model
     y_pred = model.predict(X_test_scaled)
     accuracy = accuracy_score(y_test, y_pred)
-    print(f"Model Accuracy with team stats, margin of victory and ordinal rankings: {accuracy:.3f}")
+    print(f"Model Accuracy with team stats, margin of victory and ordinal rankings: {accuracy:.4f}")
 
 
 
@@ -113,6 +113,9 @@ def generate_matchups(games, team_stats, dfs):
     # add ordinal rankings to matchups
     matchups = merge_rankings(matchups, dfs)
 
+    # add seed data to matchups
+    # matchups = merge_seed_data(matchups, dfs)
+
     return matchups
 
 def merge_rankings(matchups, dfs):
@@ -145,5 +148,25 @@ def merge_rankings(matchups, dfs):
     matchups['Team1RankDiffAbs'] = matchups['Team1RankDiff'].abs()
     matchups['Team1RankDiffPct'] = matchups['Team1RankDiff'] / matchups['Team2Rank']
     matchups['Team1RankDiffPctAbs'] = matchups['Team1RankDiffPct'].abs()
+
+    return matchups
+
+def merge_seed_data(matchups, dfs):
+    # add seed data to matchups
+    # generate matchups with seed data
+    seeds = dfs['MNCAATourneySeeds']
+    seeds['SeedNum'] = seeds['Seed'].str.extract('(\\d+)').astype(int)
+
+    # Team1 seed
+    matchups = matchups.merge(seeds[['Season', 'TeamID', 'SeedNum']], left_on=['Season', 'Team1ID'], right_on=['Season', 'TeamID'], how='left')
+    matchups = matchups.rename(columns={'SeedNum': 'Team1Seed'}).drop(columns=['TeamID'])
+
+    # Team2 seed
+    matchups = matchups.merge(seeds[['Season', 'TeamID', 'SeedNum']], left_on=['Season', 'Team2ID'], right_on=['Season', 'TeamID'], how='left')
+    matchups = matchups.rename(columns={'SeedNum': 'Team2Seed'}).drop(columns=['TeamID'])
+
+    # Fill missing seeds with 17 (meaning worse than 16-seed)
+    matchups.fillna({'Team1Seed': 17, 'Team2Seed': 17}, inplace=True)
+
 
     return matchups
