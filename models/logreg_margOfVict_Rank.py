@@ -18,12 +18,23 @@ def run_model(dfs):
     # generate matchups for the model
     matchups = generate_matchups(games, team_stats, dfs)
 
+    # load coaches data
+    coaches = dfs['MTeamCoaches']
+
+    #merge coach data with matchups 
+    matchups = merge_coach_data(matchups, coaches)
+
+    # calculate coach win rates 
+    matchups = calculate_coach_win_rates(matchups)
+
+
+
     # build feature matrix and labels 
     feature_cols = [
-        'Team1_avg_points_for', 'Team1_avg_points_against', 'Team1_win_pct', 'Team1_avg_margin_of_victory',
-        'Team2_avg_points_for', 'Team2_avg_points_against', 'Team2_win_pct', 'Team2_avg_margin_of_victory',
-        'Team1Rank', 'Team2Rank', 'Team1RankDiff', 'Team1RankDiffAbs', 'Team1RankDiffPct', 'Team1RankDiffPctAbs'
-    ]
+    'Team1_avg_points_for', 'Team1_avg_points_against', 'Team1_win_pct', 
+    'Team2_avg_points_for', 'Team2_avg_points_against', 'Team2_win_pct', 
+    'Team1Rank', 'Team2Rank', 'Team1RankDiff', 'Team1RankDiffAbs', 'Team1RankDiffPct', 'Team1RankDiffPctAbs',
+    'Team1CoachWinRate', 'Team2CoachWinRate']
     X = matchups[feature_cols]
     y = matchups['Team1Won']
 
@@ -42,7 +53,7 @@ def run_model(dfs):
     # Evaluate the model
     y_pred = model.predict(X_test_scaled)
     accuracy = accuracy_score(y_test, y_pred)
-    print(f"Model Accuracy with team stats, margin of victory and ordinal rankings: {accuracy:.4f}")
+    print(f"Model Accuracy with team stats, margin of victory, ordinal rankings, and coach win percentage: {accuracy:.4f}")
 
 
 
@@ -73,7 +84,7 @@ def build_team_stats(df):
 
 def generate_matchups(games, team_stats, dfs):
     # Create labeled matchup data from real games
-    matchups = games[['Season', 'WTeamID', 'LTeamID']].copy()
+    matchups = games[['Season', 'WTeamID', 'LTeamID', 'DayNum']].copy()
     matchups['Team1ID'] = matchups['WTeamID']
     matchups['Team2ID'] = matchups['LTeamID']
     matchups['Team1Won'] = 1
@@ -151,22 +162,80 @@ def merge_rankings(matchups, dfs):
 
     return matchups
 
-def merge_seed_data(matchups, dfs):
-    # add seed data to matchups
-    # generate matchups with seed data
-    seeds = dfs['MNCAATourneySeeds']
-    seeds['SeedNum'] = seeds['Seed'].str.extract('(\\d+)').astype(int)
+# def merge_seed_data(matchups, dfs):
+#     # add seed data to matchups
+#     # generate matchups with seed data
+#     seeds = dfs['MNCAATourneySeeds']
+#     seeds['SeedNum'] = seeds['Seed'].str.extract('(\\d+)').astype(int)
 
-    # Team1 seed
-    matchups = matchups.merge(seeds[['Season', 'TeamID', 'SeedNum']], left_on=['Season', 'Team1ID'], right_on=['Season', 'TeamID'], how='left')
-    matchups = matchups.rename(columns={'SeedNum': 'Team1Seed'}).drop(columns=['TeamID'])
+#     # Team1 seed
+#     matchups = matchups.merge(seeds[['Season', 'TeamID', 'SeedNum']], left_on=['Season', 'Team1ID'], right_on=['Season', 'TeamID'], how='left')
+#     matchups = matchups.rename(columns={'SeedNum': 'Team1Seed'}).drop(columns=['TeamID'])
 
-    # Team2 seed
-    matchups = matchups.merge(seeds[['Season', 'TeamID', 'SeedNum']], left_on=['Season', 'Team2ID'], right_on=['Season', 'TeamID'], how='left')
-    matchups = matchups.rename(columns={'SeedNum': 'Team2Seed'}).drop(columns=['TeamID'])
+#     # Team2 seed
+#     matchups = matchups.merge(seeds[['Season', 'TeamID', 'SeedNum']], left_on=['Season', 'Team2ID'], right_on=['Season', 'TeamID'], how='left')
+#     matchups = matchups.rename(columns={'SeedNum': 'Team2Seed'}).drop(columns=['TeamID'])
 
-    # Fill missing seeds with 17 (meaning worse than 16-seed)
-    matchups.fillna({'Team1Seed': 17, 'Team2Seed': 17}, inplace=True)
+#     # Fill missing seeds with 17 (meaning worse than 16-seed)
+#     matchups.fillna({'Team1Seed': 17, 'Team2Seed': 17}, inplace=True)
 
+
+#     return matchups
+
+# def get_coach(season, team_id, daynum, coaches):
+#     coach_row = coaches[
+#         (coaches['Season'] == season) &
+#         (coaches['TeamID'] == team_id) &
+#         (coaches['FirstDayNum'] <= daynum) &
+#         (coaches['LastDayNum'] >= daynum)
+#     ]
+#     return coach_row['CoachName'].values[0] if not coach_row.empty else None
+
+def merge_coach_data(matchups, coaches):
+    # Add coach names to matchups
+    for i in [1, 2]:
+        matchups = matchups.merge(
+            coaches[['Season', 'TeamID', 'FirstDayNum', 'LastDayNum', 'CoachName']],
+            how='left',
+            left_on=['Season', f'Team{i}ID'],
+            right_on=['Season', 'TeamID']
+        )
+        matchups = matchups[
+            (matchups['DayNum'] >= matchups['FirstDayNum']) & 
+            (matchups['DayNum'] <= matchups['LastDayNum'])
+        ]
+        matchups = matchups.rename(columns={'CoachName': f'Team{i}Coach'}).drop(columns=['TeamID', 'FirstDayNum', 'LastDayNum'])
+    return matchups 
+
+# calculate win rates of the coaches
+def calculate_coach_win_rates(matchups):
+    coach_win_rates = matchups.groupby(['Season', 'Team1Coach']).agg(
+        Team1Wins=('Team1Won', 'sum'),
+        Team1Games=('Team1Won', 'count')
+    ).reset_index()
+
+    coach_win_rates['Team1WinRate'] = coach_win_rates['Team1Wins'] / coach_win_rates['Team1Games']
+
+    # Merge with Team2 coaches
+    team2_coach_win_rates = matchups.groupby(['Season', 'Team2Coach']).agg(
+        Team2Wins=('Team1Won', lambda x: 1 - x.sum()),
+        Team2Games=('Team1Won', 'count')
+    ).reset_index()
+
+    team2_coach_win_rates['Team2WinRate'] = team2_coach_win_rates['Team2Wins'] / team2_coach_win_rates['Team2Games']
+
+    # concatenate both dataframes
+    coach_win_rates = pd.concat([coach_win_rates, team2_coach_win_rates], ignore_index=True)
+
+    for i in [1, 2]:
+        matchups = matchups.merge(
+            coach_win_rates[['Season', f'Team{i}Coach', f'Team{i}WinRate']],
+            how='left',
+            left_on=['Season', f'Team{i}Coach'],
+            right_on=['Season', f'Team{i}Coach']
+        )
+        matchups = matchups.rename(columns={f'Team{i}WinRate': f'Team{i}CoachWinRate'}).drop(columns=[f'Team{i}Coach'])
+    # Drop rows with NaN values in coach win rates
+    matchups = matchups.dropna(subset=['Team1CoachWinRate', 'Team2CoachWinRate'])
 
     return matchups
